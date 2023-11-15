@@ -5,10 +5,11 @@
                      <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
                            <div class="iq-header-title">
-                              <h4 class="card-title">Category Lists</h4>
+                              <h4 class="card-title">Color Lists</h4>
                            </div>
                            <div class="iq-card-header-toolbar d-flex align-items-center">
-                              <a href="index.php?act=adddm" class="btn btn-primary">Add New Category</a>
+                           <a href="index.php?act=listspct"><input type="button" class="btn btn-link" value="back"></a>
+                              <a href="index.php?act=addimg" class="btn btn-primary">Add New Image</a>
                            </div>
                         </div>
                         <div class="iq-card-body">
@@ -17,18 +18,17 @@
                                 <thead>
                                     <tr>
                                         <th width="5%">No</th>
-                                        <th width="20%">Category Name</th>
-                                        <th width="65%">Category Image</th>
+                                        <th width="65%">Ảnh sản phẩm</th>
                                         <th width="10%">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                        foreach ($listdm as $danhmuc) {
-                                            extract($danhmuc);
-                                            $suadm="index.php?act=suadm&id=".$id;
-                                            $xoadm="index.php?act=xoadm&id=".$id;
-                                            $imgpath="../uploads/".$img;
+                                        foreach ($listimg as $img) {
+                                            extract($img);
+                                            $suaimg="index.php?act=suaimg&id=".$id;
+                                            $xoaimg="index.php?act=xoaimg&id=".$id;
+                                            $imgpath="../uploads/".$anhsanpham;
                                             if(is_file($imgpath)){
                                                 $hinh="<img src='".$imgpath."' height='80'>";
                                             }else{
@@ -36,12 +36,11 @@
                                             }
                                             echo '<tr>
                                             <td>'.$id.'</td>
-                                            <td>'.$tendanhmuc.'</td>
                                             <td>'.$hinh.'</td>
                                             <td>
                                                <div class="flex align-items-center list-user-action">
-                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="'.$suadm.'"><i class="ri-pencil-line"></i></a>
-                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="'.$xoadm.'"><i class="ri-delete-bin-line"></i></a>
+                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="'.$suaimg.'"><i class="ri-pencil-line"></i></a>
+                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="'.$xoaimg.'"><i class="ri-delete-bin-line"></i></a>
                                               </div>
                                             </td>
                                         </tr>';

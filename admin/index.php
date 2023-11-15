@@ -1,176 +1,230 @@
 <?php
-    include "../model/pdo.php";
-    include "../model/danhmuc.php";
-    include "../model/sanpham.php";
-    include "header.php";
-    if(isset($_GET['act'])){
-        $act=$_GET['act'];
-        switch ($act){
-            case 'adddm':
-                if(isset($_POST['themmoi']) && ($_POST['themmoi'])){
-                    $tendm=$_POST['tendm'];
-                    $img=$_FILES['img']['name'];
-                    $target_dir = "../uploads/";
-                    $target_file = $target_dir.basename($_FILES["img"]["name"]);
-                    if (move_uploaded_file($_FILES["img"]["tmp_name"], $target_file)) {
-                        // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-                      } else {
-                        // echo "Sorry, there was an error uploading your file.";
-                      }
-                    insert_danhmuc($tendm,$img);
-                    $thongbao="Thêm danh mục thành công";
+include "../model/pdo.php";
+include "../model/danhmuc.php";
+include "../model/sanpham.php";
+include "../model/color.php";
+include "../model/img.php";
+include "header.php";
+if (isset($_GET['act'])) {
+    $act = $_GET['act'];
+    switch ($act) {
+        case 'adddm':
+            if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
+                $tendanhmuc = $_POST['tendm'];
+                $img = $_FILES['img']['name'];
+                $target_dir = "../uploads/";
+                $target_file = $target_dir . basename($_FILES["img"]["name"]);
+                if (move_uploaded_file($_FILES["img"]["tmp_name"], $target_file)) {
+                    // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                } else {
+                    // echo "Sorry, there was an error uploading your file.";
                 }
-                include "danhmuc/add.php";
+                insert_danhmuc($tendanhmuc, $img);
+                $thongbao = "Thêm danh mục thành công";
+            }
+            include "danhmuc/add.php";
             break;
 
-            case "listdm":
-                $listdm=loadAll_danhmuc();
-                include "danhmuc/list.php";
+        case "listdm":
+            $listdm = loadAll_danhmuc();
+            include "danhmuc/list.php";
             break;
 
-            case "xoadm":
-                if(isset($_GET['id']) && ($_GET['id']>0)){
-                    delete_danhmuc($_GET['id']);
+        case "xoadm":
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                delete_danhmuc($_GET['id']);
+            }
+            $listdm = loadAll_danhmuc();
+            include "danhmuc/list.php";
+            break;
+
+        case "suadm":
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                $dm = loadOne_danhmuc($_GET['id']);
+            }
+            include "danhmuc/update.php";
+            break;
+
+        case "updatedm":
+            if (isset($_POST['update']) && ($_POST['update'])) {
+                $tendanhmuc = $_POST['tendm'];
+                $id = $_POST['id'];
+                $img = $_FILES['img']['name'];
+                $target_dir = "../uploads/";
+                $target_file = $target_dir . basename($_FILES["img"]["name"]);
+                if (move_uploaded_file($_FILES["img"]["tmp_name"], $target_file)) {
+                    // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                } else {
+                    // echo "Sorry, there was an error uploading your file.";
                 }
-                $listdm=loadAll_danhmuc();
-                include "danhmuc/list.php";
+                update_danhmuc($id, $tendanhmuc, $img);
+                $thongbao = "Sửa danh mục thành công";
+            }
+            $listdm = loadAll_danhmuc();
+            include "danhmuc/list.php";
             break;
 
-            case "suadm":
-                if(isset($_GET['id']) && ($_GET['id']>0)){
-                    $dm=loadOne_danhmuc($_GET['id']);
+        case "addsp":
+            if (isset($_POST['addsp']) && ($_POST['addsp'])) {
+                $tensanpham = $_POST['tensanpham'];
+                $lk_danhmuc = $_POST['lk_danhmuc'];
+                $giagoc = $_POST['giagoc'];
+                $anh = $_FILES['anh']['name'];
+                $target_dir = "../uploads/";
+                $target_file = $target_dir . basename($_FILES["anh"]["name"]);
+                if (move_uploaded_file($_FILES["anh"]["tmp_name"], $target_file)) {
+                    // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                } else {
+                    // echo "Sorry, there was an error uploading your file.";
                 }
-                include "danhmuc/update.php";
+                insert_sanpham($tensanpham, $giagoc, $anh, $lk_danhmuc);
+                $thongbao = "Thêm sản phẩm thành công";
+            }
+            $listdm = loadAll_danhmuc();
+            include "sanpham/add.php";
             break;
 
-            case "updatedm":
-                if(isset($_POST['update']) && ($_POST['update'])){
-                    $tendm=$_POST['tendm'];
-                    $id=$_POST['id'];
-                    $img=$_FILES['img']['name'];
-                    $target_dir = "../uploads/";
-                    $target_file = $target_dir.basename($_FILES["img"]["name"]);
-                    if (move_uploaded_file($_FILES["img"]["tmp_name"], $target_file)) {
-                        // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-                      } else {
-                        // echo "Sorry, there was an error uploading your file.";
-                      }
-                    update_danhmuc($id,$tendm,$img);
-                    $thongbao="Sửa danh mục thành công";
+        case "listsp":
+            $listsp = loadAll_sanpham();
+            include "sanpham/list.php";
+            break;
+
+        case "xoasp":
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                delete_sanpham($_GET['id']);
+            }
+            $listsp = loadAll_sanpham();
+            include "sanpham/list.php";
+            break;
+
+        case "suasp":
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                $sp = loadOne_sanpham($_GET['id']);
+            }
+            $listdm = loadAll_danhmuc();
+            include "sanpham/update.php";
+            break;
+
+        case "updatesp":
+            if (isset($_POST['updatesp']) && ($_POST['updatesp'])) {
+                $tensanpham = $_POST['tensanpham'];
+                $id = $_POST['id'];
+                $lk_danhmuc = $_POST['lk_danhmuc'];
+                $giagoc = $_POST['giagoc'];
+                $anh = $_FILES['anh']['name'];
+                $target_dir = "../uploads/";
+                $target_file = $target_dir . basename($_FILES["anh"]["name"]);
+                if (move_uploaded_file($_FILES["anh"]["tmp_name"], $target_file)) {
+                    // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                } else {
+                    // echo "Sorry, there was an error uploading your file.";
                 }
-                $listdm=loadAll_danhmuc();
-                include "danhmuc/list.php";
+                update_sanpham($id, $tensanpham, $giagoc, $anh, $lk_danhmuc);
+                $thongbao = "Sửa sản phẩm thành công";
+            }
+            $listsp = loadAll_sanpham();
+            include "sanpham/list.php";
             break;
 
-            case "addsp":
-                if(isset($_POST['addsp']) && ($_POST['addsp'])){
-                    $tensp=$_POST['tensp'];
-                    $iddm=$_POST['iddm'];
-                    $oldprice=$_POST['oldprice'];
-                    $newprice=$_POST['newprice'];
-                    $imgtrc=$_FILES['imgtrc']['name'];
-                    $target_dir = "../uploads/";
-                    $target_file = $target_dir.basename($_FILES["imgtrc"]["name"]);
-                    if (move_uploaded_file($_FILES["imgtrc"]["tmp_name"], $target_file)) {
-                        // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-                    } else {
-                        // echo "Sorry, there was an error uploading your file.";
-                    }
-                    $imgsau=$_FILES['imgsau']['name'];
-                    $target_dir = "../uploads/";
-                    $target_file = $target_dir.basename($_FILES["imgsau"]["name"]);
-                    if (move_uploaded_file($_FILES["imgsau"]["tmp_name"], $target_file)) {
-                          // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-                    }else {
-                          // echo "Sorry, there was an error uploading your file.";
-                    }
-                    $mota=$_POST['mota'];
-                    $color1=$_POST['color1'];
-                    $color2=$_POST['color2'];
-                    $color3=$_POST['color3'];
-                    $color4=$_POST['color4'];
-                    insert_sanpham($tensp,$newprice,$oldprice,$imgtrc,$imgsau,$mota,$color1,$color2,$color3,$color4,$iddm);
-                    $thongbao="Thêm sản phẩm thành công";
+        case "listspct":
+            include "sanpham/sanphamchitiet.php";
+            break;
+
+        case 'addcolor':
+            if (isset($_POST['themmau']) && ($_POST['themmau'])) {
+                $tenmau = $_POST['tenmau'];
+                $mau = $_POST['mamau'];
+                insert_color($tenmau, $mau);
+                $thongbao = "Thêm màu thành công";
+            }
+            include "sanpham/addcolor.php";
+            break;
+
+        case "listcolor":
+            $listcolor = loadAll_color();
+            include "sanpham/list_color.php";
+            break;
+
+        case "xoacolor":
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                delete_color($_GET['id']);
+            }
+            $listcolor = loadAll_color();
+            include "sanpham/list_color.php";
+            break;
+
+        case "suacolor":
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                $color = loadOne_color($_GET['id']);
+            }
+            include "sanpham/update_color.php";
+            break;
+
+        case "updatecolor":
+            if (isset($_POST['updatecolor']) && ($_POST['updatecolor'])) {
+                $tenmau = $_POST['tenmau'];
+                $id = $_POST['id'];
+                $mau = $_POST['mamau'];
+                update_color($id, $tenmau, $mau);
+                $thongbao = "Sửa màu thành công";
+            }
+            $listcolor = loadAll_color();
+            include "sanpham/list_color.php";
+            break;
+
+        case "addimg":
+            if (isset($_POST['addimg']) && ($_POST['addimg'])) {
+                $anhsanpham = $_FILES['anhsanpham']['name'];
+                $target_dir = "../uploads/";
+                $target_file = $target_dir . basename($_FILES["anhsanpham"]["name"]);
+                if (move_uploaded_file($_FILES["anhsanpham"]["tmp_name"], $target_file)) {
+                    // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                } else {
+                    // echo "Sorry, there was an error uploading your file.";
                 }
-                $listdm=loadAll_danhmuc();
-                include "sanpham/add.php";
+                insert_img($anhsanpham);
+                $thongbao="Thêm ảnh thành công";
+            }
+            include "sanpham/add_img.php";
             break;
 
-            case "listsp":
-                $listsp=loadAll_sanpham();
-                include "sanpham/list.php";
-            break;
+        case "listimg":
+            $listimg=loadAll_img();
+            include "sanpham/list_image.php";
+        break;
 
-            case "xoasp":
-                if(isset($_GET['id']) && ($_GET['id']>0)){
-                    delete_sanpham($_GET['id']);
+        case "xoaimg":
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                delete_img($_GET['id']);
+            }
+            $listimg=loadAll_img();
+            include "sanpham/list_image.php";
+        break;
+
+        case "suaimg":
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                $img = loadOne_img($_GET['id']);
+            }
+            include "sanpham/update_img.php";
+        break;
+
+        case "updateimg":
+            if (isset($_POST['upimg']) && ($_POST['upimg'])) {
+                $id = $_POST['id'];
+                $anhsanpham = $_FILES['anhsanpham']['name'];
+                $target_dir = "../uploads/";
+                $target_file = $target_dir . basename($_FILES["anhsanpham"]["name"]);
+                if (move_uploaded_file($_FILES["anhsanpham"]["tmp_name"], $target_file)) {
+                    // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                } else {
+                    // echo "Sorry, there was an error uploading your file.";
                 }
-                $listsp=loadAll_sanpham();
-                include "sanpham/list.php";
-            break;
-
-            case "suasp":
-                if(isset($_GET['id']) && ($_GET['id']>0)){
-                    $sp=loadOne_sanpham($_GET['id']);
-                }
-                $listdm=loadAll_danhmuc();
-                include "sanpham/update.php";
-            break;
-
-            case "updatesp":
-                if(isset($_POST['updatesp']) && ($_POST['updatesp'])){
-                    $tensp=$_POST['tensp'];
-                    $id=$_POST['id'];
-                    $iddm=$_POST['iddm'];
-                    $oldprice=$_POST['oldprice'];
-                    $newprice=$_POST['newprice'];
-                    $imgtrc=$_FILES['imgtrc']['name'];
-                    $target_dir = "../uploads/";
-                    $target_file = $target_dir.basename($_FILES["imgtrc"]["name"]);
-                    if (move_uploaded_file($_FILES["imgtrc"]["tmp_name"], $target_file)) {
-                        // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-                    } else {
-                        // echo "Sorry, there was an error uploading your file.";
-                    }
-                    $imgsau=$_FILES['imgsau']['name'];
-                    $target_dir = "../uploads/";
-                    $target_file = $target_dir.basename($_FILES["imgsau"]["name"]);
-                    if (move_uploaded_file($_FILES["imgsau"]["tmp_name"], $target_file)) {
-                          // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-                    }else {
-                          // echo "Sorry, there was an error uploading your file.";
-                    }
-                    $mota=$_POST['mota'];
-                    $color1=$_POST['color1'];
-                    $color2=$_POST['color2'];
-                    $color3=$_POST['color3'];
-                    $color4=$_POST['color4'];
-                    update_sanpham($id,$tensp,$newprice,$oldprice,$imgtrc,$imgsau,$mota,$color1,$color2,$color3,$color4,$iddm);
-                    $thongbao="Sửa sản phẩm thành công";
-                }
-                include "sanpham/update.php";
-            break;
-
-            case 'listuser':
-                include "user-list.php";
-            break;
-
-            case 'userupdate':
-                include "user_update.php";
-
-            break;
-
-            case 'listcomment':
-                include "list-comment.php";
-            break;
-
-            case 'listbill':
-                include "list-bill.php";
-            break;
-            
-            default:
-                include "admin-dashboard.php";
-            break;
-        }
+                update_img($id,$anhsanpham);
+                $thongbao="Sửa ảnh thành công";
+            }
+            $listimg=loadAll_img();
+            include "sanpham/list_image.php";
+        break;
     }
-    include "footer.php";
+}
+include "footer.php";

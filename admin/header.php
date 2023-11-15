@@ -6,7 +6,7 @@
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title> xuyen Booksto - Responsive Bootstrap 4 Admin Dashboard Template</title>
+      <title> Booksto - Responsive Bootstrap 4 Admin Dashboard Template</title>
       <!-- Favicon -->
       <link rel="shortcut icon" href="images/favicon.ico" />
       <!-- Bootstrap CSS -->
@@ -52,7 +52,8 @@
                         <ul id="admin" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
                            <li class="active"><a href="index.php?act=dashboard"><i class="las la-house-damage"></i>Dashboard</a></li>
                            <li><a href="index.php?act=listdm"><i class="ri-function-line"></i>Danh mục</a></li>
-                           <li><a href="index.php?act=listsp"><i class="ri-book-line"></i>Sản phẩm</a></li>
+                           <li><a href="index.php?act=listsp"><i class="ri-book-line"></i>Loại sản phẩm</a></li>
+                           <li><a href="index.php?act=listspct"><i class="ri-book-line"></i>Sản phẩm chi tiết</a></li>
                            <li><a href="index.php?act=listuser"><i class="ri-book-line"></i>Quản lí tài khoản</a></li>
                            <li><a href="index.php?act=listcomment"><i class="ri-book-line"></i>Quản lí bình luận</a></li>
                            <li><a href="index.php?act=listbill"><i class="ri-book-line"></i>Quản lí đơn hàng</a></li>
