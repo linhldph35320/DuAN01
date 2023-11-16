@@ -14,8 +14,8 @@
                                 <label>Ảnh:</label><br>
                                 <input type="file" name="anhsanpham" id="">
                             </div>
-                            <input type="hidden" name="id" value="<?php if(isset($id) && ($id>0)) echo $id?>">
-                            <input type="submit" name="upimg" class="btn btn-primary" value="Submit">
+                            <input type="hidden" name="id" value="<?= $id ?>">
+                            <input type="submit" name="updateimg" class="btn btn-primary" value="Submit">
                             <input type="reset" class="btn btn-danger" value="Reset">
                             <a href="index.php?act=listimg"><input type="button" class="btn btn-link" value="List Image"></a>
                             <a href="index.php?act=listspct"><input type="button" class="btn btn-link" value="back"></a>

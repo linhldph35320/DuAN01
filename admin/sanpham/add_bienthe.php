@@ -15,6 +15,17 @@
                                 <input type="text" class="form-control" name="tensanpham">
                             </div>
                             <div class="form-group">
+                            <label>Loại sản phẩm:</label>
+                            <select class="form-control" id="exampleFormControlSelect1" name="lk_sanpham">
+                                <?php
+                                foreach ($listsp as $sanpham) {
+                                    extract($sanpham);
+                                    echo "<option value=".$id.">".$tendanhmuc."</option>";
+                                }
+                                ?>
+                            </select>
+                        </div>
+                            <div class="form-group">
                                 <label>Ảnh:</label>
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" accept="image/png, image/jpeg" name="anhsanpham">

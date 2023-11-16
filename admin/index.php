@@ -209,9 +209,9 @@ if (isset($_GET['act'])) {
         break;
 
         case "updateimg":
-            if (isset($_POST['upimg']) && ($_POST['upimg'])) {
-                $id = $_POST['id'];
+            if (isset($_POST['updateimg']) && ($_POST['updateimg'])) {
                 $anhsanpham = $_FILES['anhsanpham']['name'];
+                $id=$_POST['id'];
                 $target_dir = "../uploads/";
                 $target_file = $target_dir . basename($_FILES["anhsanpham"]["name"]);
                 if (move_uploaded_file($_FILES["anhsanpham"]["tmp_name"], $target_file)) {
@@ -220,10 +220,17 @@ if (isset($_GET['act'])) {
                     // echo "Sorry, there was an error uploading your file.";
                 }
                 update_img($id,$anhsanpham);
-                $thongbao="Sửa ảnh thành công";
+                $thongbao="Thêm ảnh thành công";
             }
             $listimg=loadAll_img();
             include "sanpham/list_image.php";
+        break;
+
+        case"addbt":
+            $listsp = loadAll_sanpham();
+            $listcolor = loadAll_color();
+            $listimg=loadAll_img();
+            include "sanpham/add_bienthe.php";
         break;
     }
 }

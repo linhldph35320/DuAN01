@@ -6,7 +6,7 @@ function insert_sanpham($tensanpham, $giagoc, $anh, $lk_danhmuc)
 }
 
 function loadAll_sanpham(){
-    $sql="SELECT * FROM `tb_sanpham` INNER JOIN tb_danhmuc ON tb_sanpham.lk_danhmuc=tb_danhmuc.id";
+    $sql="SELECT tb_sanpham.id,tensanpham,giagoc,anh,tendanhmuc FROM `tb_sanpham` LEFT JOIN tb_danhmuc ON tb_sanpham.lk_danhmuc=tb_danhmuc.id";
     $listsp=pdo_query($sql);
     return $listsp;
 }
