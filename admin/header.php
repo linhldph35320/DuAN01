@@ -57,6 +57,7 @@
                            <li><a href="index.php?act=listuser"><i class="ri-book-line"></i>Quản lí tài khoản</a></li>
                            <li><a href="index.php?act=listcomment"><i class="ri-book-line"></i>Quản lí bình luận</a></li>
                            <li><a href="index.php?act=listbill"><i class="ri-book-line"></i>Quản lí đơn hàng</a></li>
+                           <li><a href="index.php?act=thoat"><i class="ri-book-line"></i>LogOut</a></li>
                         </ul>
                      </li>
                   </ul>

@@ -9,7 +9,9 @@
         $role=checkuser($user,$pass);
         $_SESSION['role']= $role;
         if($role== 1) header('Location:index.php');
-        else header('Location:login.php');
+        else{
+            $txt_erro="Username hoặc Password không tồn tại !";
+         } //header('Location:login.php');
     }
 ?>
 
@@ -28,6 +30,11 @@
             <input type="text" name="user">
             <input type="text" name="pass">
             <input type="submit" name="dangnhap" value="Đăng Nhập">
+            <?php
+                if(isset($txt_erro)&&($txt_erro!="")){
+                    echo "<font color='red'>".$txt_erro."</font>";
+                }
+            ?>
         </form>
     </div>
 </body>
