@@ -69,64 +69,22 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 break;
 
             case "addsp":
-                if (isset($_POST['addsp']) && ($_POST['addsp'])) {
-                    $tensanpham = $_POST['tensanpham'];
-                    $lk_danhmuc = $_POST['lk_danhmuc'];
-                    $giagoc = $_POST['giagoc'];
-                    $anh = $_FILES['anh']['name'];
-                    $target_dir = "../uploads/";
-                    $target_file = $target_dir . basename($_FILES["anh"]["name"]);
-                    if (move_uploaded_file($_FILES["anh"]["tmp_name"], $target_file)) {
-                        // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-                    } else {
-                        // echo "Sorry, there was an error uploading your file.";
-                    }
-                    insert_sanpham($tensanpham, $giagoc, $anh, $lk_danhmuc);
-                    $thongbao = "Thêm sản phẩm thành công";
-                }
-                $listdm = loadAll_danhmuc();
                 include "sanpham/add.php";
                 break;
 
             case "listsp":
-                $listsp = loadAll_sanpham();
                 include "sanpham/list.php";
                 break;
 
             case "xoasp":
-                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                    delete_sanpham($_GET['id']);
-                }
-                $listsp = loadAll_sanpham();
                 include "sanpham/list.php";
                 break;
 
             case "suasp":
-                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                    $sp = loadOne_sanpham($_GET['id']);
-                }
-                $listdm = loadAll_danhmuc();
                 include "sanpham/update.php";
                 break;
 
             case "updatesp":
-                if (isset($_POST['updatesp']) && ($_POST['updatesp'])) {
-                    $tensanpham = $_POST['tensanpham'];
-                    $id = $_POST['id'];
-                    $lk_danhmuc = $_POST['lk_danhmuc'];
-                    $giagoc = $_POST['giagoc'];
-                    $anh = $_FILES['anh']['name'];
-                    $target_dir = "../uploads/";
-                    $target_file = $target_dir . basename($_FILES["anh"]["name"]);
-                    if (move_uploaded_file($_FILES["anh"]["tmp_name"], $target_file)) {
-                        // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-                    } else {
-                        // echo "Sorry, there was an error uploading your file.";
-                    }
-                    update_sanpham($id, $tensanpham, $giagoc, $anh, $lk_danhmuc);
-                    $thongbao = "Sửa sản phẩm thành công";
-                }
-                $listsp = loadAll_sanpham();
                 include "sanpham/list.php";
                 break;
 
