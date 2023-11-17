@@ -153,9 +153,9 @@ figure {
   margin: 0;
 }
 
-.container {
+/* .container {
   max-width: 1200px;
-}
+} */
 @media only screen and (max-width: 767px) {
   .container {
     max-width: 576px;
@@ -7746,6 +7746,22 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 /*contact page css end*/
 /* 17. login page css here */
+.button input{
+  background-color: #0063d1;
+  height: 45px;
+  border-radius: 5px;
+  color: #fff;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+.account_form{
+  margin: 0 20px;
+  width: 550px;
+  
+}
 .account_form h2 {
   font-size: 28px;
   text-transform: capitalize;
@@ -7775,7 +7791,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #0063d1;
 }
 .account_form input {
-  border: 1px solid #ebebeb;
+  border: 1px solid #0063d1;
   height: 40px;
   max-width: 100%;
   padding: 0 20px;
@@ -7810,6 +7826,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .login_submit {
+  justify-content: space-between;
+  display: flex;
   text-align: right;
 }
 .login_submit a {
@@ -7835,6 +7853,15 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     display: block;
     margin-bottom: 20px;
   }
+}
+.login_submit input{
+  border: solid 1px #0063d1;
+  border-radius: 5px;
+  height: 45px;
+  text-align: center;
+  background-color: #0063d1;
+  color: #FFF;
+  width: 40%;
 }
 
 .customer_login {
@@ -10381,4 +10408,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .compare-table .table tbody tr td.pro-ratting a:hover {
   color: #0063d1;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
 }

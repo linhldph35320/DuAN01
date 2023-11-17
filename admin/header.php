@@ -85,17 +85,12 @@
                      <ul class="navbar-nav ml-auto navbar-list">
                         <li class="line-height pt-3">
                            <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
-                              <img src="images/user/1.jpg" class="img-fluid rounded-circle mr-3" alt="user">
-                              <div class="caption">
-                                 <h6 class="mb-1 line-height">Barry Tech</h6>
-                                 <p class="mb-0 text-primary">$20.32</p>
-                              </div>
                            </a>
                            <div class="iq-sub-dropdown iq-user-dropdown">
                               <div class="iq-card shadow-none m-0">
                                  <div class="iq-card-body p-0 ">
                                     <div class="bg-primary p-3">
-                                       <h5 class="mb-0 text-white line-height">Hello Barry Tech</h5>
+                                       <h5 class="mb-0 text-white line-height">Thông Tin</h5>
                                        <span class="text-white font-size-12">Available</span>
                                     </div>
                                     <a href="profile.html" class="iq-sub-card iq-bg-primary-hover">
@@ -142,9 +137,6 @@
                                           </div>
                                        </div>
                                     </a>
-                                    <div class="d-inline-block w-100 text-center p-3">
-                                       <a class="bg-primary iq-sign-btn" href="sign-in.html" role="button">Sign out<i class="ri-login-box-line ml-2"></i></a>
-                                    </div>
                                  </div>
                               </div>
                            </div>
