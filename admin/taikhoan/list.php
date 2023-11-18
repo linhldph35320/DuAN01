@@ -20,6 +20,7 @@
                                         <th width="10%">Người dùng</th>
                                         <th width="10%">Mật Khẩu</th>
                                         <th width="10%">Vai Trò</th>
+                                        <th width="10%">Action</th>
 
                                     </tr>
                                 </thead>
