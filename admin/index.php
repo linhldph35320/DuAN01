@@ -6,8 +6,6 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
     include "../model/pdo.php";
     include "../model/danhmuc.php";
     include "../model/sanpham.php";
-    include "../model/color.php";
-    include "../model/img.php";
     include "header.php";
     include "../model/user.php";
     // include 'path/to/your/file.php';
@@ -112,22 +110,121 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 break;
             ///////////////////////////////////////////////////////////////////////////////////////////////
             case "addsp":
+                if(isset($_POST['addsp']) && ($_POST['addsp'])){
+                    $tensanpham=$_POST['tensanpham'];
+                    $giagoc=$_POST['giagoc'];
+                    $giagiam=$_POST['giagiam'];
+                    $anhsanpham = $_FILES['anhsanpham']['name'];
+                    $target_dir = "../uploads/";
+                    $target_file = $target_dir . basename($_FILES["anhsanpham"]["name"]);
+                    if (move_uploaded_file($_FILES["anhsanpham"]["tmp_name"], $target_file)) {
+                        // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                    } else {
+                        // echo "Sorry, there was an error uploading your file.";
+                    }
+                    $anhmota = $_FILES['anhmota']['name'];
+                    $target_dir = "../uploads/";
+                    $linkanhmota = $target_dir . basename($_FILES["anhsanpham"]["name"]);
+                    foreach ($linkanhmota as $linkamt) {
+                        if (move_uploaded_file($_FILES["anhmota"]["tmp_name"], $linkamt)) {
+                            // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                        } else {
+                            // echo "Sorry, there was an error uploading your file.";
+                        }
+                    }
+                    $mota=$_POST['mota'];
+                    // $tenmau=$_POST['tenmau'];
+                    // $anhmausac = $_FILES['anhmausac']['name'];
+                    // $target_dir = "../uploads/";
+                    // $linkanhmausac = $target_dir . basename($_FILES["anhmausac"]["name"]);
+                    // foreach ($linkanhmausac as $linkams) {
+                    //     if (move_uploaded_file($_FILES["anhmausac"]["tmp_name"], $linkams)) {
+                    //         // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                    //     } else {
+                    //         // echo "Sorry, there was an error uploading your file.";
+                    //     }
+                    // }
+                    $soluong=$_POST['soluong'];
+                    $lk_danhmuc=$_POST['lk_danhmuc'];
+                    insert_sanpham($tensanpham,$giagoc,$giagiam,$anhsanpham,$mota,$soluong,$lk_danhmuc,$anhmota);
+                    $thongbao="Thêm sản phẩm thành công";
+                }
+                $listdm = loadAll_danhmuc();
                 include "sanpham/add.php";
                 break;
 
             case "listsp":
+                $listsp=loadAll_sanpham();
                 include "sanpham/list.php";
                 break;
 
+            case "viewsp":
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    $listspct=viewOne_sanpham_chitiet($_GET['id']);
+                    $listimg=viewOne_sanpham_img($_GET['id']);
+                }
+            include "sanpham/list_one.php";
+            break;
+
             case "xoasp":
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    delete_sanpham_chitiet($_GET['id']);
+                    delete_sanpham_img($_GET['id']);
+                }
+                $listsp=loadAll_sanpham();
                 include "sanpham/list.php";
                 break;
 
             case "suasp":
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    $sanpham=loadOne_sanpham_chitiet($_GET['id']);
+                }
+                $listdm = loadAll_danhmuc();
                 include "sanpham/update.php";
                 break;
 
             case "updatesp":
+                if(isset($_POST['update']) && ($_POST['update'])){
+                    $id=$_POST['id'];
+                    $tensanpham=$_POST['tensanpham'];
+                    $giagoc=$_POST['giagoc'];
+                    $giagiam=$_POST['giagiam'];
+                    $anhsanpham = $_FILES['anhsanpham']['name'];
+                    $target_dir = "../uploads/";
+                    $target_file = $target_dir . basename($_FILES["anhsanpham"]["name"]);
+                    if (move_uploaded_file($_FILES["anhsanpham"]["tmp_name"], $target_file)) {
+                        // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                    } else {
+                        // echo "Sorry, there was an error uploading your file.";
+                    }
+                    $anhmota = $_FILES['anhmota']['name'];
+                    $target_dir = "../uploads/";
+                    $linkanhmota = $target_dir . basename($_FILES["anhsanpham"]["name"]);
+                    foreach ($linkanhmota as $linkamt) {
+                        if (move_uploaded_file($_FILES["anhmota"]["tmp_name"], $linkamt)) {
+                            // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                        } else {
+                            // echo "Sorry, there was an error uploading your file.";
+                        }
+                    }
+                    $mota=$_POST['mota'];
+                    // $tenmau=$_POST['tenmau'];
+                    // $anhmausac = $_FILES['anhmausac']['name'];
+                    // $target_dir = "../uploads/";
+                    // $linkanhmausac = $target_dir . basename($_FILES["anhmausac"]["name"]);
+                    // foreach ($linkanhmausac as $linkams) {
+                    //     if (move_uploaded_file($_FILES["anhmausac"]["tmp_name"], $linkams)) {
+                    //         // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                    //     } else {
+                    //         // echo "Sorry, there was an error uploading your file.";
+                    //     }
+                    // }
+                    $soluong=$_POST['soluong'];
+                    $lk_danhmuc=$_POST['lk_danhmuc'];
+                    update_sanpham($id,$tensanpham,$giagoc,$giagiam,$anhsanpham,$mota,$soluong,$lk_danhmuc,$anhmota);
+                    $thongbao="Sửa sản phẩm thành công";
+                }
+                $listsp=loadAll_sanpham();
                 include "sanpham/list.php";
                 break;
 

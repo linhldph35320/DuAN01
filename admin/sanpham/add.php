@@ -26,15 +26,45 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Giá:</label>
+                            <label>Giá gốc:</label>
                             <input type="text" class="form-control" name="giagoc">
                         </div>
                         <div class="form-group">
-                            <label>Ảnh:</label>
+                            <label>Giá giảm:</label>
+                            <input type="text" class="form-control" name="giagiam">
+                        </div>
+                        <div class="form-group">
+                            <label>Ảnh đại diện:</label>
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" accept="image/png, image/jpeg" name="anh">
+                                <input type="file" class="custom-file-input" accept="image/png, image/jpeg" name="anhsanpham">
                                 <label class="custom-file-label">Choose file</label>
                             </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Ảnh mô tả:</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" accept="image/png, image/jpeg" name="anhmota[]" multiple="multiple">
+                                <label class="custom-file-label">Choose file</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Mô tả:</label><br>
+                            <textarea name="mota" id="" cols="100" rows="10"></textarea>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label>Tên màu:</label>
+                            <input type="text" class="form-control" name="tenmau">
+                        </div>
+                        <div class="form-group">
+                            <label>Màu sắc:</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" accept="image/png, image/jpeg" name="mausac[]" multiple="multiple">
+                                <label class="custom-file-label">Choose file</label>
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <label>Số lượng:</label>
+                            <input type="text" class="form-control" name="soluong">
                         </div>
                         <input type="submit" name="addsp" class="btn btn-primary" value="Submit">
                         <button type="reset" class="btn btn-danger">Reset</button>
