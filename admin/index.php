@@ -6,6 +6,7 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
     include "../model/pdo.php";
     include "../model/danhmuc.php";
     include "../model/sanpham.php";
+    include "../model/donhang.php";
     include "header.php";
     include "../model/user.php";
     // include 'path/to/your/file.php';
@@ -226,6 +227,47 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 }
                 $listsp=loadAll_sanpham();
                 include "sanpham/list.php";
+                break;
+
+   
+                
+
+            case"listbill":  
+                $listdonghang=loadAll_donhang();
+                include "donhang/list-bill.php";
+                
+                break;
+
+            case "xoadonhang":
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    delete_donhang($_GET['id']);
+                }
+                $listdonghang=loadAll_donhang();
+                include "donhang/list-bill.php";
+                break;
+
+            case "suadonhang":
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    $donhang = loadOne_donhang( $_GET['id']);
+                    
+                }
+                include "donhang/update.php";
+                break;
+
+            case "updatedh":
+                if (isset($_POST['update']) && ($_POST['update'])) {
+                    $id = $_POST['id'];
+                    // $lk_user = $_POST['lk_user'];
+                    $tendaydu = $_POST['tendaydu'];
+                    $email = $_POST['email'];
+                    $sodienthoai = $_POST['sodienthoai'];
+                    $diachi = $_POST['diachi'];
+                    $ghichu = $_POST['ghichu'];
+                    update_donhang($id,$tendaydu,$email,$sodienthoai,$diachi,$ghichu);
+                    $thongbao = "Sửa danh mục thành công";
+                }
+                $listdonghang=loadAll_donhang();
+                include "donhang/list-bill.php";
                 break;
 
             case "thoat":
