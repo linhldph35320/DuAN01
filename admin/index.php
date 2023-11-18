@@ -9,6 +9,9 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
     include "../model/color.php";
     include "../model/img.php";
     include "header.php";
+    include "../model/user.php";
+    // include 'path/to/your/file.php';
+
     if (isset($_GET['act'])) {
         $act = $_GET['act'];
         switch ($act) {
@@ -67,7 +70,47 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 $listdm = loadAll_danhmuc();
                 include "danhmuc/list.php";
                 break;
-
+            case "dskh":
+                $listtaikhoan = loadAll_taikhoan();
+                include "taikhoan/list.php";
+                break;
+            case "xoatk":
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    delete_taikhoan($_GET['id']);
+                }
+                $listtaikhoan = loadAll_taikhoan();
+                include "taikhoan/list.php";
+                break;
+            ///////////////////
+            case "list":
+                $listdm = loadAll_danhmuc();
+                include "danhmuc/list.php";
+                break;
+                ///////////////
+            case "suatk":
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    $dm = loadOne_taikhoan($_GET['id']);
+                }
+                include "taikhoan/update.php";
+                break;
+               
+            case "updatetk":
+                if (isset($_POST['update']) && ($_POST['update'])) {
+                    $id = $_POST['id'];
+                    $name = $_POST['name'];
+                    $address = $_POST['address'];
+                    $email = $_POST['email'];
+                    $user = $_POST['user'];
+                    $pass = $_POST['pass'];
+                    $role = $_POST['role'];
+          
+                    update_taikhoan($id, $name, $address,$email,$user,$pass,$role);
+                    $thongbao = "Sửa danh mục thành công";
+                }
+                $listtaikhoan = loadAll_taikhoan();
+                include "taikhoan/list.php";
+                break;
+            ///////////////////////////////////////////////////////////////////////////////////////////////
             case "addsp":
                 include "sanpham/add.php";
                 break;

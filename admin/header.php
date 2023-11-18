@@ -54,7 +54,7 @@
                            <li><a href="index.php?act=listdm"><i class="ri-function-line"></i>Danh mục</a></li>
                            <li><a href="index.php?act=listsp"><i class="ri-book-line"></i>Loại sản phẩm</a></li>
                            <li><a href="index.php?act=listspct"><i class="ri-book-line"></i>Sản phẩm chi tiết</a></li>
-                           <li><a href="index.php?act=listuser"><i class="ri-book-line"></i>Quản lí tài khoản</a></li>
+                           <li><a href="index.php?act=dskh"><i class="ri-book-line"></i>Quản lí tài khoản</a></li>
                            <li><a href="index.php?act=listcomment"><i class="ri-book-line"></i>Quản lí bình luận</a></li>
                            <li><a href="index.php?act=listbill"><i class="ri-book-line"></i>Quản lí đơn hàng</a></li>
                            <li><a href="index.php?act=thoat"><i class="ri-book-line"></i>LogOut</a></li>
