@@ -23,58 +23,63 @@
                 <!--login area start-->
                 <div class="col-lg-6 col-md-6">
 
-<SPan>ĐĂNG NHẬP
+
                     <div class="account_form">
-                        <h2>login</h2>
-                        <form action="#">
+                        <h2>Đăng nhập</h2>
+                        <form action="index.php?act=dangnhap" method="post">
                             <p>
-                                <label>Username or email <span>*</span></label>
-                                <input type="text" name="username">
+                                <label>Tên đăng nhập <span>*</span></label>
+                                <input type="text" name="user">
                             </p>
                             <p>
-                                <label>Passwords <span>*</span></label>
+                                <label>Mật khẩu <span>*</span></label>
                                 <input type="password" name="pass">
                             </p>
                             <div class="login_submit">
-                                <a href="#">Lost your password?</a>
+                                
+                                <a href="index.php?act=quenmk">Quên mật khẩu</a>
                                 <label for="remember">
                                     <input id="remember" type="checkbox">
-                                    Remember me
+                                    Nhớ tài khoản
                                 </label>
-                                <button type="submit">login</button>
-
+                       
+                                <input type="submit" value="Đăng nhập" name="dangnhap">
+                               <input type="reset" value="Nhập lại">
                             </div>
 
                         </form>
                     </div>
-</SPan>
+                    
+
 
                 </div>
-                <!--login area start-->
-
-                <!--register area start-->
+  
                 <div class="col-lg-6 col-md-6">
 
-<SPan>ĐĂNG KÝ
+
                     <div class="account_form register">
-                        <h2>Register</h2>
-                        <form action="#">
+                        <h2>Đăng ký</h2>
+                        <form action="index.php?act=dangky" method="post">
                             <p>
-                                <label>Email address <span>*</span></label>
-                                <input type="text">
+                                <label>Email <span>*</span></label>
+                                <input type="email" name="email"> 
                             </p>
                             <p>
-                                <label>Passwords <span>*</span></label>
-                                <input type="password">
+                                <label>tên đăng nhập <span>*</span></label>
+                                <input type="text" name="user"> 
+                            </p>
+                            <p>
+                                <label>Mật khẩu <span>*</span></label>
+                                <input type="password" name="pass">
                             </p>
                             <div class="login_submit">
-                                <button type="submit">Register</button>
+                            <input type="submit" value="Đăng kí" name="dangky">
+                             <input type="reset" value="Nhập lại">
                             </div>
                         </form>
                     </div>
 
-</SPan>
-                </div>
+     </div>
                 <!--register area end-->
             </div>
         </div>

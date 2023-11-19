@@ -7747,7 +7747,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 /*contact page css end*/
 /* 17. login page css here */
 .account_form h2 {
-  font-size: 28px;
+  font-size: 15px;
+  color: rgb(49, 142, 223);
   text-transform: capitalize;
   font-weight: 500;
   line-height: 22px;
@@ -7755,7 +7756,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 @media only screen and (max-width: 767px) {
   .account_form h2 {
-    font-size: 24px;
+    font-size: 15px;
     margin-bottom: 20px;
   }
 }
@@ -10381,26 +10382,4 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .compare-table .table tbody tr td.pro-ratting a:hover {
   color: #0063d1;
-}
-.dangnhapcss  input{
-  border-radius: 30px;
-  margin-top: 10px;
-  background-color: #0063d1;
-  width: 120px;
-  font-size: larger;
-  color: white;
-}
-.dangnhapcss input{
-  border-radius: 30px;
-  background-color: #0063d1;
-  width: 120px;
-  font-size: larger;
-  color: white;
-  
-}
-
-.css{
-  width: 150px;
-  background-color: #0063d1;
-  height: 50px;
 }
