@@ -238,7 +238,9 @@
         </div>
     </div>
     <!--Offcanvas menu area end-->
+    <!-- //////////////////////kết thúc phần header  -->
 
+    <!-- ///////////////bắt đầu phần footer -->
     <header>
         <div class="main_header">
             <!--header top start-->

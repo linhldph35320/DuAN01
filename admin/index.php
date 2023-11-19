@@ -74,13 +74,13 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 $listtaikhoan = loadAll_taikhoan();
                 include "taikhoan/list.php";
                 break;
-            
+
             case "viewtk":
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                     $list1tk = viewOne_taikhoan($_GET['id']);
                 }
                 include "taikhoan/list_one.php";
-            break;
+                break;
 
             case "xoatk":
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
@@ -89,12 +89,12 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 $listtaikhoan = loadAll_taikhoan();
                 include "taikhoan/list.php";
                 break;
-                ///////////////////
+            ///////////////////
             case "list":
                 $listdm = loadAll_danhmuc();
                 include "danhmuc/list.php";
                 break;
-                ///////////////
+            ///////////////
             case "suatk":
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                     $dm = loadOne_taikhoan($_GET['id']);
@@ -118,7 +118,7 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 $listtaikhoan = loadAll_taikhoan();
                 include "taikhoan/list.php";
                 break;
-                ///////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
             case "addsp":
                 if (isset($_POST['addsp']) && ($_POST['addsp'])) {
                     $tensanpham = $_POST['tensanpham'];
@@ -251,14 +251,14 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
             case "listbill":
                 $listdonghang = loadAll_donhang();
                 include "donhang/list-bill.php";
-            break;
+                break;
 
             case "viewdonhang":
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                    $onedh=viewOne_donhang($_GET['id']);
+                    $onedh = viewOne_donhang($_GET['id']);
                 }
                 include "donhang/list-one-bill.php";
-            break;
+                break;
 
             case "xoadonhang":
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {

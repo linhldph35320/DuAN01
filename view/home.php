@@ -1,4 +1,3 @@
-
 <span>BANNER SLIDE
     <div class="sticky_header_area sticky-header">
         <div class="container">
@@ -39,7 +38,7 @@
                                                     <ul>
                                                         <li><a href="viewcart.php">cart</a></li>
                                                         <li><a href="wishlist.html">Wishlist</a></li>
-                                                        
+
                                                         <li><a href="my-account.html">my account</a></li>
                                                         <li><a href="404.html">Error 404</a></li>
                                                     </ul>
@@ -144,7 +143,7 @@
                                         <div class="cart_button">
                                             <a href="viewcart.php">View cart</a>
                                         </div>
-                                       
+
 
                                     </div>
 
@@ -206,7 +205,7 @@
         </div>
     </section>
 </span>
- 
+
 <span>ICON
     <section class="shipping_area mb-70">
         <div class="container">
@@ -289,7 +288,7 @@
     </div>
 </span>
 
-    <!--product area start-->
+<!--product area start-->
 <SPAN>SẢN PHÂM
     <section class="product_area mb-46">
         <div class="container">
@@ -304,10 +303,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product1.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product2.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product1.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product2.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -317,8 +316,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -341,10 +341,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product3.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product4.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product3.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product4.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -354,8 +354,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -378,10 +379,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product5.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product6.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product5.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product6.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -391,8 +392,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -415,10 +417,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product7.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product8.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product7.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product8.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -428,8 +430,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -452,10 +455,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product9.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product10.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product9.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product10.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -465,8 +468,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -489,10 +493,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product11.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product12.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product11.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product12.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -502,8 +506,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -526,10 +531,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product4.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product5.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product4.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product5.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -539,8 +544,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -566,7 +572,7 @@
     <!--product area end-->
 </SPAN>
 
- 
+
 <SPAn>BANNER3
     <div class="banner_area mb-40">
         <div class="container">
@@ -590,7 +596,7 @@
     </div>
     <!--banner area end-->
 </SPAn>
-    <!--top- category area start-->
+<!--top- category area start-->
 <SPan>ITEM2
     <section class="top_category_product mb-70">
         <div class="container">
@@ -683,7 +689,7 @@
     </section>
 
 </SPan>
-    
+<!-- phần này kết thúc header  -->
 
 <SPan>SAN PHẨM 1
     <section class="featured_product_area mb-70">
@@ -696,206 +702,48 @@
                 </div>
             </div>
             <div class="row featured_container featured_column3">
-                <div class="col-lg-4">
+                <?php
+                $i = 0;
+                foreach ($spnew as $sp) {
+                    extract($sp);
+                    $imgpath = "uploads/".$anhdaidiensp;
+                    if (is_file($imgpath)) {
+                       $hinh = "<img src='" . $imgpath . "' height='80'>";
+                    } else {
+                       $hinh = "No photo";
+                    }
+                    echo '                <div class="col-lg-4">
                     <article class="single_product">
                         <figure>
                             <div class="product_thumb">
-                                <a class="primary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product13.jpg" alt=""></a>
-                                <a class="secondary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product14.jpg" alt=""></a>
+                                <a class="primary_img" href="sanphamct.php">'.$hinh.'</a>
                                 <div class="label_product">
                                     <span class="label_sale">sale</span>
                                 </div>
                             </div>
                             <figcaption class="product_content">
                                 <div class="price_box">
-                                    <span class="current_price">$79.00</span>
+                                    <span class="current_price">'.$giagoc.'</span>
                                 </div>
-                                <h3 class="product_name"><a href="sanphamct.php">Pellentesque posuere hendrerit
-                                        dui</a></h3>
+                                <h3 class="product_name"><a href="sanphamct.php">'.$tensanpham.'</a></h3>
                                 <div class="add_to_cart">
                                     <a href="viewcart.php" title="add to cart">Add to cart</a>
                                 </div>
                             </figcaption>
                         </figure>
                     </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product15.jpg" alt=""></a>
-                                <a class="secondary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product16.jpg" alt=""></a>
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-                                    <span class="old_price">$86.00</span>
-                                    <span class="current_price">$79.00</span>
-                                </div>
-                                <h3 class="product_name"><a href="sanphamct.php">Auctor gravida enim pellentesque
-                                        quam</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product17.jpg" alt=""></a>
-                                <a class="secondary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product18.jpg" alt=""></a>
-                                <div class="label_product">
-                                    <span class="label_sale">sale</span>
-                                </div>
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-                                    <span class="old_price">$86.00</span>
-                                    <span class="current_price">$79.00</span>
-                                </div>
-                                <h3 class="product_name"><a href="sanphamct.php">Kaoreet lobortis sagittis
-                                        pellentesque</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product19.jpg" alt=""></a>
-                                <a class="secondary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product20.jpg" alt=""></a>
-                                <div class="label_product">
-                                    <span class="label_sale">sale</span>
-                                </div>
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-                                    <span class="old_price">$86.00</span>
-                                    <span class="current_price">$79.00</span>
-                                </div>
-                                <h3 class="product_name"><a href="sanphamct.php">Cras neque honcus consectetur
-                                        magna</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product21.jpg" alt=""></a>
-                                <a class="secondary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product22.jpg" alt=""></a>
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-                                    <span class="current_price">$79.00</span>
-                                </div>
-                                <h3 class="product_name"><a href="sanphamct.php">Duis pulvinar obortis eleifend
-                                        elementum</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product23.jpg" alt=""></a>
-                                <a class="secondary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product24.jpg" alt=""></a>
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-                                    <span class="old_price">$86.00</span>
-                                    <span class="current_price">$79.00</span>
-                                </div>
-                                <h3 class="product_name"><a href="sanphamct.php">Fusce ultricies dolor vitae
-                                        tristique suscipit</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product15.jpg" alt=""></a>
-                                <a class="secondary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product16.jpg" alt=""></a>
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-                                    <span class="old_price">$86.00</span>
-                                    <span class="current_price">$79.00</span>
-                                </div>
-                                <h3 class="product_name"><a href="sanphamct.php">Natus erro at congue massa
-                                        commodo sit</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
-                <div class="col-lg-4">
-                    <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product17.jpg" alt=""></a>
-                                <a class="secondary_img" href="sanphamct.php"><img
-                                        src="assets/img/product/product18.jpg" alt=""></a>
-                                <div class="label_product">
-                                    <span class="label_sale">sale</span>
-                                </div>
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-                                    <span class="old_price">$86.00</span>
-                                    <span class="current_price">$79.00</span>
-                                </div>
-                                <h3 class="product_name"><a href="sanphamct.php">Cras neque honcus consectetur
-                                        magna</a></h3>
-                                <div class="add_to_cart">
-                                    <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </article>
-                </div>
+                </div>';
+                    $i += 1;
+
+                }
+                ?>
+
             </div>
         </div>
     </section>
     <!--featured product area end-->
 </SPan>
-    <!--product area start-->
+<!--product area start-->
 
 <SPan>SẢN PHẨM 2
     <section class="product_area mb-46">
@@ -911,10 +759,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product1.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product2.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product1.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product2.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -924,8 +772,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -945,10 +794,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product3.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product4.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product3.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product4.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -958,8 +807,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -979,10 +829,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product5.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product6.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product5.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product6.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -992,8 +842,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -1013,10 +864,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product7.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product8.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product7.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product8.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -1026,8 +877,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -1047,10 +899,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product9.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product10.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product9.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product10.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -1060,8 +912,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -1081,10 +934,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product11.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product12.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product11.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product12.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -1094,8 +947,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -1115,10 +969,10 @@
                 <article class="single_product">
                     <figure>
                         <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product4.jpg" alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img
-                                    src="assets/img/product/product5.jpg" alt=""></a>
+                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product4.jpg"
+                                    alt=""></a>
+                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product5.jpg"
+                                    alt=""></a>
                             <div class="label_product">
                                 <span class="label_sale">sale</span>
                             </div>
@@ -1128,8 +982,9 @@
                                                 class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                     <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
                                     </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box"
-                                            title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                            data-bs-target="#modal_box" title="quick view"> <span
+                                                class="ion-ios-search-strong"></span></a></li>
                                 </ul>
                             </div>
                             <div class="add_to_cart">
@@ -1151,7 +1006,7 @@
     </section>
     <!--product area end-->
 </SPan>
-    <!--banner area start-->
+<!--banner area start-->
 <SPan> BANNER4
 
 
@@ -1177,9 +1032,12 @@
     </div>
     <!--banner area end-->
 </SPan>
-    <!--product area start-->
+<!--product area start-->
 
-<SPAn>SẢM PHẨM 3  
+
+
+
+<SPAn>SẢM PHẨM 3
     <section class="product_area mb-46">
         <div class="container">
             <div class="row">
@@ -1493,7 +1351,7 @@
         </div>
     </section>
     <!--product area end-->
-</SPAn>  
+</SPAn>
 
 <SPAn>ITEM4
     <!--blog area start-->
@@ -1579,7 +1437,7 @@
     </section>
     <!--blog area end-->
 </SPAn>
-    <!--brand area start-->
+<!--brand area start-->
 <SPAn>ICON2
     <div class="brand_area mb-70">
         <div class="container">
