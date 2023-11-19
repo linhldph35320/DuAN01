@@ -48,6 +48,11 @@
                             </div>
 
                         </form>
+                        <?php
+                                if(isset($dangnhap)&&($dangnhap!="")){
+                                    echo $dangnhap;
+                                }
+                            ?>
                     </div>
                     
 
@@ -77,6 +82,11 @@
                              <input type="reset" value="Nhập lại">
                             </div>
                         </form>
+                        <?php
+                                if(isset($dangki)&&($dangki!="")){
+                                    echo $dangki;
+                                }
+                            ?>
                     </div>
 
      </div>

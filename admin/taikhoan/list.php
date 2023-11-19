@@ -31,7 +31,7 @@
                                             echo '<tr>
                                             <td>' .  $taikhoan['id'] . '</td>
                                             <td>' . $taikhoan['user'] . '</td>
-                                            <td>' .$taikhoan['pass'] . '</td>
+                                            <td><input type="password" name="" id="" value="'.$taikhoan['pass'].'" disabled></td>
                                             <td>
                                                <div class="flex align-items-center list-user-action">
                                                <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="View" href="'. $viewtk .'"><i class="ri-eye-line"></i></a>

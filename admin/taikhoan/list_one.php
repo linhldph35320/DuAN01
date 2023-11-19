@@ -43,7 +43,7 @@
                                         <td>' . $address . '</td>
                                         <td>' . $email . '</td>
                                         <td>' . $user . '</td>
-                                        <td>' . $pass . '</td>
+                                        <td><input type="password" name="" id="" value="'.$pass.'" disabled></td>
                                         <td>' . $vaitro . '</td>
                                         <td>
                                             <div class="flex align-items-center list-user-action">
