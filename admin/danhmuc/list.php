@@ -41,7 +41,7 @@
                                             <td>
                                                <div class="flex align-items-center list-user-action">
                                                  <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="'.$suadm.'"><i class="ri-pencil-line"></i></a>
-                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="'.$xoadm.'"><i class="ri-delete-bin-line"></i></a>
+                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="'.$xoadm.'" onclick="myFunction()"><i class="ri-delete-bin-line"></i></a>
                                               </div>
                                             </td>
                                         </tr>';

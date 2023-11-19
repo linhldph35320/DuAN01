@@ -23,6 +23,12 @@ function loadOne_taikhoan($id){
     return $dm;
 }
 
+function viewOne_taikhoan($id){
+    $sql="SELECT * FROM `tb_user` WHERE id=".$id;
+    $list1tk=pdo_query($sql);
+    return $list1tk;
+}
+
 function update_taikhoan($id, $name, $address, $email, $user, $pass, $role){
     $sql="UPDATE `tb_user` SET `name`='$name',`address`='$address',`email`='$email',`user`='$user',`pass`='$pass',`role`='$role' WHERE id=".$id;
     pdo_execute($sql);

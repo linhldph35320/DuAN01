@@ -25,44 +25,40 @@
                            <table id="user-list-table" class="table table-striped table-bordered mt-4" role="grid" aria-describedby="user-list-page-info">
                              <thead>
                                  <tr>
-                                    <th>No</th>
-                                    <th>Tên người đặt hàng</th>
-                                    <th>Email</th>
-                                    <th>Số điện thoại</th>
-                                    <th>Địa chỉ</th>
-                                    <th>Ghi chú</th>
-                                    <th>Ngày đặt hàng</th>
-                                    <th>Trạng thái đơn hàng</th>
+                                    <th>Mã đơn hàng</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Ảnh đại diện sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Tổng tiền</th>
+                                    <th>Mã hóa đơn</th>
                                     <th>Action</th>
                                  </tr>
                                  
                              </thead>
                              <tbody>
                                     <?php
-                                        foreach ($listdonghang as $donhang) {
-                                            extract($donhang);
-                                            if($trangthai==1){
-                                             $th="Chưa xác nhận";
-                                            }else{
-                                             $th="Đã xác nhận";
-                                            }
+                                        foreach ($onedh as $dh) {
+                                            extract($dh);
                                             $suadh="index.php?act=suadonhang&id=".$id;
                                             $xoadh="index.php?act=xoadonhang&id=".$id;
-                                            $viewdh="index.php?act=viewdonhang&id=".$id;
+                                            $imgpath = "../uploads/" . $anhdaidiensp;
+                                            if (is_file($imgpath)) {
+                                                $hinh = "<img src='" . $imgpath . "' height='80'>";
+                                            } else {
+                                                $hinh = "No photo";
+                                            }
                                             echo '<tr>
-                                            <td>'.$id.'</td>
-                                            <td>'.$tendaydu.'</td>
-                                            <td>'.$email.'</td>
-                                            <td>'.$sodienthoai.'</td>
-                                            <td>'.$diachi.'</td>
-                                            <td>'.$ghichu.'</td>
-                                            <td>'.$ngaydathang.'</td>
-                                            <td>'.$th.'</td>
+                                            <td>'.$madonhang.'</td>
+                                            <td>'.$tensanpham.'</td>
+                                            <td>'.$hinh.'</td>
+                                            <td>'.$gia.'</td>
+                                            <td>'.$soluong.'</td>
+                                            <td>'.$tongtien.'</td>
+                                            <td>'.$lk_donhang.'</td>
                                             <td>
                                                <div class="flex align-items-center list-user-action">
-                                               <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="View" href="'.$viewdh.'"><i class="ri-eye-line"></i></a>
-                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="'.$suadh.'"><i class="ri-pencil-line"></i></a>
-                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="'.$xoadh.'" onclick="myFunction()"><i class="ri-delete-bin-line"></i></a>
+                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back" href="index.php?act=listbill"><-</a>
                                               </div>
                                             </td>
                                         </tr>';

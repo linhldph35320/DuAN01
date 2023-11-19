@@ -8,7 +8,7 @@ function insert_sanpham($tensanpham,$giagoc,$giagiam,$anhsanpham,$mota,$soluong,
       exit();
     }
     
-    mysqli_query($con, "INSERT INTO `tb_sanpham`(`tensanpham`, `giagoc`, `giagiam`, `anhsanpham`, `mota`,`soluong`, `lk_danhmuc`) VALUES ('$tensanpham','$giagoc','$giagiam','$anhsanpham','$mota','$soluong','$lk_danhmuc')");
+    mysqli_query($con, "INSERT INTO `tb_sanpham`(`tensanpham`, `giagoc`, `giagiam`, `anhdaidiensp`, `mota`,`soluong`, `lk_danhmuc`) VALUES ('$tensanpham','$giagoc','$giagiam','$anhsanpham','$mota','$soluong','$lk_danhmuc')");
     
     // Print auto-generated id
     $id_pro=mysqli_insert_id($con);
@@ -22,13 +22,13 @@ function insert_sanpham($tensanpham,$giagoc,$giagiam,$anhsanpham,$mota,$soluong,
 }
 
 function loadAll_sanpham(){
-    $sql="SELECT tb_sanpham.id, tensanpham, tendanhmuc, giagoc, giagiam, anhsanpham, mota, soluong FROM `tb_sanpham` INNER JOIN tb_danhmuc ON tb_sanpham.lk_danhmuc=tb_danhmuc.id ORDER BY tb_sanpham.id";
+    $sql="SELECT tb_sanpham.id, tensanpham, tendanhmuc, giagoc, giagiam, anhdaidiensp, mota, soluong FROM `tb_sanpham` INNER JOIN tb_danhmuc ON tb_sanpham.lk_danhmuc=tb_danhmuc.id ORDER BY tb_sanpham.id";
     $listsp=pdo_query($sql);
     return $listsp;
 }
 
 function viewOne_sanpham_chitiet($id){
-    $sql="SELECT tb_sanpham.id, tensanpham, tendanhmuc, giagoc, giagiam, anhsanpham, mota, soluong FROM `tb_sanpham` INNER JOIN tb_danhmuc ON tb_sanpham.lk_danhmuc=tb_danhmuc.id WHERE tb_sanpham.id=".$id;
+    $sql="SELECT tb_sanpham.id, tensanpham, tendanhmuc, giagoc, giagiam, anhdaidiensp, mota, soluong FROM `tb_sanpham` INNER JOIN tb_danhmuc ON tb_sanpham.lk_danhmuc=tb_danhmuc.id WHERE tb_sanpham.id=".$id;
     $listspct=pdo_query($sql);
     return $listspct;
 }
@@ -64,7 +64,7 @@ function update_sanpham($id,$tensanpham,$giagoc,$giagiam,$anhsanpham,$mota,$solu
       exit();
     }
     if($anhsanpham!=""){
-        mysqli_query($con, "UPDATE `tb_sanpham` SET `tensanpham`='$tensanpham',`giagoc`='$giagoc',`giagiam`='$giagiam',`anhsanpham`='$anhsanpham',`mota`='$mota',`soluong`='$soluong',`lk_danhmuc`='$lk_danhmuc' WHERE id=".$id);
+        mysqli_query($con, "UPDATE `tb_sanpham` SET `tensanpham`='$tensanpham',`giagoc`='$giagoc',`giagiam`='$giagiam',`anhdaidiensp`='$anhsanpham',`mota`='$mota',`soluong`='$soluong',`lk_danhmuc`='$lk_danhmuc' WHERE id=".$id);
     }else{
         mysqli_query($con, "UPDATE `tb_sanpham` SET `tensanpham`='".$tensanpham."',`giagoc`=".$giagoc.",`giagiam`=".$giagiam.",`mota`='".$mota."',`soluong`=".$soluong.",`lk_danhmuc`=".$lk_danhmuc." WHERE id=".$id);
     }

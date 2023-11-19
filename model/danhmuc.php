@@ -11,8 +11,10 @@
     }
 
     function delete_danhmuc($id){
-        $sql="DELETE FROM `tb_danhmuc` WHERE id=".$id; 
+        $sql="DELETE FROM `tb_sanpham` WHERE lk_danhmuc=".$id;
+        $sql1="DELETE FROM `tb_danhmuc` WHERE id=".$id; 
         pdo_execute($sql);
+        pdo_execute($sql1);
     }
 
     function loadOne_danhmuc($id){

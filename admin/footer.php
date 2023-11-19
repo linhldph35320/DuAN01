@@ -67,6 +67,11 @@
 <script src="../js/chart-custom.js"></script>
 <!-- Custom JavaScript -->
 <script src="../js/custom.js"></script>
+<script>
+function myFunction() {
+  confirm("Bạn có đồng ý xóa không?");
+}
+</script>
 </body>
 
 <!-- Mirrored from templates.iqonic.design/booksto/html/admin-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2023 08:34:29 GMT -->

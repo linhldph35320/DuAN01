@@ -22,7 +22,6 @@
                                         <th style="width: 10%;">Giá gốc</th>
                                         <th style="width: 10%;">Giá giảm</th>
                                         <th style="width: 10%;">Ảnh đại diện sản phẩm</th>
-                                        <th style="width: 10%;">Ảnh mô tả sản phẩm</th>
                                         <th style="width: 50%;">Mô tả</th>
                                         <th style="width: 10%;">Số lượng</th>
                                         <th style="width: 20%;">Action</th>
@@ -34,7 +33,7 @@
                                         extract($sanphamchitiet);
                                         $suasp = "index.php?act=suasp&id=" . $id;
                                         $xoasp = "index.php?act=xoasp&id=" . $id;
-                                        $imgpath = "../uploads/" . $anhsanpham;
+                                        $imgpath = "../uploads/" . $anhdaidiensp;
                                         if (is_file($imgpath)) {
                                             $hinh = "<img src='" . $imgpath . "' height='80'>";
                                         } else {
@@ -42,20 +41,21 @@
                                         }
                                         foreach ($listimg as $img) {
                                             extract($img);
-                                            $imgpath1="../uploads/" . $anhsanpham;
+                                            $imgpath1 = "../uploads/" . $anhsanpham;
                                             if (is_file($imgpath1)) {
                                                 $hinh1 = "<img src='" . $imgpath1 . "' height='80'>";
+                                                echo $hinh1;
                                             } else {
                                                 $hinh1 = "No photo";
                                             }
-                                            // for ($i=0; $i<= $img; $i++) { 
-                                            //     if (is_file($imgpath1)) {
-                                            //         $hinh1 = "<img src='" . $imgpath1 . "' height='80'>";
-                                            //     } else {
-                                            //         $hinh1 = "No photo";
-                                            //     }
-                                            // }
                                         }
+                                        // for ($i=0; $i<= $img; $i++) { 
+                                        //     if (is_file($imgpath1)) {
+                                        //         $hinh1 = "<img src='" . $imgpath1 . "' height='80'>";
+                                        //     } else {
+                                        //         $hinh1 = "No photo";
+                                        //     }
+                                        // }
                                         echo '<tr>
                                             <td>' . $id . '</td>
                                             <td>' . $tensanpham . '</td>
@@ -63,13 +63,12 @@
                                             <td>' . $giagoc . '</td>
                                             <td>' . $giagiam . '</td>
                                             <td>' . $hinh . '</td>
-                                            <td>' . $hinh1 . '</td>
                                             <td>' . $mota . '</td>
                                             <td>' . $soluong . '</td>
                                             <td>
                                                <div class="flex align-items-center list-user-action">
                                                  <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="' . $suasp . '"><i class="ri-pencil-line"></i></a>
-                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="' . $xoasp . '"><i class="ri-delete-bin-line"></i></a>
+                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="' . $xoasp . '" onclick="myFunction()"><i class="ri-delete-bin-line"></i></a>
                                                  <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back" href="index.php?act=listsp"><-</a>
                                               </div>
                                             </td>

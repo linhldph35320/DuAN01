@@ -30,7 +30,7 @@
                               $suasp = "index.php?act=suasp&id=" . $id;
                               $xoasp = "index.php?act=xoasp&id=" . $id;
                               $viewsp = "index.php?act=viewsp&id=" . $id;
-                              $imgpath = "../uploads/" . $anhsanpham;
+                              $imgpath = "../uploads/" . $anhdaidiensp;
                               if (is_file($imgpath)) {
                                  $hinh = "<img src='" . $imgpath . "' height='80'>";
                               } else {
@@ -45,7 +45,7 @@
                                                <div class="flex align-items-center list-user-action">
                                                <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="View" href="' . $viewsp . '"><i class="ri-eye-line"></i></a>
                                                  <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="' . $suasp . '"><i class="ri-pencil-line"></i></a>
-                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="' . $xoasp . '"><i class="ri-delete-bin-line"></i></a>
+                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="' . $xoasp . '" onclick="myFunction()"><i class="ri-delete-bin-line"></i></a>
                                               </div>
                                             </td>
                                         </tr>';
