@@ -6,9 +6,10 @@ include("model/pdo.php");
 include("model/sanpham.php");
 include("model/taikhoan.php");
 include("view/header.php");
-// include("global.php");
-$spnew = loadAll_sanpham_home(); 
+$spnew = loadAll_sanpham_home();
 include("view/home.php");
+
+
 
 
 

@@ -20,8 +20,14 @@ function insert_sanpham($tensanpham,$giagoc,$giagiam,$anhsanpham,$mota,$soluong,
     //     mysqli_query($con,"INSERT INTO `tb_sanpham_mausac`(`id_sanpham`, `mau`) VALUES ('$id_pro','$anhms')");
     // }
 }
+function loadAll_sanpham_sp(){
+    $sql="SELECT * FROM tb_sanpham ";
+    $listsp=pdo_query($sql);
+    return $listsp;
+}
+
 function loadAll_sanpham_home(){
-    $sql="SELECT * FROM tb_sanpham WHERE 1 ORDER BY ID  DESC LIMIT 0, 9";
+    $sql="SELECT * FROM tb_sanpham WHERE 1 ORDER BY ID  DESC LIMIT 0, 8";
     $listsp=pdo_query($sql);
     return $listsp;
 }

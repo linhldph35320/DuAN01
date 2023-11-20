@@ -2,22 +2,22 @@
 <html class="no-js" lang="en">
 
 
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Junko - Electronics eCommerce HTML Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Junko - Electronics eCommerce HTML Template</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-    <!-- CSS 
+<!-- CSS 
     ========================= -->
 
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assetsindex/css/plugins.css">
+<!-- Plugins CSS -->
+<link rel="stylesheet" href="assetsindex/css/plugins.css">
 
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assetsindex/css/style.css">
+<!-- Main Style CSS -->
+<link rel="stylesheet" href="assetsindex/css/style.css">
 
 </head>
 
@@ -46,7 +46,7 @@
                         <div class="top_right text-end">
                             <ul>
                                 <li><a href="login.php">My Account</a></li>
-                                
+
                             </ul>
                         </div>
                         <div class="search_container">
@@ -142,82 +142,12 @@
                             <ul class="offcanvas_main_menu">
                                 <li class="menu-item-has-children active">
                                     <a href="index.php">Home</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.php">Home 1</a></li>
-                                        <li><a href="index-2.php">Home 2</a></li>
-                                        <li><a href="index-3.php">Home 3</a></li>
-                                        <li><a href="index-4.php">Home 4</a></li>
-                                        <li><a href="index-5.php">Home 5</a></li>
-                                    </ul>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="shop.php">Shop</a>
+                                    <a href="shop.php">Sản Phẩm</a>
                                     <ul class="sub-menu">
-                                        <li class="menu-item-has-children">
-                                            <a href="#">Shop Layouts</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="shop.php">shop</a></li>
-                                                <li><a href="shop-fullwidth.php">Full Width</a></li>
-                                                <li><a href="shop-fullwidth-list.php">Full Width list</a></li>
-                                                <li><a href="shop-right-sidebar.php">Right Sidebar </a></li>
-                                                <li><a href="shop-right-sidebar-list.php"> Right Sidebar list</a></li>
-                                                <li><a href="shop-list.php">List View</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">other Pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="viewcart.php">cart</a></li>
-                                                <li><a href="wishlist.php">Wishlist</a></li>
-                                                <li><a href="checkout.php">Checkout</a></li>
-                                                <li><a href="login.php">my account</a></li>
-                                                <li><a href="404.php">Error 404</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#">Product Types</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="product-details.php">product details</a></li>
-                                                <li><a href="product-sidebar.php">product sidebar</a></li>
-                                                <li><a href="product-grouped.php">product grouped</a></li>
-                                                <li><a href="variable-product.php">product variable</a></li>
-                                                <li><a href="product-countdown.php">product countdown</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog.php">blog</a></li>
-                                        <li><a href="blog-details.php">blog details</a></li>
-                                        <li><a href="blog-fullwidth.php">blog fullwidth</a></li>
-                                        <li><a href="blog-sidebar.php">blog left sidebar</a></li>
-                                        <li><a href="blog-no-sidebar.php">blog no sidebar</a></li>
-                                    </ul>
 
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">pages </a>
-                                    <ul class="sub-menu">
-                                        <li><a href="about.php">About Us</a></li>
-                                        <li><a href="services.php">services</a></li>
-                                        <li><a href="privacy-policy.php">privacy policy</a></li>
-                                        <li><a href="faq.php">Frequently Questions</a></li>
-                                        <li><a href="contact.php">contact</a></li>
-                                        <li><a href="login.php">login</a></li>
-                                        <li><a href="404.php">Error 404</a></li>
-                                        <li><a href="compare.php">Compare</a></li>
                                     </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="login.php">my account</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="about.php">about Us</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="contact.php"> Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -256,7 +186,7 @@
                             <div class="top_right text-end">
                                 <ul>
                                     <li><a href="login.php"> My Account </a></li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -503,95 +433,18 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Phần menu thanh navbar  -->
                         <div class="col-lg-9 col-md-12">
                             <div class="main_menu menu_position">
                                 <nav>
                                     <ul>
-                                        <li><a class="active" href="index.php">home<i class="fa fa-angle-down"></i></a>
-                                            <ul class="sub_menu">
-                                                <li><a href="index.php">Home shop 1</a></li>
-                                                <li><a href="index-2.php">Home shop 2</a></li>
-                                                <li><a href="index-3.php">Home shop 3</a></li>
-                                                <li><a href="index-4.php">Home shop 4</a></li>
-                                                <li><a href="index-5.php">Home shop 5</a></li>
-                                            </ul>
+                                        <li><a class="active" href="index.php">Home</a>
                                         </li>
-                                        <li class="mega_items"><a href="shop.php">shop<i
-                                                    class="fa fa-angle-down"></i></a>
-                                            <div class="mega_menu">
-                                                <ul class="mega_menu_inner">
-                                                    <li><a href="#">Shop Layouts</a>
-                                                        <ul>
-                                                            <li><a href="shop-fullwidth.php">Full Width</a></li>
-                                                            <li><a href="shop-fullwidth-list.php">Full Width list</a>
-                                                            </li>
-                                                            <li><a href="shop-right-sidebar.php">Right Sidebar </a>
-                                                            </li>
-                                                            <li><a href="shop-right-sidebar-list.php"> Right Sidebar
-                                                                    list</a></li>
-                                                            <li><a href="shop-list.php">List View</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">other Pages</a>
-                                                        <ul>
-                                                            <li><a href="viewcart.php">cart</a></li>
-                                                            <li><a href="wishlist.php">Wishlist</a></li>
-                                                            <li><a href="checkout.php">Checkout</a></li>
-                                                            <li><a href="login.php">my account</a></li>
-                                                            <li><a href="404.php">Error 404</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">Product Types</a>
-                                                        <ul>
-                                                            <li><a href="product-details.php">product details</a></li>
-                                                            <li><a href="product-sidebar.php">product sidebar</a></li>
-                                                            <li><a href="product-grouped.php">product grouped</a></li>
-                                                            <li><a href="variable-product.php">product variable</a>
-                                                            </li>
-                                                            <li><a href="product-countdown.php">product countdown</a>
-                                                            </li>
+                                        <li class="mega_items"><a href="shop.php">Sản Phẩm</a>
 
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">Concrete Tools</a>
-                                                        <ul>
-                                                            <li><a href="shop.php">Cables & Connectors</a></li>
-                                                            <li><a href="shop-list.php">Graphics Tablets</a></li>
-                                                            <li><a href="shop-fullwidth.php">Printers, Ink & Toner</a>
-                                                            </li>
-                                                            <li><a href="shop-fullwidth-list.php">Refurbished
-                                                                    Tablets</a></li>
-                                                            <li><a href="shop-right-sidebar.php">Optical Drives</a>
-                                                            </li>
+                                        </li>
+                                        <!-- ............................................................................. -->
 
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li><a href="blog.php">blog<i class="fa fa-angle-down"></i></a>
-                                            <ul class="sub_menu pages">
-                                                <li><a href="blog-details.php">blog details</a></li>
-                                                <li><a href="blog-fullwidth.php">blog fullwidth</a></li>
-                                                <li><a href="blog-sidebar.php">blog left sidebar</a></li>
-                                                <li><a href="blog-no-sidebar.php">blog no sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">pages <i class="fa fa-angle-down"></i></a>
-                                            <ul class="sub_menu pages">
-                                                <li><a href="about.php">About Us</a></li>
-                                                <li><a href="services.php">services</a></li>
-                                                <li><a href="privacy-policy.php">privacy policy</a></li>
-                                                <li><a href="faq.php">Frequently Questions</a></li>
-                                                <li><a href="contact.php">contact</a></li>
-                                                <li><a href="login.php">login</a></li>
-                                                <li><a href="404.php">Error 404</a></li>
-                                                <li><a href="compare.php">Compare</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li><a href="about.php">about Us</a></li>
-                                        <li><a href="contact.php"> Contact Us</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -602,8 +455,8 @@
             <!--header bottom end-->
         </div>
     </header>
-  
-    
+
+
 
     <!-- JS
 ============================================ -->
