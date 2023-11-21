@@ -49,8 +49,8 @@
 
                         </form>
                         <?php
-                                if(isset($dangnhap)&&($dangnhap!="")){
-                                    echo $dangnhap;
+                                if(isset($dangNhap)&&($dangNhap!="")){
+                                    echo $dangNhap;
                                 }
                             ?>
                     </div>
@@ -83,8 +83,8 @@
                             </div>
                         </form>
                         <?php
-                                if(isset($dangki)&&($dangki!="")){
-                                    echo $dangki;
+                                if(isset($dangKi)&&($dangKi!="")){
+                                    echo $dangKi;
                                 }
                             ?>
                     </div>

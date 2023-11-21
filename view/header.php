@@ -79,62 +79,9 @@
                         </div>
 
                         <div class="middel_right_info">
-                            <div class="header_wishlist">
-                                <a href="wishlist.php"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                <span class="wishlist_quantity">3</span>
-                            </div>
                             <div class="mini_cart_wrapper">
-                                <a href="javascript:void(0)"><i class="fa fa-shopping-bag"
-                                        aria-hidden="true"></i>$147.00 <i class="fa fa-angle-down"></i></a>
-                                <span class="cart_quantity">2</span>
+                                <a href="javascript:void(0)"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-angle-down"></i></a>
                                 <!--mini cart-->
-                                <div class="mini_cart">
-                                    <div class="cart_item">
-                                        <div class="cart_img">
-                                            <a href="#"><img src="assets/img/s-product/product.jpg" alt=""></a>
-                                        </div>
-                                        <div class="cart_info">
-                                            <a href="#">Sit voluptatem rhoncus sem lectus</a>
-                                            <p>Qty: 1 X <span> $60.00 </span></p>
-                                        </div>
-                                        <div class="cart_remove">
-                                            <a href="#"><i class="ion-android-close"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="cart_item">
-                                        <div class="cart_img">
-                                            <a href="#"><img src="assets/img/s-product/product2.jpg" alt=""></a>
-                                        </div>
-                                        <div class="cart_info">
-                                            <a href="#">Natus erro at congue massa commodo</a>
-                                            <p>Qty: 1 X <span> $60.00 </span></p>
-                                        </div>
-                                        <div class="cart_remove">
-                                            <a href="#"><i class="ion-android-close"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="mini_cart_table">
-                                        <div class="cart_total">
-                                            <span>Sub total:</span>
-                                            <span class="price">$138.00</span>
-                                        </div>
-                                        <div class="cart_total mt-10">
-                                            <span>total:</span>
-                                            <span class="price">$138.00</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="mini_cart_footer">
-                                        <div class="cart_button">
-                                            <a href="viewcart.php">View cart</a>
-                                        </div>
-                                        <div class="cart_button">
-                                            <a href="checkout.php">Checkout</a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
                                 <!--mini cart end-->
                             </div>
                         </div>
@@ -144,7 +91,7 @@
                                     <a href="index.php">Home</a>
                                 </li>
                                 <li class="menu-item-has-children">
-                                    <a href="shop.php">Sản Phẩm</a>
+                                    <a href="index.php?act=shop">Sản Phẩm</a>
                                     <ul class="sub-menu">
 
                                     </ul>
@@ -234,54 +181,56 @@
                                     </form>
                                 </div>
                                 <div class="middel_right_info">
-                                    <div class="header_wishlist">
-                                        <a href="wishlist.php"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                        <span class="wishlist_quantity">3</span>
-                                    </div>
                                     <div class="mini_cart_wrapper">
-                                        <a href="javascript:void(0)"><i class="fa fa-shopping-bag"
-                                                aria-hidden="true"></i>$147.00 <i class="fa fa-angle-down"></i></a>
-                                        <span class="cart_quantity">2</span>
+                                        <a href="javascript:void(0)"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-angle-down"></i></a>
                                         <!--mini cart-->
                                         <div class="mini_cart">
-                                            <div class="cart_item">
+                                            <?php
+                                            $tong = 0;
+                                            $i = 0;
+                                            foreach ($_SESSION['mycart'] as $cart) {
+                                                $imgpath = "uploads/" . $cart[2];
+                                                if (is_file($imgpath)) {
+                                                    $hinh = "<img src='" . $imgpath . "'>";
+                                                } else {
+                                                    $hinh = "No photo";
+                                                }
+                                                $thanhtien = $cart[3] * $cart[4];
+                                                $tong = $tong + $thanhtien;
+                                                $xoasp = '<a href="index.php?act=delcart&idcart=' . $i . '"><input type="hidden" value="Xoá"><i class="fa fa-trash-o"></i></a>';
+                                                echo '                                            <div class="cart_item">
                                                 <div class="cart_img">
-                                                    <a href="#"><img src="assets/img/s-product/product.jpg" alt=""></a>
+                                                    <a href="#">' . $hinh . '</a>
                                                 </div>
                                                 <div class="cart_info">
-                                                    <a href="#">Sit voluptatem rhoncus sem lectus</a>
-                                                    <p>Qty: 1 X <span> $60.00 </span></p>
+                                                    <a href="#">' . $cart[1] . '</a>
+                                                    <p>Qty: 1 X <span>' . $cart[3] . '</span></p>
                                                 </div>
                                                 <div class="cart_remove">
-                                                    <a href="#"><i class="ion-android-close"></i></a>
+                                                    ' . $xoasp . '
                                                 </div>
-                                            </div>
-                                            <div class="cart_item">
-                                                <div class="cart_img">
-                                                    <a href="#"><img src="assets/img/s-product/product2.jpg" alt=""></a>
-                                                </div>
-                                                <div class="cart_info">
-                                                    <a href="#">Natus erro at congue massa commodo</a>
-                                                    <p>Qty: 1 X <span> $60.00 </span></p>
-                                                </div>
-                                                <div class="cart_remove">
-                                                    <a href="#"><i class="ion-android-close"></i></a>
-                                                </div>
-                                            </div>
+                                            </div>';
+                                                $i += 1;
+                                            }
+                                            ?>
                                             <div class="mini_cart_table">
-                                                <div class="cart_total">
-                                                    <span>Sub total:</span>
-                                                    <span class="price">$138.00</span>
-                                                </div>
-                                                <div class="cart_total mt-10">
-                                                    <span>total:</span>
-                                                    <span class="price">$138.00</span>
-                                                </div>
+                                                <?php
+                                                $tong = 0;
+                                                $i = 0;
+                                                foreach ($_SESSION['mycart'] as $cart) {
+                                                    $thanhtien = $cart[3] * $cart[4];
+                                                    $tong = $tong + $thanhtien;
+                                                    echo '                                                <div class="cart_total">
+                                                    <span>Tổng tiền:</span>
+                                                    <span class="price">$'.$tong.'</span>
+                                                </div>';
+                                                }
+                                                ?>
                                             </div>
 
                                             <div class="mini_cart_footer">
                                                 <div class="cart_button">
-                                                    <a href="viewcart.php">View cart</a>
+                                                    <a href="index.php?act=viewcart">View cart</a>
                                                 </div>
                                                 <div class="cart_button">
                                                     <a href="checkout.php">Checkout</a>
@@ -310,8 +259,7 @@
                                 </div>
                                 <div class="categories_menu_toggle">
                                     <ul>
-                                        <li class="menu_item_children"><a href="#">Brake Parts <i
-                                                    class="fa fa-angle-right"></i></a>
+                                        <li class="menu_item_children"><a href="#">Brake Parts <i class="fa fa-angle-right"></i></a>
                                             <ul class="categories_mega_menu">
                                                 <li class="menu_item_children"><a href="#">Dresses</a>
                                                     <ul class="categorie_sub_menu">
@@ -347,8 +295,7 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="menu_item_children"><a href="#"> Wheels & Tires <i
-                                                    class="fa fa-angle-right"></i></a>
+                                        <li class="menu_item_children"><a href="#"> Wheels & Tires <i class="fa fa-angle-right"></i></a>
                                             <ul class="categories_mega_menu column_3">
                                                 <li class="menu_item_children"><a href="#">Chair</a>
                                                     <ul class="categorie_sub_menu">
@@ -376,8 +323,7 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="menu_item_children"><a href="#"> Furnitured & Decor <i
-                                                    class="fa fa-angle-right"></i></a>
+                                        <li class="menu_item_children"><a href="#"> Furnitured & Decor <i class="fa fa-angle-right"></i></a>
                                             <ul class="categories_mega_menu column_2">
                                                 <li class="menu_item_children"><a href="#">Brake Tools</a>
                                                     <ul class="categorie_sub_menu">
@@ -397,8 +343,7 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="menu_item_children"><a href="#"> Turbo System <i
-                                                    class="fa fa-angle-right"></i></a>
+                                        <li class="menu_item_children"><a href="#"> Turbo System <i class="fa fa-angle-right"></i></a>
                                             <ul class="categories_mega_menu column_2">
                                                 <li class="menu_item_children"><a href="#">Check Trousers</a>
                                                     <ul class="categorie_sub_menu">
@@ -440,7 +385,7 @@
                                     <ul>
                                         <li><a class="active" href="index.php">Home</a>
                                         </li>
-                                        <li class="mega_items"><a href="shop.php">Sản Phẩm</a>
+                                        <li class="mega_items"><a href="index.php?act=shop">Sản Phẩm</a>
 
                                         </li>
                                         <!-- ............................................................................. -->
@@ -466,11 +411,3 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-
-
-
-</body>
-
-
-<!-- Mirrored from htmldemo.net/junko/junko/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2023 09:28:29 GMT -->
-</php>

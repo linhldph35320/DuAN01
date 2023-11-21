@@ -38,6 +38,25 @@ function loadAll_sanpham(){
     return $listsp;
 }
 
+function loaddAll_sanpham_top5(){
+    $sql="SELECT * FROM `tb_sanpham` WHERE giagiam>0 ORDER BY giagiam DESC LIMIT 0,5";
+    $sptop5=pdo_query($sql);
+    return $sptop5;
+}
+
+function loaddAll_sanpham_danhmuc_laptop(){
+    $sql="SELECT * FROM `tb_sanpham` WHERE lk_danhmuc=11";
+    $spdanhmuc=pdo_query($sql);
+    return $spdanhmuc;
+}
+
+function loaddAll_sanpham_danhmuc_dienthoai(){
+    $sql="SELECT * FROM `tb_sanpham` WHERE lk_danhmuc>=6 && lk_danhmuc<=10";
+    $spdt=pdo_query($sql);
+    return $spdt;
+}
+
+
 function viewOne_sanpham_chitiet($id){
     $sql="SELECT tb_sanpham.id, tensanpham, tendanhmuc, giagoc, giagiam, anhdaidiensp, mota, soluong FROM `tb_sanpham` INNER JOIN tb_danhmuc ON tb_sanpham.lk_danhmuc=tb_danhmuc.id WHERE tb_sanpham.id=".$id;
     $listspct=pdo_query($sql);

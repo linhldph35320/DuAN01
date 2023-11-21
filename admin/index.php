@@ -89,12 +89,12 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 $listtaikhoan = loadAll_taikhoan();
                 include "taikhoan/list.php";
                 break;
-            ///////////////////
+                ///////////////////
             case "list":
                 $listdm = loadAll_danhmuc();
                 include "danhmuc/list.php";
                 break;
-            ///////////////
+                ///////////////
             case "suatk":
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                     $dm = loadOne_taikhoan($_GET['id']);
@@ -118,7 +118,7 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 $listtaikhoan = loadAll_taikhoan();
                 include "taikhoan/list.php";
                 break;
-            ///////////////////////////////////////////////////////////////////////////////////////////////
+                ///////////////////////////////////////////////////////////////////////////////////////////////
             case "addsp":
                 if (isset($_POST['addsp']) && ($_POST['addsp'])) {
                     $tensanpham = $_POST['tensanpham'];
@@ -132,14 +132,25 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                     } else {
                         // echo "Sorry, there was an error uploading your file.";
                     }
-                    $anhmota = $_FILES['anhmota']['name'];
-                    $target_dir = "../uploads/";
-                    $linkanhmota = $target_dir . basename($_FILES["anhsanpham"]["name"]);
-                    foreach ($linkanhmota as $linkamt) {
-                        if (move_uploaded_file($_FILES["anhmota"]["tmp_name"], $linkamt)) {
-                            // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-                        } else {
-                            // echo "Sorry, there was an error uploading your file.";
+                    $anhmota=$_FILES['anhmota']['name'];
+                    $total = count($_FILES['anhmota']['name']);
+                    // Loop through each file
+                    for ($i = 0; $i < $total; $i++) {
+
+                        //Get the temp file path
+                        $tmpFilePath = $_FILES['anhmota']['tmp_name'][$i];
+
+                        //Make sure we have a file path
+                        if ($tmpFilePath != "") {
+                            //Setup our new file path
+                            $newFilePath = "../uploads/" . $_FILES['anhmota']['name'][$i];
+
+                            //Upload the file into the temp dir
+                            if (move_uploaded_file($tmpFilePath, $newFilePath)) {
+
+                                //Handle other code here
+
+                            }
                         }
                     }
                     $mota = $_POST['mota'];
@@ -217,14 +228,25 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                     } else {
                         // echo "Sorry, there was an error uploading your file.";
                     }
-                    $anhmota = $_FILES['anhmota']['name'];
-                    $target_dir = "../uploads/";
-                    $linkanhmota = $target_dir . basename($_FILES["anhsanpham"]["name"]);
-                    foreach ($linkanhmota as $linkamt) {
-                        if (move_uploaded_file($_FILES["anhmota"]["tmp_name"], $linkamt)) {
-                            // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-                        } else {
-                            // echo "Sorry, there was an error uploading your file.";
+                    $anhmota=$_FILES['anhmota']['name'];
+                    $total = count($_FILES['anhmota']['name']);
+                    // Loop through each file
+                    for ($i = 0; $i < $total; $i++) {
+
+                        //Get the temp file path
+                        $tmpFilePath = $_FILES['anhmota']['tmp_name'][$i];
+
+                        //Make sure we have a file path
+                        if ($tmpFilePath != "") {
+                            //Setup our new file path
+                            $newFilePath = "../uploads/" . $_FILES['anhmota']['name'][$i];
+
+                            //Upload the file into the temp dir
+                            if (move_uploaded_file($tmpFilePath, $newFilePath)) {
+
+                                //Handle other code here
+
+                            }
                         }
                     }
                     $mota = $_POST['mota'];

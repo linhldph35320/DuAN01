@@ -1,134 +1,50 @@
-<span>BANNER SLIDE
-    <div class="sticky_header_area sticky-header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-3">
-                    <div class="logo">
-                        <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+<section class="slider_section mb-70">
+    <div class="slider_area owl-carousel">
+        <div class="single_slider d-flex align-items-center" data-bgimg="assets/img/slider/slider1.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slider_content">
+                            <h1> best skin</h1>
+                            <h2>qled 75 inch q7f</h2>
+                            <p>exclusive offer <span> 20% off </span> this week</p>
+                            <a class="button" href="shop.php">shopping now</a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-9">
-                    <div class="sticky_header_right menu_position">
-                        <div class="main_menu">
-                            <nav>
-                                <ul>
-                                    <li><a class="active" href="index.html">Home</a>
-                                    </li>
-                                    <li class="mega_items"><a href="shop.php">Sản Phẩm</a>
-                                    </li>
-                            </nav>
+            </div>
+
+        </div>
+        <div class="single_slider d-flex align-items-center" data-bgimg="assets/img/slider/slider2.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slider_content">
+                            <h1>Dual Front</h1>
+                            <h2>camera 20mp</h2>
+                            <p>exclusive offer <span> 20% off </span> this week</p>
+                            <a class="button" href="shop.php">shopping now</a>
                         </div>
-                        <div class="middel_right_info">
-                            <div class="header_wishlist">
-                                <a href="wishlist.html"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-                                <span class="wishlist_quantity">3</span>
-                            </div>
-                            <div class="mini_cart_wrapper">
-                                <a href="javascript:void(0)"><i class="fa fa-shopping-bag"
-                                        aria-hidden="true"></i>$147.00 <i class="fa fa-angle-down"></i></a>
-                                <span class="cart_quantity">2</span>
-                                <!--mini cart-->
-                                <div class="mini_cart">
-                                    <div class="cart_item">
-                                        <div class="cart_img">
-                                            <a href="#"><img src="assets/img/s-product/product.jpg" alt=""></a>
-                                        </div>
-                                        <div class="cart_info">
-                                            <a href="#">Sit voluptatem rhoncus sem lectus</a>
-                                            <p>Qty: 1 X <span> $60.00 </span></p>
-                                        </div>
-                                        <div class="cart_remove">
-                                            <a href="#"><i class="ion-android-close"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="cart_item">
-                                        <div class="cart_img">
-                                            <a href="#"><img src="assets/img/s-product/product2.jpg" alt=""></a>
-                                        </div>
-                                        <div class="cart_info">
-                                            <a href="#">Natus erro at congue massa commodo</a>
-                                            <p>Qty: 1 X <span> $60.00 </span></p>
-                                        </div>
-                                        <div class="cart_remove">
-                                            <a href="#"><i class="ion-android-close"></i></a>
-                                        </div>
-                                    </div>
-                                    <div class="mini_cart_table">
-                                        <div class="cart_total">
-                                            <span>Sub total:</span>
-                                            <span class="price">$138.00</span>
-                                        </div>
-                                        <div class="cart_total mt-10">
-                                            <span>total:</span>
-                                            <span class="price">$138.00</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="mini_cart_footer">
-                                        <div class="cart_button">
-                                            <a href="viewcart.php">View cart</a>
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-                                <!--mini cart end-->
-                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single_slider d-flex align-items-center" data-bgimg="assets/img/slider/slider3.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slider_content">
+                            <h1>Hurry Up!</h1>
+                            <h2>IN THE WORD 2022</h2>
+                            <p>exclusive offer <span> 20% off </span> this week</p>
+                            <a class="button" href="shop.php">shopping now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <section class="slider_section mb-70">
-        <div class="slider_area owl-carousel">
-            <div class="single_slider d-flex align-items-center" data-bgimg="assets/img/slider/slider1.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="slider_content">
-                                <h1> best skin</h1>
-                                <h2>qled 75 inch q7f</h2>
-                                <p>exclusive offer <span> 20% off </span> this week</p>
-                                <a class="button" href="shop.php">shopping now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="single_slider d-flex align-items-center" data-bgimg="assets/img/slider/slider2.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="slider_content">
-                                <h1>Dual Front</h1>
-                                <h2>camera 20mp</h2>
-                                <p>exclusive offer <span> 20% off </span> this week</p>
-                                <a class="button" href="shop.php">shopping now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="single_slider d-flex align-items-center" data-bgimg="assets/img/slider/slider3.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="slider_content">
-                                <h1>Hurry Up!</h1>
-                                <h2>IN THE WORD 2022</h2>
-                                <p>exclusive offer <span> 20% off </span> this week</p>
-                                <a class="button" href="shop.php">shopping now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+</section>
 </span>
 
 <!-- <span>ICON
@@ -183,435 +99,166 @@
         </div>
     </section>
 </span> -->
-<span>BANNER2
-    <div class="banner_area mb-40">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.php"><img src="assets/img/bg/banner1.jpg" alt=""></a>
-                        </div>
+<div class="banner_area mb-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="single_banner mb-30">
+                    <div class="banner_thumb">
+                        <a href="shop.php"><img src="assets/img/bg/banner1.jpg" alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.php"><img src="assets/img/bg/banner2.jpg" alt=""></a>
-                        </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="single_banner mb-30">
+                    <div class="banner_thumb">
+                        <a href="shop.php"><img src="assets/img/bg/banner2.jpg" alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.php"><img src="assets/img/bg/banner3.jpg" alt=""></a>
-                        </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="single_banner mb-30">
+                    <div class="banner_thumb">
+                        <a href="shop.php"><img src="assets/img/bg/banner3.jpg" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </span>
 
 <!--product area start-->
-<SPAN>SẢN PHÂM
-    <section class="product_area mb-46">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section_title">
-                        <h2>Hot Deals Products</h2>
-                    </div>
+<section class="product_area mb-46">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section_title">
+                    <h2>FLASH SALE</h2>
                 </div>
             </div>
-            <div class="product_carousel product_column5 owl-carousel">
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product1.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product2.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                            <div class="product_timing">
-                                <div data-countdown="2023/12/15"></div>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Natus erro at congue massa commodo
-                                    sit</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product3.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product4.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                            <div class="product_timing">
-                                <div data-countdown="2023/12/15"></div>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Itaque earum velit elementum</a>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product5.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product6.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                            <div class="product_timing">
-                                <div data-countdown="2023/12/15"></div>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Mauris tincidunt eros posuere
-                                    placerat</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product7.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product8.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                            <div class="product_timing">
-                                <div data-countdown="2023/12/15"></div>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Morbi ornare vestibulum massa</a>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product9.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product10.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                            <div class="product_timing">
-                                <div data-countdown="2023/12/15"></div>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Porro quisquam eget feugiat
-                                    pretium</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product11.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product12.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                            <div class="product_timing">
-                                <div data-countdown="2023/12/15"></div>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Laudantium enim fringilla
-                                    dignissim ipsum primis</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product4.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product5.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                            <div class="product_timing">
-                                <div data-countdown="2023/12/15"></div>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Natus erro at congue massa commodo
-                                    sit</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-            </div>
         </div>
-    </section>
-    <!--product area end-->
+        <div class="product_carousel product_column5 owl-carousel">
+            <?php
+            foreach ($sptop5 as $sanphamtop5) {
+                extract($sanphamtop5);
+                $spct = "index.php?act=chitietsanpham&id=" . $id;
+                $add = "index.php?act=addtocart&id=" . $id;
+                $imgpath = "uploads/" . $anhdaidiensp;
+                if (is_file($imgpath)) {
+                    $hinh = "<img src='" . $imgpath . "'>";
+                } else {
+                    $hinh = "No photo";
+                }
+                echo '                 <form action="index.php?act=addtocart" method="post">
+                <input type="hidden" name="id" value="' . $id . '">
+                <input type="hidden" name="tensanpham" value="' . $tensanpham . '">
+                <input type="hidden" name="anhdaidiensp" value="' . $anhdaidiensp . '">
+                <input type="hidden" name="giagiam" value="' . $giagiam . '">               
+                <article class="single_product">
+                        <figure>
+                            <div class="product_thumb">
+                                <a class="primary_img" href="' . $spct . '">' . $hinh . '</a>
+                                <div class="label_product">
+                                    <span class="label_sale">sale</span>
+                                </div>
+                                <div class="action_links">
+                                    <ul>
+                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                        <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
+                                        </li>
+                                        <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box" title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="add_to_cart">
+                                <input type="submit" name="addtocart" class="btn btn-primary" value="Add to cart">
+                                </div>
+                                <div class="product_timing">
+                                    <div data-countdown="2023/12/15"></div>
+                                </div>
+                            </div>
+                            <figcaption class="product_content">
+                                <div class="price_box">
+                                    <span class="old_price">' . $giagoc . '</span>
+                                    <span class="current_price">' . $giagiam . '</span>
+                                </div>
+                                <h3 class="product_name"><a href="index.php?act=chitietsanpham&id="' . $id . '>' . $tensanpham . '</a></h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    </form>';
+            }
+            ?>
+        </div>
+    </div>
+</section>
+<!--product area end-->
 </SPAN>
 
 
-<SPAn>BANNER3
-    <div class="banner_area mb-40">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.php"><img src="assets/img/bg/banner4.jpg" alt=""></a>
-                        </div>
+<div class="banner_area mb-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="single_banner mb-30">
+                    <div class="banner_thumb">
+                        <a href="shop.php"><img src="assets/img/bg/banner4.jpg" alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.php"><img src="assets/img/bg/banner5.jpg" alt=""></a>
-                        </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="single_banner mb-30">
+                    <div class="banner_thumb">
+                        <a href="shop.php"><img src="assets/img/bg/banner5.jpg" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--banner area end-->
+</div>
+<!--banner area end-->
 </SPAn>
 <!--top- category area start-->
-<SPan>ITEM2
-    <section class="top_category_product mb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-md-3">
-                    <div class="top_category_header">
-                        <h3>Top Categories This Week</h3>
-                        <p>Aliquam eget consectetuer habitasse interdum.</p>
-                        <a href="shop.php">Show All Categories</a>
-                    </div>
+<section class="top_category_product mb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-3">
+                <div class="top_category_header">
+                    <h3>Top Categories This Week</h3>
+                    <p>Aliquam eget consectetuer habitasse interdum.</p>
+                    <a href="shop.php">Show All Categories</a>
                 </div>
-                <div class="col-lg-10 col-md-9">
-                    <div class="top_category_container category_column5 owl-carousel">
-                        <div class="col-lg-2">
-                            <article class="single_category">
-                                <figure>
-                                    <div class="category_thumb">
-                                        <a href="shop.php"><img src="assets/img/s-product/category1.jpg" alt=""></a>
-                                    </div>
-                                    <figcaption class="category_name">
-                                        <h3><a href="shop.php">Games & Consoles </a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </div>
-                        <div class="col-lg-2">
-                            <article class="single_category">
-                                <figure>
-                                    <div class="category_thumb">
-                                        <a href="shop.php"><img src="assets/img/s-product/category2.jpg" alt=""></a>
-                                    </div>
-                                    <figcaption class="category_name">
-                                        <h3><a href="shop.php">Home Accessories</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </div>
-                        <div class="col-lg-2">
-                            <article class="single_category">
-                                <figure>
-                                    <div class="category_thumb">
-                                        <a href="shop.php"><img src="assets/img/s-product/category3.jpg" alt=""></a>
-                                    </div>
-                                    <figcaption class="category_name">
-                                        <h3><a href="shop.php">TV & Audio</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </div>
-                        <div class="col-lg-2">
-                            <article class="single_category">
-                                <figure>
-                                    <div class="category_thumb">
-                                        <a href="shop.php"><img src="assets/img/s-product/category4.jpg" alt=""></a>
-                                    </div>
-                                    <figcaption class="category_name">
-                                        <h3><a href="shop.php">Games & Consoles </a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </div>
-                        <div class="col-lg-2">
-                            <article class="single_category">
-                                <figure>
-                                    <div class="category_thumb">
-                                        <a href="shop.php"><img src="assets/img/s-product/category5.jpg" alt=""></a>
-                                    </div>
-                                    <figcaption class="category_name">
-                                        <h3><a href="shop.php">Laptop & Tablets </a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </div>
-                        <div class="col-lg-2">
-                            <article class="single_category">
-                                <figure>
-                                    <div class="category_thumb">
-                                        <a href="shop.php"><img src="assets/img/s-product/category2.jpg" alt=""></a>
-                                    </div>
-                                    <figcaption class="category_name">
-                                        <h3><a href="shop.php">Home Accessories</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-lg-10 col-md-9">
+                <div class="top_category_container category_column5 owl-carousel">
+                    <?php
+                    foreach ($listdm as $dm) {
+                        extract($dm);
+                        $imgpath = "uploads/" . $img;
+                        if (is_file($imgpath)) {
+                            $hinh = "<img src='" . $imgpath . "' width='185px' height='205px'>";
+                        } else {
+                            $hinh = "No photo";
+                        }
+                        echo '                        <div class="col-lg-2">
+                               <article class="single_category">
+                                   <figure>
+                                       <div class="category_thumb">
+                                           <a href="shop.php">' . $hinh . '</a>
+                                       </div>
+                                       <figcaption class="category_name">
+                                           <h3><a href="shop.php">' . $tendanhmuc . '</a></h3>
+                                       </figcaption>
+                                   </figure>
+                               </article>
+                           </div>';
+                    }
+                    ?>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 </SPan>
 <!-- phần này kết thúc header  -->
@@ -622,7 +269,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section_title">
-                        <h2>Sản Phẩm Cửa Hàng</h2>
+                        <h2>Sản Phẩm Nổi Bật</h2>
                     </div>
                 </div>
             </div>
@@ -631,17 +278,24 @@
                 $i = 0;
                 foreach ($spnew as $sp) {
                     extract($sp);
+                    $spct = "index.php?act=chitietsanpham&id=" . $id;
+                    $add = "index.php?act=addtocart&id=" . $id;
                     $imgpath = "uploads/" . $anhdaidiensp;
                     if (is_file($imgpath)) {
-                        $hinh = "<img src='" . $imgpath . "' height='80' width=250'>";
+                        $hinh = "<img src='" . $imgpath . "'>";
                     } else {
                         $hinh = "No photo";
                     }
                     echo '                <div class="col-lg-4">
+                    <form action="index.php?act=addtocart" method="post">
+                    <input type="hidden" name="id" value="' . $id . '">
+                    <input type="hidden" name="tensanpham" value="' . $tensanpham . '">
+                    <input type="hidden" name="anhdaidiensp" value="' . $anhdaidiensp . '">
+                    <input type="hidden" name="giagiam" value="' . $giagiam . '">
                     <article class="single_product">
                         <figure>
                             <div class="product_thumb">
-                                <a class="primary_img" href="sanphamct.php">' . $hinh . '</a>
+                                <a class="primary_img" href="' . $spct . '">' . $hinh . '</a>
                                 <div class="label_product">
                                     <span class="label_sale">sale</span>
                                 </div>
@@ -650,16 +304,16 @@
                                 <div class="price_box">
                                     <span style="color:red;" class="current_price">' . $giagoc . ' $</span>
                                 </div>
-                                <h3 class="product_name"><a href="sanphamct.php">' . $tensanpham . '</a></h3>
+                                <h3 class="product_name"><a href="' . $spct . '">' . $tensanpham . '</a></h3>
                                 <div class="add_to_cart">
-                                    <a href="viewcart.php" title="add to cart">Add to cart</a>
+                                <input type="submit" name="addtocart" class="btn btn-primary" value="Add to cart">
                                 </div>
                             </figcaption>
                         </figure>
                     </article>
-                </div>';
+                </div>
+            </form>';
                     $i += 1;
-
                 }
                 ?>
 
@@ -670,757 +324,354 @@
 </SPan>
 <!--product area start-->
 
-<SPan>SẢN PHẨM 2
-    <section class="product_area mb-46">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section_title">
-                        <h2>Computer & Laptop</h2>
-                    </div>
+<section class="product_area mb-46">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section_title">
+                    <h2>Máy tính & Laptop</h2>
                 </div>
-            </div>
-            <div class="product_carousel product_column5 owl-carousel">
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product1.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product2.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Natus erro at congue massa commodo
-                                    sit</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product3.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product4.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Itaque earum velit elementum</a>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product5.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product6.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Mauris tincidunt eros posuere
-                                    placerat</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product7.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product8.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Morbi ornare vestibulum massa</a>
-                            </h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product9.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product10.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Porro quisquam eget feugiat
-                                    pretium</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product11.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product12.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Laudantium enim fringilla dignissim
-                                    ipsum primis</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article class="single_product">
-                    <figure>
-                        <div class="product_thumb">
-                            <a class="primary_img" href="sanphamct.php"><img src="assets/img/product/product4.jpg"
-                                    alt=""></a>
-                            <a class="secondary_img" href="sanphamct.php"><img src="assets/img/product/product5.jpg"
-                                    alt=""></a>
-                            <div class="label_product">
-                                <span class="label_sale">sale</span>
-                            </div>
-                            <div class="action_links">
-                                <ul>
-                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                    </li>
-                                    <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                            data-bs-target="#modal_box" title="quick view"> <span
-                                                class="ion-ios-search-strong"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="add_to_cart">
-                                <a href="viewcart.php" title="add to cart">Add to cart</a>
-                            </div>
-                        </div>
-                        <figcaption class="product_content">
-                            <div class="price_box">
-                                <span class="old_price">$86.00</span>
-                                <span class="current_price">$79.00</span>
-                            </div>
-                            <h3 class="product_name"><a href="sanphamct.php">Natus erro at congue massa commodo
-                                    sit</a></h3>
-                        </figcaption>
-                    </figure>
-                </article>
             </div>
         </div>
-    </section>
-    <!--product area end-->
+        <div class="product_carousel product_column5 owl-carousel">
+            <?php
+            foreach ($spdanhmuc as $spdm) {
+                extract($spdm);
+                $spct = "index.php?act=chitietsanpham&id=" . $id;
+                $add = "index.php?act=addtocart&id=" . $id;
+                $imgpath = "uploads/" . $anhdaidiensp;
+                if (is_file($imgpath)) {
+                    $hinh = "<img src='" . $imgpath . "'>";
+                } else {
+                    $hinh = "No photo";
+                }
+                echo '<form action="index.php?act=addtocart" method="post">
+                <input type="hidden" name="id" value="' . $id . '">
+                <input type="hidden" name="tensanpham" value="' . $tensanpham . '">
+                <input type="hidden" name="anhdaidiensp" value="' . $anhdaidiensp . '">
+                <input type="hidden" name="giagiam" value="' . $giagiam . '">      
+                <article class="single_product">
+                    <figure>
+                        <div class="product_thumb">
+                            <a class="primary_img" href="' . $spct . '">' . $hinh . '</a>
+                            <div class="label_product">
+                                <span class="label_sale">sale</span>
+                            </div>
+                            <div class="action_links">
+                                <ul>
+                                    <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                    <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
+                                    </li>
+                                    <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box" title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="add_to_cart">
+                            <input type="submit" name="addtocart" class="btn btn-primary" value="Add to cart">
+                            </div>
+                        </div>
+                        <figcaption class="product_content">
+                            <div class="price_box">
+                                <span class="old_price">$' . $giagoc . '</span>
+                                <span class="current_price">$' . $giagiam . '</span>
+                            </div>
+                            <h3 class="product_name"><a href="' . $spct . '">' . $tensanpham . '</a></h3>
+                        </figcaption>
+                    </figure>
+                </article>
+            </form>';
+            }
+            ?>
+        </div>
+    </div>
+</section>
+<!--product area end-->
 </SPan>
 <!--banner area start-->
-<SPan> BANNER4
 
 
-    <div class="banner_area mb-40">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-9">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.php"><img src="assets/img/bg/banner6.jpg" alt=""></a>
-                        </div>
+<div class="banner_area mb-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-9">
+                <div class="single_banner mb-30">
+                    <div class="banner_thumb">
+                        <a href="shop.php"><img src="assets/img/bg/banner6.jpg" alt=""></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="single_banner mb-30">
-                        <div class="banner_thumb">
-                            <a href="shop.php"><img src="assets/img/bg/banner7.jpg" alt=""></a>
-                        </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="single_banner mb-30">
+                    <div class="banner_thumb">
+                        <a href="shop.php"><img src="assets/img/bg/banner7.jpg" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--banner area end-->
+</div>
+<!--banner area end-->
 </SPan>
 <!--product area start-->
 
 
 
-
-<SPAn>SẢM PHẨM 3
-    <section class="product_area mb-46">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 col-md-12">
-                    <div class="product_left_area">
-                        <div class="section_title">
-                            <h2>Smartphone & Tablets</h2>
-                        </div>
-                        <div class="product_carousel product_column4 owl-carousel">
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product1.jpg" alt=""></a>
-                                        <a class="secondary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product2.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-                                            <span class="old_price">$86.00</span>
-                                            <span class="current_price">$79.00</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="sanphamct.php">Natus erro at congue
-                                                massa commodo sit</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product3.jpg" alt=""></a>
-                                        <a class="secondary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product4.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-                                            <span class="old_price">$86.00</span>
-                                            <span class="current_price">$79.00</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="sanphamct.php">Itaque earum velit
-                                                elementum</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product5.jpg" alt=""></a>
-                                        <a class="secondary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product6.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-                                            <span class="old_price">$86.00</span>
-                                            <span class="current_price">$79.00</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="sanphamct.php">Mauris tincidunt eros
-                                                posuere placerat</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product7.jpg" alt=""></a>
-                                        <a class="secondary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product8.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-                                            <span class="old_price">$86.00</span>
-                                            <span class="current_price">$79.00</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="sanphamct.php">Morbi ornare vestibulum
-                                                massa</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product9.jpg" alt=""></a>
-                                        <a class="secondary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product10.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-                                            <span class="old_price">$86.00</span>
-                                            <span class="current_price">$79.00</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="sanphamct.php">Porro quisquam eget
-                                                feugiat pretium</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product11.jpg" alt=""></a>
-                                        <a class="secondary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product12.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-                                            <span class="old_price">$86.00</span>
-                                            <span class="current_price">$79.00</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="sanphamct.php">Laudantium enim
-                                                fringilla dignissim ipsum primis</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                            <article class="single_product">
-                                <figure>
-                                    <div class="product_thumb">
-                                        <a class="primary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product4.jpg" alt=""></a>
-                                        <a class="secondary_img" href="sanphamct.php"><img
-                                                src="assets/img/product/product5.jpg" alt=""></a>
-                                        <div class="label_product">
-                                            <span class="label_sale">sale</span>
-                                        </div>
-                                        <div class="action_links">
-                                            <ul>
-                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                            class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                <li class="compare"><a href="#" title="compare"><span
-                                                            class="ion-levels"></span></a></li>
-                                                <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#modal_box" title="quick view"> <span
-                                                            class="ion-ios-search-strong"></span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="add_to_cart">
-                                            <a href="viewcart.php" title="add to cart">Add to cart</a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="product_content">
-                                        <div class="price_box">
-                                            <span class="old_price">$86.00</span>
-                                            <span class="current_price">$79.00</span>
-                                        </div>
-                                        <h3 class="product_name"><a href="sanphamct.php">Natus erro at congue
-                                                massa commodo sit</a></h3>
-                                    </figcaption>
-                                </figure>
-                            </article>
-                        </div>
+<section class="product_area mb-46">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-12">
+                <div class="product_left_area">
+                    <div class="section_title">
+                        <h2>Điện thoại & Máy tính bảng</h2>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                    <!--testimonials section start-->
-                    <div class="testimonial_are">
-                        <div class="section_title">
-                            <h2>Testimonials</h2>
-                        </div>
-                        <div class="testimonial_active owl-carousel">
-                            <article class="single_testimonial">
+                    <div class="product_carousel product_column4 owl-carousel">
+                        <?php
+                        foreach ($spdt as $sanphamdt) {
+                            extract($sanphamdt);
+                            $spct = "index.php?act=chitietsanpham&id=" . $id;
+                            $add = "index.php?act=addtocart&id=" . $id;
+                            $imgpath = "uploads/" . $anhdaidiensp;
+                            if (is_file($imgpath)) {
+                                $hinh = "<img src='" . $imgpath . "'>";
+                            } else {
+                                $hinh = "No photo";
+                            }
+                            echo '<form action="index.php?act=addtocart" method="post">
+                            <input type="hidden" name="id" value="' . $id . '">
+                            <input type="hidden" name="tensanpham" value="' . $tensanpham . '">
+                            <input type="hidden" name="anhdaidiensp" value="' . $anhdaidiensp . '">
+                            <input type="hidden" name="giagiam" value="' . $giagiam . '">                  
+                            <article class="single_product">
                                 <figure>
-                                    <div class="testimonial_thumb">
-                                        <a href="#"><img src="assets/img/about/testimonial1.jpg" alt=""></a>
+                                    <div class="product_thumb">
+                                        <a class="primary_img" href="' . $spct . '">' . $hinh . '</a>
+                                        <div class="label_product">
+                                            <span class="label_sale">sale</span>
+                                        </div>
+                                        <div class="action_links">
+                                            <ul>
+                                                <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+                                                <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a></li>
+                                                <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box" title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="add_to_cart">
+                                        <input type="submit" name="addtocart" class="btn btn-primary" value="Add to cart">
+                                        </div>
                                     </div>
-                                    <figcaption class="testimonial_content">
-                                        <p>Support and response has been amazing, helping me with several issues I came
-                                            across and got them solved almost the same day. A pleasure to work with
-                                            them!</p>
-                                        <h3><a href="#">Kathy Young</a><span> - CEO of SunPark</span></h3>
+                                    <figcaption class="product_content">
+                                        <div class="price_box">
+                                            <span class="old_price">$' . $giagoc . '</span>
+                                            <span class="current_price">$' . $giagiam . '</span>
+                                        </div>
+                                        <h3 class="product_name"><a href="' . $spct . '">' . $tensanpham . '</a></h3>
                                     </figcaption>
-
                                 </figure>
                             </article>
-                            <article class="single_testimonial">
-                                <figure>
-                                    <div class="testimonial_thumb">
-                                        <a href="#"><img src="assets/img/about/testimonial2.jpg" alt=""></a>
-                                    </div>
-                                    <figcaption class="testimonial_content">
-                                        <p>Perfect Themes and the best of all that you have many options to choose! Best
-                                            Support team ever! Thank you very much!</p>
-                                        <h3><a href="#">John Sullivan</a><span> - Customer</span></h3>
-                                    </figcaption>
-
-                                </figure>
-                            </article>
-                            <article class="single_testimonial">
-                                <figure>
-                                    <div class="testimonial_thumb">
-                                        <a href="#"><img src="assets/img/about/testimonial3.jpg" alt=""></a>
-                                    </div>
-                                    <figcaption class="testimonial_content">
-                                        <p>Code, template and others are very good. The support has served me
-                                            immediately and solved my problems when I need help. Are to be
-                                            congratulated.</p>
-                                        <h3><a href="#">Jenifer Brown</a><span> - Manager of AZ</span></h3>
-                                    </figcaption>
-
-                                </figure>
-                            </article>
-                        </div>
+                        </form>';
+                        }
+                        ?>
                     </div>
-                    <!--testimonials section end-->
                 </div>
             </div>
+            <div class="col-lg-3 col-md-12">
+                <!--testimonials section start-->
+                <div class="testimonial_are">
+                    <div class="section_title">
+                        <h2>Testimonials</h2>
+                    </div>
+                    <div class="testimonial_active owl-carousel">
+                        <article class="single_testimonial">
+                            <figure>
+                                <div class="testimonial_thumb">
+                                    <a href="#"><img src="assets/img/about/testimonial1.jpg" alt=""></a>
+                                </div>
+                                <figcaption class="testimonial_content">
+                                    <p>Support and response has been amazing, helping me with several issues I came
+                                        across and got them solved almost the same day. A pleasure to work with
+                                        them!</p>
+                                    <h3><a href="#">Kathy Young</a><span> - CEO of SunPark</span></h3>
+                                </figcaption>
+
+                            </figure>
+                        </article>
+                        <article class="single_testimonial">
+                            <figure>
+                                <div class="testimonial_thumb">
+                                    <a href="#"><img src="assets/img/about/testimonial2.jpg" alt=""></a>
+                                </div>
+                                <figcaption class="testimonial_content">
+                                    <p>Perfect Themes and the best of all that you have many options to choose! Best
+                                        Support team ever! Thank you very much!</p>
+                                    <h3><a href="#">John Sullivan</a><span> - Customer</span></h3>
+                                </figcaption>
+
+                            </figure>
+                        </article>
+                        <article class="single_testimonial">
+                            <figure>
+                                <div class="testimonial_thumb">
+                                    <a href="#"><img src="assets/img/about/testimonial3.jpg" alt=""></a>
+                                </div>
+                                <figcaption class="testimonial_content">
+                                    <p>Code, template and others are very good. The support has served me
+                                        immediately and solved my problems when I need help. Are to be
+                                        congratulated.</p>
+                                    <h3><a href="#">Jenifer Brown</a><span> - Manager of AZ</span></h3>
+                                </figcaption>
+
+                            </figure>
+                        </article>
+                    </div>
+                </div>
+                <!--testimonials section end-->
+            </div>
         </div>
-    </section>
-    <!--product area end-->
+    </div>
+</section>
+<!--product area end-->
 </SPAn>
 
-<SPAn>ITEM4
-    <!--blog area start-->
-    <section class="blog_section mb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section_title">
-                        <h2>From the Blog</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="blog_carousel blog_column4 owl-carousel">
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="blog-details.html"><img src="assets/img/blog/blog1.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
-                                    <h3 class="post_title"><a href="blog-details.html">Blog image post</a></h3>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="blog-details.html"><img src="assets/img/blog/blog2.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
-                                    <h3 class="post_title"><a href="blog-details.html">Post with Gallery</a></h3>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="blog-details.html"><img src="assets/img/blog/blog3.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
-                                    <h3 class="post_title"><a href="blog-details.html">Post with Audio</a></h3>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="blog-details.html"><img src="assets/img/blog/blog4.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
-                                    <h3 class="post_title"><a href="blog-details.html">Post with Video</a></h3>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_blog">
-                            <figure>
-                                <div class="blog_thumb">
-                                    <a href="blog-details.html"><img src="assets/img/blog/blog5.jpg" alt=""></a>
-                                </div>
-                                <figcaption class="blog_content">
-                                    <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
-                                    <h3 class="post_title"><a href="blog-details.html">Maecenas ultricies</a></h3>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
+<!--blog area start-->
+<section class="blog_section mb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section_title">
+                    <h2>From the Blog</h2>
                 </div>
             </div>
         </div>
-    </section>
-    <!--blog area end-->
+        <div class="row">
+            <div class="blog_carousel blog_column4 owl-carousel">
+                <div class="col-lg-3">
+                    <article class="single_blog">
+                        <figure>
+                            <div class="blog_thumb">
+                                <a href="blog-details.html"><img src="assets/img/blog/blog1.jpg" alt=""></a>
+                            </div>
+                            <figcaption class="blog_content">
+                                <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
+                                <h3 class="post_title"><a href="blog-details.html">Blog image post</a></h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col-lg-3">
+                    <article class="single_blog">
+                        <figure>
+                            <div class="blog_thumb">
+                                <a href="blog-details.html"><img src="assets/img/blog/blog2.jpg" alt=""></a>
+                            </div>
+                            <figcaption class="blog_content">
+                                <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
+                                <h3 class="post_title"><a href="blog-details.html">Post with Gallery</a></h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col-lg-3">
+                    <article class="single_blog">
+                        <figure>
+                            <div class="blog_thumb">
+                                <a href="blog-details.html"><img src="assets/img/blog/blog3.jpg" alt=""></a>
+                            </div>
+                            <figcaption class="blog_content">
+                                <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
+                                <h3 class="post_title"><a href="blog-details.html">Post with Audio</a></h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col-lg-3">
+                    <article class="single_blog">
+                        <figure>
+                            <div class="blog_thumb">
+                                <a href="blog-details.html"><img src="assets/img/blog/blog4.jpg" alt=""></a>
+                            </div>
+                            <figcaption class="blog_content">
+                                <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
+                                <h3 class="post_title"><a href="blog-details.html">Post with Video</a></h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+                <div class="col-lg-3">
+                    <article class="single_blog">
+                        <figure>
+                            <div class="blog_thumb">
+                                <a href="blog-details.html"><img src="assets/img/blog/blog5.jpg" alt=""></a>
+                            </div>
+                            <figcaption class="blog_content">
+                                <p class="post_author">By <a href="#">admin</a> July 04, 2022</p>
+                                <h3 class="post_title"><a href="blog-details.html">Maecenas ultricies</a></h3>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--blog area end-->
 </SPAn>
 <!--brand area start-->
-<SPAn>ICON2
-    <div class="brand_area mb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="brand_container owl-carousel">
-                        <div class="brand_items">
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/img/brand/brand1.jpg" alt=""></a>
-                            </div>
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/img/brand/brand2.jpg" alt=""></a>
-                            </div>
+<div class="brand_area mb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="brand_container owl-carousel">
+                    <div class="brand_items">
+                        <div class="single_brand">
+                            <a href="#"><img src="assets/img/brand/brand1.jpg" alt=""></a>
                         </div>
-                        <div class="brand_items">
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/img/brand/brand3.jpg" alt=""></a>
-                            </div>
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/img/brand/brand4.jpg" alt=""></a>
-                            </div>
+                        <div class="single_brand">
+                            <a href="#"><img src="assets/img/brand/brand2.jpg" alt=""></a>
                         </div>
-                        <div class="brand_items">
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/img/brand/brand5.jpg" alt=""></a>
-                            </div>
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/img/brand/brand6.jpg" alt=""></a>
-                            </div>
+                    </div>
+                    <div class="brand_items">
+                        <div class="single_brand">
+                            <a href="#"><img src="assets/img/brand/brand3.jpg" alt=""></a>
                         </div>
-                        <div class="brand_items">
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/img/brand/brand7.jpg" alt=""></a>
-                            </div>
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/img/brand/brand8.jpg" alt=""></a>
-                            </div>
+                        <div class="single_brand">
+                            <a href="#"><img src="assets/img/brand/brand4.jpg" alt=""></a>
                         </div>
-                        <div class="brand_items">
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/img/brand/brand9.jpg" alt=""></a>
-                            </div>
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/img/brand/brand10.jpg" alt=""></a>
-                            </div>
+                    </div>
+                    <div class="brand_items">
+                        <div class="single_brand">
+                            <a href="#"><img src="assets/img/brand/brand5.jpg" alt=""></a>
                         </div>
-                        <div class="brand_items">
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/img/brand/brand2.jpg" alt=""></a>
-                            </div>
-                            <div class="single_brand">
-                                <a href="#"><img src="assets/img/brand/brand3.jpg" alt=""></a>
-                            </div>
+                        <div class="single_brand">
+                            <a href="#"><img src="assets/img/brand/brand6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="brand_items">
+                        <div class="single_brand">
+                            <a href="#"><img src="assets/img/brand/brand7.jpg" alt=""></a>
+                        </div>
+                        <div class="single_brand">
+                            <a href="#"><img src="assets/img/brand/brand8.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="brand_items">
+                        <div class="single_brand">
+                            <a href="#"><img src="assets/img/brand/brand9.jpg" alt=""></a>
+                        </div>
+                        <div class="single_brand">
+                            <a href="#"><img src="assets/img/brand/brand10.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="brand_items">
+                        <div class="single_brand">
+                            <a href="#"><img src="assets/img/brand/brand2.jpg" alt=""></a>
+                        </div>
+                        <div class="single_brand">
+                            <a href="#"><img src="assets/img/brand/brand3.jpg" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--brand area end-->
+</div>
+<!--brand area end-->
 </SPAn>
