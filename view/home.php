@@ -179,8 +179,8 @@
                             </div>
                             <figcaption class="product_content">
                                 <div class="price_box">
-                                    <span class="old_price">' . $giagoc . '</span>
-                                    <span class="current_price">' . $giagiam . '</span>
+                                    <span class="old_price">' . $giagoc . '₫</span>
+                                    <span class="current_price">' . $giagiam . '₫</span>
                                 </div>
                                 <h3 class="product_name"><a href="index.php?act=chitietsanpham&id="' . $id . '>' . $tensanpham . '</a></h3>
                             </figcaption>
@@ -226,7 +226,7 @@
                 <div class="top_category_header">
                     <h3>Top Categories This Week</h3>
                     <p>Aliquam eget consectetuer habitasse interdum.</p>
-                    <a href="shop.php">Show All Categories</a>
+                    <a href="index.php?act=shop">Show All Categories</a>
                 </div>
             </div>
             <div class="col-lg-10 col-md-9">
@@ -244,7 +244,7 @@
                                <article class="single_category">
                                    <figure>
                                        <div class="category_thumb">
-                                           <a href="shop.php">' . $hinh . '</a>
+                                           <a href="index.php?act=shop">' . $hinh . '</a>
                                        </div>
                                        <figcaption class="category_name">
                                            <h3><a href="shop.php">' . $tendanhmuc . '</a></h3>
@@ -302,7 +302,7 @@
                             </div>
                             <figcaption class="product_content">
                                 <div class="price_box">
-                                    <span style="color:red;" class="current_price">' . $giagoc . ' $</span>
+                                    <span style="color:red;" class="current_price">' . $giagoc . '₫</span>
                                 </div>
                                 <h3 class="product_name"><a href="' . $spct . '">' . $tensanpham . '</a></h3>
                                 <div class="add_to_cart">
@@ -371,8 +371,8 @@
                         </div>
                         <figcaption class="product_content">
                             <div class="price_box">
-                                <span class="old_price">$' . $giagoc . '</span>
-                                <span class="current_price">$' . $giagiam . '</span>
+                                <span class="old_price">' . $giagoc . '₫</span>
+                                <span class="current_price">' . $giagiam . '₫</span>
                             </div>
                             <h3 class="product_name"><a href="' . $spct . '">' . $tensanpham . '</a></h3>
                         </figcaption>
@@ -460,8 +460,8 @@
                                     </div>
                                     <figcaption class="product_content">
                                         <div class="price_box">
-                                            <span class="old_price">$' . $giagoc . '</span>
-                                            <span class="current_price">$' . $giagiam . '</span>
+                                            <span class="old_price">' . $giagoc . '₫</span>
+                                            <span class="current_price">' . $giagiam . '₫</span>
                                         </div>
                                         <h3 class="product_name"><a href="' . $spct . '">' . $tensanpham . '</a></h3>
                                     </figcaption>
