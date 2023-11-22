@@ -21,4 +21,8 @@ function update_taikhoan($id,$user,$pass,$email,$address,$tel){
     $sql="UPDATE tb_user SET `user`='".$user."',`pass`='".$pass."',`email`='".$email."',`address`='".$address."',`tel`='".$tel."' WHERE id=".$id;
     pdo_execute($sql);
 }
+function update_user($id,$name,$address,$email,$user,$pass){
+    $sql="UPDATE tb_user SET `name`='".$name."',`address`='".$address."',`email`='".$email."',`user`='".$user."',`pass`='".$pass."' WHERE id=".$id;
+    pdo_execute($sql);
+}
 ?>

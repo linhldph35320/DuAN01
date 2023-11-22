@@ -46,7 +46,7 @@
                         <div class="top_right text-end">
                             <ul>
                                 <li><a href="login.php">My Account</a></li>
-
+                                <li><a href="index.php?act=user_infor">Cập Nhật</a></li>
                             </ul>
                         </div>
                         <div class="search_container">
@@ -133,7 +133,7 @@
                             <div class="top_right text-end">
                                 <ul>
                                     <li><a href="login.php"> My Account </a></li>
-
+                                    <li><a href="index.php?act=user_infor">Cập Nhật</a></li>
                                 </ul>
                             </div>
                         </div>
