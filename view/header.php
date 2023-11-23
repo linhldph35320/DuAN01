@@ -22,102 +22,6 @@
 </head>
 
 <body>
-
-    <!--header area start-->
-
-    <!--Offcanvas menu area start-->
-    <div class="off_canvars_overlay">
-
-    </div>
-    <div class="Offcanvas_menu">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="canvas_open">
-                        <a href="javascript:void(0)"><i class="ion-navicon"></i></a>
-                    </div>
-                    <div class="Offcanvas_menu_wrapper">
-                        <div class="canvas_close">
-                            <a href="javascript:void(0)"><i class="ion-android-close"></i></a>
-                        </div>
-                        <div class="support_info">
-                            <p>Telephone Enquiry: <a href="tel:0123456789">0123456789</a></p>
-                        </div>
-                        <div class="top_right text-end">
-                            <ul>
-                                <li><a href="login.php">My Account</a></li>
-                                <li><a href="index.php?act=user_infor">Cập Nhật</a></li>
-                            </ul>
-                        </div>
-                        <div class="search_container">
-                            <form action="#">
-                                <div class="hover_category">
-                                    <select class="select_option" name="select" id="categori">
-                                        <option selected value="1">All Categories</option>
-                                        <option value="2">Accessories</option>
-                                        <option value="3">Accessories & More</option>
-                                        <option value="4">Butters & Eggs</option>
-                                        <option value="5">Camera & Video </option>
-                                        <option value="6">Mornitors</option>
-                                        <option value="7">Tablets</option>
-                                        <option value="8">Laptops</option>
-                                        <option value="9">Handbags</option>
-                                        <option value="10">Headphone & Speaker</option>
-                                        <option value="11">Herbs & botanicals</option>
-                                        <option value="12">Vegetables</option>
-                                        <option value="13">Shop</option>
-                                        <option value="14">Laptops & Desktops</option>
-                                        <option value="15">Watchs</option>
-                                        <option value="16">Electronic</option>
-                                    </select>
-                                </div>
-                                <div class="search_box">
-                                    <input placeholder="Search product..." type="text">
-                                    <button type="submit">Search</button>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="middel_right_info">
-                            <div class="mini_cart_wrapper">
-                                <a href="javascript:void(0)"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-angle-down"></i></a>
-                                <!--mini cart-->
-                                <!--mini cart end-->
-                            </div>
-                        </div>
-                        <div id="menu" class="text-start ">
-                            <ul class="offcanvas_main_menu">
-                                <li class="menu-item-has-children active">
-                                    <a href="index.php">Home</a>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="index.php?act=shop">Sản Phẩm</a>
-                                    <ul class="sub-menu">
-
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="Offcanvas_footer">
-                            <span><a href="#"><i class="fa fa-envelope-o"></i> info@yourdomain.com</a></span>
-                            <ul>
-                                <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li class="pinterest"><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Offcanvas menu area end-->
-    <!-- //////////////////////kết thúc phần header  -->
-
-    <!-- ///////////////bắt đầu phần footer -->
     <header>
         <div class="main_header">
             <!--header top start-->
@@ -132,8 +36,8 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="top_right text-end">
                                 <ul>
-                                    <li><a href="login.php"> My Account </a></li>
-                                    <li><a href="index.php?act=user_infor">Cập Nhật</a></li>
+                                    <li><a href=""> My Account </a></li>
+                                    <li><a href="checkout.html"> Checkout </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -153,93 +57,28 @@
                         <div class="col-lg-9 col-md-6">
                             <div class="middel_right">
                                 <div class="search_container">
-                                    <form action="#">
+                                    <form action="index.php?act=timkiem" method="GET">
                                         <div class="hover_category">
-                                            <select class="select_option" name="select" id="categori1">
-                                                <option selected value="1">All Categories</option>
-                                                <option value="2">Accessories</option>
-                                                <option value="3">Accessories & More</option>
-                                                <option value="4">Butters & Eggs</option>
-                                                <option value="5">Camera & Video </option>
-                                                <option value="6">Mornitors</option>
-                                                <option value="7">Tablets</option>
-                                                <option value="8">Laptops</option>
-                                                <option value="9">Handbags</option>
-                                                <option value="10">Headphone & Speaker</option>
-                                                <option value="11">Herbs & botanicals</option>
-                                                <option value="12">Vegetables</option>
-                                                <option value="13">Shop</option>
-                                                <option value="14">Laptops & Desktops</option>
-                                                <option value="15">Watchs</option>
-                                                <option value="16">Electronic</option>
+                                            <select class="select_option" name="lk_danhmuc" id="categori1">
+                                                <option selected></option>
+                                                <?php
+                                                foreach ($listdm as $dm) {
+                                                    extract($dm);
+                                                    $viewspdm = "index.php?act=viewspdm&id=" . $id;
+                                                    echo '<option value="' . $id . '">' . $tendanhmuc . '</option>';
+                                                }
+                                                ?>
                                             </select>
                                         </div>
                                         <div class="search_box">
-                                            <input placeholder="Search product..." type="text">
-                                            <button type="submit">Search</button>
+                                            <input placeholder="Tìm kiếm sản phẩm..." type="text" name="tim">
+                                            <button type="submit" name="timkiem">Tìm</button>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="middel_right_info">
                                     <div class="mini_cart_wrapper">
-                                        <a href="javascript:void(0)"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-angle-down"></i></a>
-                                        <!--mini cart-->
-                                        <div class="mini_cart">
-                                            <?php
-                                            $tong = 0;
-                                            $i = 0;
-                                            foreach ($_SESSION['mycart'] as $cart) {
-                                                $imgpath = "uploads/" . $cart[2];
-                                                if (is_file($imgpath)) {
-                                                    $hinh = "<img src='" . $imgpath . "'>";
-                                                } else {
-                                                    $hinh = "No photo";
-                                                }
-                                                $thanhtien = $cart[3] * $cart[4];
-                                                $tong = $tong + $thanhtien;
-                                                $xoasp = '<a href="index.php?act=delcart&idcart=' . $i . '"><input type="hidden" value="Xoá"><i class="fa fa-trash-o"></i></a>';
-                                                echo '                                            <div class="cart_item">
-                                                <div class="cart_img">
-                                                    <a href="#">' . $hinh . '</a>
-                                                </div>
-                                                <div class="cart_info">
-                                                    <a href="#">' . $cart[1] . '</a>
-                                                    <p>Qty: 1 X <span>' . $cart[3] . '</span></p>
-                                                </div>
-                                                <div class="cart_remove">
-                                                    ' . $xoasp . '
-                                                </div>
-                                            </div>';
-                                                $i += 1;
-                                            }
-                                            ?>
-                                            <div class="mini_cart_table">
-                                                <?php
-                                                $tong = 0;
-                                                $i = 0;
-                                                foreach ($_SESSION['mycart'] as $cart) {
-                                                    $thanhtien = $cart[3] * $cart[4];
-                                                    $tong = $tong + $thanhtien;
-                                                    echo '                                                <div class="cart_total">
-                                                    <span>Tổng tiền:</span>
-                                                    <span class="price">$'.$tong.'</span>
-                                                </div>';
-                                                }
-                                                ?>
-                                            </div>
-
-                                            <div class="mini_cart_footer">
-                                                <div class="cart_button">
-                                                    <a href="index.php?act=viewcart">View cart</a>
-                                                </div>
-                                                <div class="cart_button">
-                                                    <a href="checkout.php">Checkout</a>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-                                        <!--mini cart end-->
+                                        <?php include "cart/minicart.php"; ?>
                                     </div>
                                 </div>
                             </div>
@@ -255,141 +94,52 @@
                         <div class="col-lg-3 col-md-12">
                             <div class="categories_menu">
                                 <div class="categories_title">
-                                    <h2 class="categori_toggle">ALL CATEGORIES</h2>
+                                    <h2 class="categori_toggle">DANH MỤC</h2>
                                 </div>
                                 <div class="categories_menu_toggle">
                                     <ul>
-                                        <li class="menu_item_children"><a href="#">Brake Parts <i class="fa fa-angle-right"></i></a>
-                                            <ul class="categories_mega_menu">
-                                                <li class="menu_item_children"><a href="#">Dresses</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Sweater</a></li>
-                                                        <li><a href="#">Evening</a></li>
-                                                        <li><a href="#">Day</a></li>
-                                                        <li><a href="#">Sports</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">Handbags</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Shoulder</a></li>
-                                                        <li><a href="#">Satchels</a></li>
-                                                        <li><a href="#">kids</a></li>
-                                                        <li><a href="#">coats</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">shoes</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Ankle Boots</a></li>
-                                                        <li><a href="#">Clog sandals </a></li>
-                                                        <li><a href="#">run</a></li>
-                                                        <li><a href="#">Books</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">Clothing</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Coats Jackets </a></li>
-                                                        <li><a href="#">Raincoats</a></li>
-                                                        <li><a href="#">Jackets</a></li>
-                                                        <li><a href="#">T-shirts</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu_item_children"><a href="#"> Wheels & Tires <i class="fa fa-angle-right"></i></a>
-                                            <ul class="categories_mega_menu column_3">
-                                                <li class="menu_item_children"><a href="#">Chair</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Dining room</a></li>
-                                                        <li><a href="#">bedroom</a></li>
-                                                        <li><a href="#"> Home & Office</a></li>
-                                                        <li><a href="#">living room</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">Lighting</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Ceiling Lighting</a></li>
-                                                        <li><a href="#">Wall Lighting</a></li>
-                                                        <li><a href="#">Outdoor Lighting</a></li>
-                                                        <li><a href="#">Smart Lighting</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">Sofa</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Fabric Sofas</a></li>
-                                                        <li><a href="#">Leather Sofas</a></li>
-                                                        <li><a href="#">Corner Sofas</a></li>
-                                                        <li><a href="#">Sofa Beds</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu_item_children"><a href="#"> Furnitured & Decor <i class="fa fa-angle-right"></i></a>
-                                            <ul class="categories_mega_menu column_2">
-                                                <li class="menu_item_children"><a href="#">Brake Tools</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Driveshafts</a></li>
-                                                        <li><a href="#">Spools</a></li>
-                                                        <li><a href="#">Diesel </a></li>
-                                                        <li><a href="#">Gasoline</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">Emergency Brake</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Dolls for Girls</a></li>
-                                                        <li><a href="#">Girls' Learning Toys</a></li>
-                                                        <li><a href="#">Arts and Crafts for Girls</a></li>
-                                                        <li><a href="#">Video Games for Girls</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu_item_children"><a href="#"> Turbo System <i class="fa fa-angle-right"></i></a>
-                                            <ul class="categories_mega_menu column_2">
-                                                <li class="menu_item_children"><a href="#">Check Trousers</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Building</a></li>
-                                                        <li><a href="#">Electronics</a></li>
-                                                        <li><a href="#">action figures </a></li>
-                                                        <li><a href="#">specialty & boutique toy</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="menu_item_children"><a href="#">Calculators</a>
-                                                    <ul class="categorie_sub_menu">
-                                                        <li><a href="#">Dolls for Girls</a></li>
-                                                        <li><a href="#">Girls' Learning Toys</a></li>
-                                                        <li><a href="#">Arts and Crafts for Girls</a></li>
-                                                        <li><a href="#">Video Games for Girls</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#"> Lighting</a></li>
-                                        <li><a href="#"> Accessories</a></li>
-                                        <li><a href="#">Body Parts</a></li>
-                                        <li><a href="#">Perfomance Filters</a></li>
-                                        <li><a href="#"> Engine Parts</a></li>
-                                        <li id="cat_toggle" class="has-sub"><a href="#"> More Categories</a>
-                                            <ul class="categorie_sub">
-                                                <li><a href="#">Hide Categories</a></li>
-                                            </ul>
-
-                                        </li>
+                                        <?php
+                                        foreach ($listdm as $dm) {
+                                            extract($dm);
+                                            $viewspdm = "index.php?act=viewspdm&id=" . $id;
+                                            echo '<li class="menu_item_children"><a href="#">' . $tendanhmuc . '</a>';
+                                        }
+                                        ?>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <!-- Phần menu thanh navbar  -->
                         <div class="col-lg-9 col-md-12">
                             <div class="main_menu menu_position">
                                 <nav>
                                     <ul>
-                                        <li><a class="active" href="index.php">Home</a>
+                                        <li><a class="active" href="index.php">Trang chủ</a>
                                         </li>
-                                        <li class="mega_items"><a href="index.php?act=shop">Sản Phẩm</a>
-
+                                        <li class="mega_items"><a href="index.php?act=shop">Sản phẩm</a>
                                         </li>
-                                        <!-- ............................................................................. -->
+                                        <li><a href="#">blog<i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="#">blog details</a></li>
+                                                <li><a href="#">blog fullwidth</a></li>
+                                                <li><a href="#">blog left sidebar</a></li>
+                                                <li><a href="#">blog no sidebar</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Page<i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub_menu pages">
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">services</a></li>
+                                                <li><a href="#">privacy policy</a></li>
+                                                <li><a href="#">Frequently Questions</a></li>
+                                                <li><a href="#">contact</a></li>
+                                                <li><a href="#">login</a></li>
+                                                <li><a href="#">Error 404</a></li>
+                                                <li><a href="#">Compare</a></li>
+                                            </ul>
+                                        </li>
 
+                                        <li><a href="#">Về chúng tôi</a></li>
+                                        <li><a href="#">Liên hệ với chúng tôi</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -400,14 +150,3 @@
             <!--header bottom end-->
         </div>
     </header>
-
-
-
-    <!-- JS
-============================================ -->
-
-    <!-- Plugins JS -->
-    <script src="assets/js/plugins.js"></script>
-
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>

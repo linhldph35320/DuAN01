@@ -47,58 +47,57 @@
 </section>
 </span>
 
-<!-- <span>ICON
-    <section class="shipping_area mb-70">
-        <div class="container">
-            <div class=" row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_shipping">
-                        <div class="shipping_icone">
-                            <img src="assets/img/about/shipping1.png" alt="">
-                        </div>
-                        <div class="shipping_content">
-                            <h2>Free Shipping</h2>
-                            <p>Free shipping on all US order</p>
-                        </div>
+<section class="shipping_area mb-70">
+    <div class="container">
+        <div class=" row">
+            <div class="col-lg-3 col-md-6">
+                <div class="single_shipping">
+                    <div class="shipping_icone">
+                        <img src="assets/img/about/shipping1.png" alt="">
+                    </div>
+                    <div class="shipping_content">
+                        <h2>Free Shipping</h2>
+                        <p>Free shipping on all US order</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_shipping">
-                        <div class="shipping_icone">
-                            <img src="assets/img/about/shipping2.png" alt="">
-                        </div>
-                        <div class="shipping_content">
-                            <h2>Support 24/7</h2>
-                            <p>Contact us 24 hours a day</p>
-                        </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single_shipping">
+                    <div class="shipping_icone">
+                        <img src="assets/img/about/shipping2.png" alt="">
+                    </div>
+                    <div class="shipping_content">
+                        <h2>Support 24/7</h2>
+                        <p>Contact us 24 hours a day</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_shipping">
-                        <div class="shipping_icone">
-                            <img src="assets/img/about/shipping3.png" alt="">
-                        </div>
-                        <div class="shipping_content">
-                            <h2>100% Money Back</h2>
-                            <p>You have 30 days to Return</p>
-                        </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single_shipping">
+                    <div class="shipping_icone">
+                        <img src="assets/img/about/shipping3.png" alt="">
+                    </div>
+                    <div class="shipping_content">
+                        <h2>100% Money Back</h2>
+                        <p>You have 30 days to Return</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single_shipping">
-                        <div class="shipping_icone">
-                            <img src="assets/img/about/shipping4.png" alt="">
-                        </div>
-                        <div class="shipping_content">
-                            <h2>Payment Secure</h2>
-                            <p>We ensure secure payment</p>
-                        </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="single_shipping">
+                    <div class="shipping_icone">
+                        <img src="assets/img/about/shipping4.png" alt="">
+                    </div>
+                    <div class="shipping_content">
+                        <h2>Payment Secure</h2>
+                        <p>We ensure secure payment</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-</span> -->
+    </div>
+</section>
+
 <div class="banner_area mb-40">
     <div class="container">
         <div class="row">
@@ -128,185 +127,39 @@
 </div>
 </span>
 
-<!--product area start-->
-<section class="product_area mb-46">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section_title">
-                    <h2>FLASH SALE</h2>
-                </div>
-            </div>
-        </div>
-        <div class="product_carousel product_column5 owl-carousel">
-            <?php
-            foreach ($sptop5 as $sanphamtop5) {
-                extract($sanphamtop5);
-                $spct = "index.php?act=chitietsanpham&id=" . $id;
-                $add = "index.php?act=addtocart&id=" . $id;
-                $imgpath = "uploads/" . $anhdaidiensp;
-                if (is_file($imgpath)) {
-                    $hinh = "<img src='" . $imgpath . "'>";
-                } else {
-                    $hinh = "No photo";
-                }
-                echo '                 <form action="index.php?act=addtocart" method="post">
-                <input type="hidden" name="id" value="' . $id . '">
-                <input type="hidden" name="tensanpham" value="' . $tensanpham . '">
-                <input type="hidden" name="anhdaidiensp" value="' . $anhdaidiensp . '">
-                <input type="hidden" name="giagiam" value="' . $giagiam . '">               
-                <article class="single_product">
-                        <figure>
-                            <div class="product_thumb">
-                                <a class="primary_img" href="' . $spct . '">' . $hinh . '</a>
-                                <div class="label_product">
-                                    <span class="label_sale">sale</span>
-                                </div>
-                                <div class="action_links">
-                                    <ul>
-                                        <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                        <li class="compare"><a href="#" title="compare"><span class="ion-levels"></span></a>
-                                        </li>
-                                        <li class="quick_button"><a href="#" data-bs-toggle="modal" data-bs-target="#modal_box" title="quick view"> <span class="ion-ios-search-strong"></span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="add_to_cart">
-                                <input type="submit" name="addtocart" class="btn btn-primary" value="Add to cart">
-                                </div>
-                                <div class="product_timing">
-                                    <div data-countdown="2023/12/15"></div>
-                                </div>
-                            </div>
-                            <figcaption class="product_content">
-                                <div class="price_box">
-                                    <span class="old_price">' . $giagoc . '₫</span>
-                                    <span class="current_price">' . $giagiam . '₫</span>
-                                </div>
-                                <h3 class="product_name"><a href="index.php?act=chitietsanpham&id="' . $id . '>' . $tensanpham . '</a></h3>
-                            </figcaption>
-                        </figure>
-                    </article>
-                    </form>';
-            }
-            ?>
-        </div>
-    </div>
-</section>
-<!--product area end-->
-</SPAN>
-
-
-<div class="banner_area mb-40">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6">
-                <div class="single_banner mb-30">
-                    <div class="banner_thumb">
-                        <a href="shop.php"><img src="assets/img/bg/banner4.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="single_banner mb-30">
-                    <div class="banner_thumb">
-                        <a href="shop.php"><img src="assets/img/bg/banner5.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--banner area end-->
-</SPAn>
-<!--top- category area start-->
-<section class="top_category_product mb-70">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-md-3">
-                <div class="top_category_header">
-                    <h3>Top Categories This Week</h3>
-                    <p>Aliquam eget consectetuer habitasse interdum.</p>
-                    <a href="index.php?act=shop">Show All Categories</a>
-                </div>
-            </div>
-            <div class="col-lg-10 col-md-9">
-                <div class="top_category_container category_column5 owl-carousel">
-                    <?php
-                    foreach ($listdm as $dm) {
-                        extract($dm);
-                        $imgpath = "uploads/" . $img;
-                        if (is_file($imgpath)) {
-                            $hinh = "<img src='" . $imgpath . "' width='185px' height='205px'>";
-                        } else {
-                            $hinh = "No photo";
-                        }
-                        echo '                        <div class="col-lg-2">
-                               <article class="single_category">
-                                   <figure>
-                                       <div class="category_thumb">
-                                           <a href="index.php?act=shop">' . $hinh . '</a>
-                                       </div>
-                                       <figcaption class="category_name">
-                                           <h3><a href="shop.php">' . $tendanhmuc . '</a></h3>
-                                       </figcaption>
-                                   </figure>
-                               </article>
-                           </div>';
-                    }
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-</SPan>
-<!-- phần này kết thúc header  -->
-
 <SPan>
     <section class="featured_product_area mb-70">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section_title">
-                        <h2>Sản Phẩm Nổi Bật</h2>
+                        <h2>Danh mục</h2>
                     </div>
                 </div>
             </div>
             <div class="row featured_container featured_column3">
                 <?php
                 $i = 0;
-                foreach ($spnew as $sp) {
-                    extract($sp);
-                    $spct = "index.php?act=chitietsanpham&id=" . $id;
-                    $add = "index.php?act=addtocart&id=" . $id;
-                    $imgpath = "uploads/" . $anhdaidiensp;
+                foreach ($listdm as $dm) {
+                    extract($dm);
+                    $viewspdm = "index.php?act=viewspdm&id=" . $id;
+                    // $add = "index.php?act=addtocart&id=" . $id;
+                    $imgpath = "uploads/" . $img;
                     if (is_file($imgpath)) {
                         $hinh = "<img src='" . $imgpath . "'>";
                     } else {
                         $hinh = "No photo";
                     }
                     echo '                <div class="col-lg-4">
-                    <form action="index.php?act=addtocart" method="post">
-                    <input type="hidden" name="id" value="' . $id . '">
-                    <input type="hidden" name="tensanpham" value="' . $tensanpham . '">
-                    <input type="hidden" name="anhdaidiensp" value="' . $anhdaidiensp . '">
-                    <input type="hidden" name="giagiam" value="' . $giagiam . '">
                     <article class="single_product">
                         <figure>
                             <div class="product_thumb">
-                                <a class="primary_img" href="' . $spct . '">' . $hinh . '</a>
-                                <div class="label_product">
-                                    <span class="label_sale">sale</span>
-                                </div>
+                                <a class="primary_img" href="' . $viewspdm . '">' . $hinh . '</a>
                             </div>
                             <figcaption class="product_content">
-                                <div class="price_box">
-                                    <span style="color:red;" class="current_price">' . $giagoc . '₫</span>
-                                </div>
-                                <h3 class="product_name"><a href="' . $spct . '">' . $tensanpham . '</a></h3>
+                                <h3 class="product_name"><a href="' . $viewspdm . '">' . $tendanhmuc . '</a></h3>
                                 <div class="add_to_cart">
-                                <input type="submit" name="addtocart" class="btn btn-primary" value="Add to cart">
+                                <a href="' . $viewspdm . '">Xem danh mục</a>
                                 </div>
                             </figcaption>
                         </figure>
@@ -329,14 +182,14 @@
         <div class="row">
             <div class="col-12">
                 <div class="section_title">
-                    <h2>Máy tính & Laptop</h2>
+                    <h2>SẢN PHẨM CÓ LƯỢT XEM NHIỀU NHẤT</h2>
                 </div>
             </div>
         </div>
         <div class="product_carousel product_column5 owl-carousel">
             <?php
-            foreach ($spdanhmuc as $spdm) {
-                extract($spdm);
+            foreach ($lx as $lx) {
+                extract($lx);
                 $spct = "index.php?act=chitietsanpham&id=" . $id;
                 $add = "index.php?act=addtocart&id=" . $id;
                 $imgpath = "uploads/" . $anhdaidiensp;

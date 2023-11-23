@@ -37,28 +37,12 @@
                             <button data-role="grid_list" type="button" class="btn-list" data-bs-toggle="tooltip"
                                 title="List"></button>
                         </div>
-                        <div class=" niceselect_option">
-                            <form class="select_option" action="#">
-                                <select name="orderby" id="short">
-
-                                    <option selected value="1">Sort by average rating</option>
-                                    <option value="2">Sort by popularity</option>
-                                    <option value="3">Sort by newness</option>
-                                    <option value="4">Sort by price: low to high</option>
-                                    <option value="5">Sort by price: high to low</option>
-                                    <option value="6">Product Name: Z</option>
-                                </select>
-                            </form>
-                        </div>
-                        <div class="page_amount">
-                            <p>Showing 1–9 of 21 results</p>
-                        </div>
                     </div>
                     <!--shop toolbar end-->
                     <div class="row shop_wrapper">
                         <?php
-                            foreach ($spnew as $sanpham) {
-                                extract($sanpham);
+                            foreach ($listspdm as $spdm) {
+                                extract($spdm);
                                 $spct = "index.php?act=chitietsanpham&id=" . $id;
                                 $add="index.php?act=addtocart&id=".$id;
                                 $imgpath = "uploads/" . $anhdaidiensp;
@@ -156,18 +140,6 @@
                             </div>';
                             }
                         ?>
-                    </div>
-
-                    <div class="shop_toolbar t_bottom">
-                        <div class="pagination">
-                            <ul>
-                                <li class="current">1</li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li class="next"><a href="#">next</a></li>
-                                <li><a href="#">>></a></li>
-                            </ul>
-                        </div>
                     </div>
                     <!--shop toolbar end-->
                     <!--shop wrapper end-->

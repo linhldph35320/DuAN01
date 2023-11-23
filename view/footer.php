@@ -12,7 +12,7 @@
                             <p>We are a team of designers and developers that
                                 create high quality HTML Template, Woocommerce, Shopify Theme.</p>
                             <p><span>Address</span> Your address goes here.</p>
-                            <p><span>Mobile: </span><a href="tel:0123456789">0123456789</a> – <a href="tel:0123456789">0123456789</a> </p>
+                            <p><span>Mobile: </span><a href="tel:0123456789">0336107429</a> – <a href="tel:0123456789">0123456789</a> </p>
                             <p><span>Support: </span><a href="mailto:demo@example.com">demo@example.com</a>
                             </p>
                         </div>
