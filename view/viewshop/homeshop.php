@@ -59,7 +59,7 @@
                         <?php
                             foreach ($spnew as $sanpham) {
                                 extract($sanpham);
-                                $spct = "index.php?act=chitietsanpham&id=" . $id;
+                                $spct = "index.php?act=chitietsanpham&id=" . $id."&lk_danhmuc=".$lk_danhmuc;
                                 $add="index.php?act=addtocart&id=".$id;
                                 $imgpath = "uploads/" . $anhdaidiensp;
                                 if (is_file($imgpath)) {

@@ -36,8 +36,9 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="top_right text-end">
                                 <ul>
-                                    <li><a href=""> My Account </a></li>
-                                    <li><a href="checkout.html"> Checkout </a></li>
+                                    <li>
+                                    <a href="index.php?act=account"> My Account </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -102,7 +103,7 @@
                                         foreach ($listdm as $dm) {
                                             extract($dm);
                                             $viewspdm = "index.php?act=viewspdm&id=" . $id;
-                                            echo '<li class="menu_item_children"><a href="#">' . $tendanhmuc . '</a>';
+                                            echo '<li class="menu_item_children"><a href="' . $viewspdm . '">' . $tendanhmuc . '</a>';
                                         }
                                         ?>
                                     </ul>

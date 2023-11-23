@@ -41,6 +41,7 @@
                                     $tong = 0;
                                     $i = 0;
                                     foreach ($_SESSION['mycart'] as $cart) {
+                                        $spct = "index.php?act=chitietsanpham&id=" . $cart[0];
                                         $imgpath = "uploads/" . $cart[2];
                                         if (is_file($imgpath)) {
                                             $hinh = "<img src='" . $imgpath . "'>";
@@ -53,8 +54,8 @@
                                         echo '                                        <tr>
                                                 <td class="product_remove">' . $xoasp . '
                                                 </td>
-                                                <td class="product_thumb"><a href="#">' . $hinh . '</a></td>
-                                                <td class="product_name"><a href="#">' . $cart[1] . '</a></td>
+                                                <td class="product_thumb"><a href="'.$spct.'">' . $hinh . '</a></td>
+                                                <td class="product_name"><a href="'.$spct.'">' . $cart[1] . '</a></td>
                                                 <td class="product-price">$' . $cart[3] . '</td>
                                                 <td class="product_quantity">' . $cart[4] . '</td>
                                                 <td class="product_total">$' . $thanhtien . '</td>

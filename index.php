@@ -14,6 +14,7 @@ $sptop5 = loaddAll_sanpham_top5();
 $spdanhmuc = loaddAll_sanpham_danhmuc_laptop();
 $spdt = loaddAll_sanpham_danhmuc_dienthoai();
 $lx = loadAll_sanpham_luotxem();
+$lb = loadAll_sanpham_luotban();
 
 include("view/header.php");
 if (!isset($_SESSION['mycart']))
@@ -47,6 +48,10 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $listspct = viewOne_sanpham_chitiet($_GET['id']);
                 $listimg = viewOne_sanpham_img($_GET['id']);
                 $listbinhluansp = loadAll_binhluan_sanpham($_GET['id']);
+                $listspdm = loadAll_sanpham_danhmuc($_GET['id']);
+            }
+            if (isset($_GET['lk_danhmuc']) && ($_GET['lk_danhmuc'])) {
+                $listspdm = loadAll_sanpham_danhmuc($_GET['lk_danhmuc']);
             }
             include("view/sanphamchitiet.php");
             break;
@@ -100,7 +105,11 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
 
         case "billconfirm":
             if (isset($_POST['dathang']) && ($_POST['dathang'])) {
-                $ho = $_POST['ho'];
+                if (isset($_SESSION['user']))
+                    $iduser = $_SESSION['user']['id'];
+                else
+                $id=0;
+                    $ho = $_POST['ho'];
                 $ten = $_POST['ten'];
                 $tendaydu = $_POST['tendaydu'];
                 $tinh_thanhpho = $_POST['tinh_thanhpho'];
@@ -113,15 +122,19 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $phuongthucthanhtoan = $_POST['phuongthucthanhtoan'];
                 $tongtien = tongdonhang();
                 $ngaydathang = date('h:i:sa d/m/Y');
-                $id_bill=insert_bill($ho, $ten, $tendaydu, $tinh_thanhpho, $quan_huyen, $phuong_xa, $sonha_tenduong, $sodienthoai, $email, $ghichu, $phuongthucthanhtoan, $tongtien, $ngaydathang);
+                $id_bill = insert_bill($iduser,$ho, $ten, $tendaydu, $tinh_thanhpho, $quan_huyen, $phuong_xa, $sonha_tenduong, $sodienthoai, $email, $ghichu, $phuongthucthanhtoan, $tongtien, $ngaydathang);
                 foreach ($_SESSION['mycart'] as $cart) {
-                    insert_cart($cart[0],$cart[1],$cart[2],$cart[3],$cart[4],$cart[5],$id_bill);
+                    insert_cart($_SESSION['user']['id'],$cart[0], $cart[1], $cart[2], $cart[3], $cart[4], $cart[5], $id_bill);
                 }
-                unset( $_SESSION['mycart']);
+                $_SESSION['mycart'] = [];
             }
-            $bill=loadOne_bill($id_bill);
-            $billchitiet=loadAll_cart($id_bill);
+            $bill = loadOne_bill($id_bill);
+            $billchitiet = loadAll_cart($id_bill);
             include "view/cart/billconfirm.php";
+            break;
+
+        case "dangkydangnhap":
+            include "taikhoan/login.php";
             break;
 
         case "dangky":
@@ -179,7 +192,20 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 update_user($id, $name, $address, $email, $user, $pass);
                 $capnhatuser = "Cập Nhật Thành Công !";
                 $_SESSION['user'] = checkuser($user, $pass);
-                header('Location:index.php?act=user_infor');
+                header('Location:index.php?act=account');
+            }
+            break;
+
+        case 'logout':
+            $_SESSION['user'] =[];
+            include "taikhoan/login.php";
+        break;
+
+        case 'account':
+            if ($_SESSION['user'] ==[]) {
+                include "taikhoan/login.php";
+            } else {
+                include "view/myaccount.php";
             }
             break;
 

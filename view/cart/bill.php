@@ -109,24 +109,24 @@
                                         $thanhtien = $cart[3] * $cart[4];
                                         $tong = $tong + $thanhtien;
                                         echo '                                    <tr>
-                                        <td>'.$cart[1].'<strong> × '.$cart[4].'</strong></td>
-                                        <td>'.$cart[3].'</td>
+                                        <td>' . $cart[1] . '<strong> × ' . $cart[4] . '</strong></td>
+                                        <td>' . $cart[3] . '</td>
                                     </tr>';
                                     }
                                     ?>
                                 </tbody>
                                 <tfoot>
-                                <?php
+                                    <?php
                                     $tong = 0;
                                     $i = 0;
                                     foreach ($_SESSION['mycart'] as $cart) {
                                         $thanhtien = $cart[3] * $cart[4];
                                         $tong = $tong + $thanhtien;
-                                        echo '                                    <tr class="order_total">
-                                        <th>Tổng tiền</th>
-                                        <td><strong>'.$tong.'</strong></td>
-                                    </tr>';
                                     }
+                                    echo '                                    <tr class="order_total">
+                                    <th>Tổng tiền</th>
+                                    <td><strong>' . $tong . '</strong></td>
+                                </tr>';
                                     ?>
                                 </tfoot>
                             </table>

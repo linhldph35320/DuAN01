@@ -86,6 +86,12 @@ function loadAll_sanpham_luotxem()
     return $lx;
 }
 
+function loadAll_sanpham_luotban(){
+    $sql="SELECT * FROM `tb_sanpham` ORDER BY soluongban DESC LIMIT 0,5";
+    $lb=pdo_query($sql);
+    return $lb;
+}
+
 // function find_sanpham($lk_danhmuc, $tim)
 // {
 //     $sql = "SELECT * FROM `tb_sanpham` WHERE (tensanpham LIKE '".$tim."%' AND lk_danhmuc=".$lk_danhmuc.") OR (tensanpham LIKE '".$tim."%') OR (lk_danhmuc=".$lk_danhmuc.")";

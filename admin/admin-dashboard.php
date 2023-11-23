@@ -47,7 +47,9 @@
                               <div class="rounded-circle iq-card-icon bg-info"><i class="ri-radar-line"></i></div>
                               <div class="text-left ml-3">                                 
                                  <h2 class="mb-0"><span class="counter">690</span></h2>
-                                 <h5 class="">Orders</h5>
+                                 <h5 class="">
+                                    <a href="">Orders</a>
+                                 </h5>
                               </div>
                            </div>
                         </div>

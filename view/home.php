@@ -190,7 +190,7 @@
             <?php
             foreach ($lx as $lx) {
                 extract($lx);
-                $spct = "index.php?act=chitietsanpham&id=" . $id;
+                $spct = "index.php?act=chitietsanpham&id=" . $id."&lk_danhmuc=".$lk_danhmuc;
                 $add = "index.php?act=addtocart&id=" . $id;
                 $imgpath = "uploads/" . $anhdaidiensp;
                 if (is_file($imgpath)) {
@@ -274,13 +274,13 @@
             <div class="col-lg-9 col-md-12">
                 <div class="product_left_area">
                     <div class="section_title">
-                        <h2>Điện thoại & Máy tính bảng</h2>
+                        <h2>SẢN PHẨM CÓ LƯỢT BÁN CAO NHẤT</h2>
                     </div>
                     <div class="product_carousel product_column4 owl-carousel">
                         <?php
-                        foreach ($spdt as $sanphamdt) {
-                            extract($sanphamdt);
-                            $spct = "index.php?act=chitietsanpham&id=" . $id;
+                        foreach ($lb as $lb) {
+                            extract($lb);
+                            $spct = "index.php?act=chitietsanpham&id=" . $id."&lk_danhmuc=".$lk_danhmuc;
                             $add = "index.php?act=addtocart&id=" . $id;
                             $imgpath = "uploads/" . $anhdaidiensp;
                             if (is_file($imgpath)) {
