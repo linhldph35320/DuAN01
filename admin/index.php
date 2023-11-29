@@ -132,7 +132,7 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                     } else {
                         // echo "Sorry, there was an error uploading your file.";
                     }
-                    $anhmota=$_FILES['anhmota']['name'];
+                    $anhmota = $_FILES['anhmota']['name'];
                     $total = count($_FILES['anhmota']['name']);
                     // Loop through each file
                     for ($i = 0; $i < $total; $i++) {
@@ -186,6 +186,7 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                     $listbinhluan = loadAll_binhluan($_GET['id']);
                 }
                 include "sanpham/list_one.php";
+                include "sanpham/list_one_img.php";
                 include "sanpham/binhluan.php";
                 break;
 
@@ -200,7 +201,7 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
             case "xoasp":
                 if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                     delete_sanpham_chitiet($_GET['id']);
-                    delete_sanpham_img($_GET['id']);
+                    delete_sanpham_anh($_GET['id']);
                 }
                 $listsp = loadAll_sanpham();
                 include "sanpham/list.php";
@@ -212,6 +213,38 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 }
                 $listdm = loadAll_danhmuc();
                 include "sanpham/update.php";
+                break;
+
+            case "xoaimg":
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    delete_sanpham_img($_GET['id']);
+                }
+                $listsp = loadAll_sanpham();
+                include "sanpham/list.php";
+                break;
+
+            case "suaimg":
+                if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                    $img = loadOne_img_chitiet($_GET['id']);
+                }
+                include "sanpham/update_one_img.php";
+                break;
+
+            case "updateimg":
+                if (isset($_POST['update']) && ($_POST['update'])) {
+                    $id = $_POST['id'];
+                    $anhsanpham = $_FILES['anhsanpham']['name'];
+                    $target_dir = "../uploads/";
+                    $target_file = $target_dir . basename($_FILES["anhsanpham"]["name"]);
+                    if (move_uploaded_file($_FILES["anhsanpham"]["tmp_name"], $target_file)) {
+                        // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                    } else {
+                        // echo "Sorry, there was an error uploading your file.";
+                    }
+                    update_img($anhsanpham,$id);
+                }
+                $listsp = loadAll_sanpham();
+                include "sanpham/list.php";
                 break;
 
             case "updatesp":
@@ -228,27 +261,6 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                     } else {
                         // echo "Sorry, there was an error uploading your file.";
                     }
-                    $anhmota=$_FILES['anhmota']['name'];
-                    $total = count($_FILES['anhmota']['name']);
-                    // Loop through each file
-                    for ($i = 0; $i < $total; $i++) {
-
-                        //Get the temp file path
-                        $tmpFilePath = $_FILES['anhmota']['tmp_name'][$i];
-
-                        //Make sure we have a file path
-                        if ($tmpFilePath != "") {
-                            //Setup our new file path
-                            $newFilePath = "../uploads/" . $_FILES['anhmota']['name'][$i];
-
-                            //Upload the file into the temp dir
-                            if (move_uploaded_file($tmpFilePath, $newFilePath)) {
-
-                                //Handle other code here
-
-                            }
-                        }
-                    }
                     $mota = $_POST['mota'];
                     // $tenmau=$_POST['tenmau'];
                     // $anhmausac = $_FILES['anhmausac']['name'];
@@ -263,7 +275,7 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                     // }
                     $soluong = $_POST['soluong'];
                     $lk_danhmuc = $_POST['lk_danhmuc'];
-                    update_sanpham($id, $tensanpham, $giagoc, $giagiam, $anhsanpham, $mota, $soluong, $lk_danhmuc, $anhmota);
+                    update_sanpham($id, $tensanpham, $giagoc, $giagiam, $anhsanpham, $mota, $soluong, $lk_danhmuc);
                     $thongbao = "Sửa sản phẩm thành công";
                 }
                 $listsp = loadAll_sanpham();
@@ -301,12 +313,17 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 if (isset($_POST['update']) && ($_POST['update'])) {
                     $id = $_POST['id'];
                     // $lk_user = $_POST['lk_user'];
+                    $ho = $_POST['ho'];
+                    $ten = $_POST['ten'];
                     $tendaydu = $_POST['tendaydu'];
-                    $email = $_POST['email'];
+                    $tinh_thanhpho = $_POST['tinh_thanhpho'];
+                    $quan_huyen = $_POST['quan_huyen'];
+                    $phuong_xa = $_POST['phuong_xa'];
+                    $sonha_tenduong = $_POST['sonha_tenduong'];
                     $sodienthoai = $_POST['sodienthoai'];
-                    $diachi = $_POST['diachi'];
+                    $email = $_POST['email'];
                     $ghichu = $_POST['ghichu'];
-                    update_donhang($id, $tendaydu, $email, $sodienthoai, $diachi, $ghichu);
+                    update_donhang($id, $ho,$ten,$tendaydu,$tinh_thanhpho,$quan_huyen,$phuong_xa,$sonha_tenduong,$email, $sodienthoai,$ghichu);
                     $thongbao = "Sửa danh mục thành công";
                 }
                 $listdonghang = loadAll_donhang();

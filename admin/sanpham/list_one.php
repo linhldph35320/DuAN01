@@ -39,16 +39,6 @@
                                         } else {
                                             $hinh = "No photo";
                                         }
-                                        foreach ($listimg as $img) {
-                                            extract($img);
-                                            $imgpath1 = "../uploads/" . $anhsanpham;
-                                            if (is_file($imgpath1)) {
-                                                $hinh1 = "<img src='" . $imgpath1 . "' height='80'>";
-                                                echo $hinh1;
-                                            } else {
-                                                $hinh1 = "No photo";
-                                            }
-                                        }
                                         // for ($i=0; $i<= $img; $i++) { 
                                         //     if (is_file($imgpath1)) {
                                         //         $hinh1 = "<img src='" . $imgpath1 . "' height='80'>";

@@ -23,15 +23,13 @@ function loadOne_donhang($id)
 
 function viewOne_donhang($id)
 {
-    $sql = "SELECT tb_donhang_chitiet.id,madonhang,tensanpham,anhdaidiensp,gia,tb_donhang_chitiet.soluong,tongtien,lk_donhang FROM `tb_donhang_chitiet` INNER JOIN tb_sanpham ON tb_donhang_chitiet.lk_sanpham=tb_sanpham.id WHERE lk_donhang=" . $id;
+    $sql = "SELECT * FROM `tb_hoadon` WHERE idbill=" . $id;
     $onedh = pdo_query($sql);
     return $onedh;
 }
 
-function update_donhang($id, $tendaydu, $email, $sodienthoai, $diachi, $ghichu)
+function update_donhang($id, $ho,$ten,$tendaydu,$tinh_thanhpho,$quan_huyen,$phuong_xa,$sonha_tenduong,$email, $sodienthoai,$ghichu)
 {
-    $sql = "UPDATE  `tb_donhang` SET `tendaydu`='" . $tendaydu . "',`email`='" . $email . "',
-    `sodienthoai`='" . $sodienthoai . "',`diachi`='" . $diachi . "',`ghichu`='" . $ghichu . "'
-    WHERE id=" . $id;
+    $sql = "UPDATE `tb_donhang` SET `ho`='$ho',`ten`='$ten',`tendaydu`='$tendaydu',`tinh_thanhpho`='$tinh_thanhpho',`quan_huyen`='$quan_huyen',`phuong_xa`='$phuong_xa',`sonha_tenduong`='$sonha_tenduong',`sodienthoai`='$sodienthoai',`email`='$email',`ghichu`='$ghichu' WHERE id=" . $id;
     pdo_execute($sql);
 }

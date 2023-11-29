@@ -57,14 +57,19 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
 
         case "binhluan":
-            if (isset($_POST['guibinhluan']) && ($_POST['guibinhluan'])) {
-                $noidung = $_POST['noidung'];
-                $idpro = $_POST['idpro'];
-                $ten = $_POST['ten'];
-                $email = $_POST['email'];
-                $ngaybinhluan = date('h:i:sa d/m/Y');
-                insert_binhluan($noidung, $idpro, $ten, $email, $ngaybinhluan);
-                header("Location:" . $_SERVER['HTTP_REFERER']);
+            if ($_SESSION['user'] == []) {
+                include "taikhoan/login.php";
+            } else {
+                if (isset($_POST['guibinhluan']) && ($_POST['guibinhluan'])) {
+                    $noidung = $_POST['noidung'];
+                    $iduser = $_POST['iduser'];
+                    $idpro = $_POST['idpro'];
+                    $ten = $_POST['ten'];
+                    $email = $_POST['email'];
+                    $ngaybinhluan = date('h:i:sa d/m/Y');
+                    insert_binhluan($noidung, $iduser, $idpro, $ten, $email, $ngaybinhluan);
+                    header("Location:" . $_SERVER['HTTP_REFERER']);
+                }
             }
             break;
 
@@ -108,8 +113,8 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 if (isset($_SESSION['user']))
                     $iduser = $_SESSION['user']['id'];
                 else
-                $id=0;
-                    $ho = $_POST['ho'];
+                    $id = 0;
+                $ho = $_POST['ho'];
                 $ten = $_POST['ten'];
                 $tendaydu = $_POST['tendaydu'];
                 $tinh_thanhpho = $_POST['tinh_thanhpho'];
@@ -122,9 +127,9 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $phuongthucthanhtoan = $_POST['phuongthucthanhtoan'];
                 $tongtien = tongdonhang();
                 $ngaydathang = date('h:i:sa d/m/Y');
-                $id_bill = insert_bill($iduser,$ho, $ten, $tendaydu, $tinh_thanhpho, $quan_huyen, $phuong_xa, $sonha_tenduong, $sodienthoai, $email, $ghichu, $phuongthucthanhtoan, $tongtien, $ngaydathang);
+                $id_bill = insert_bill($iduser, $ho, $ten, $tendaydu, $tinh_thanhpho, $quan_huyen, $phuong_xa, $sonha_tenduong, $sodienthoai, $email, $ghichu, $phuongthucthanhtoan, $tongtien, $ngaydathang);
                 foreach ($_SESSION['mycart'] as $cart) {
-                    insert_cart($_SESSION['user']['id'],$cart[0], $cart[1], $cart[2], $cart[3], $cart[4], $cart[5], $id_bill);
+                    insert_cart($_SESSION['user']['id'], $cart[0], $cart[1], $cart[2], $cart[3], $cart[4], $cart[5], $id_bill);
                 }
                 $_SESSION['mycart'] = [];
             }
@@ -197,16 +202,12 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
 
         case 'logout':
-            $_SESSION['user'] =[];
-            include "taikhoan/login.php";
-        break;
+            $_SESSION['user'] = [];
+            header('Location:index.php');
+            break;
 
         case 'account':
-            if ($_SESSION['user'] ==[]) {
-                include "taikhoan/login.php";
-            } else {
-                include "view/myaccount.php";
-            }
+            include "view/myaccount.php";
             break;
 
         default:

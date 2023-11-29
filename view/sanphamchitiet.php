@@ -159,7 +159,7 @@
                                 <a class="active" data-bs-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false">Mô tả</a>
                             </li>
                             <li>
-                                <a data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews (1)</a>
+                                <a data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
                             </li>
                         </ul>
                     </div>
@@ -200,6 +200,18 @@
                                     }
                                     ?>
                                     <form action="index.php?act=binhluan" method="post">
+                                        <?php
+                                        if ($_SESSION['user'] != []) {
+                                            if (isset($_SESSION['user'])) {
+                                                $iduser = $_SESSION['user']['id'];
+                                                $user = $_SESSION['user']['user'];
+                                                $email = $_SESSION['user']['email'];
+                                            } else {
+                                                $name = "";
+                                                $email = "";
+                                            }
+                                        }
+                                        ?>
                                         <div class="row">
                                             <div class="col-12">
                                                 <label for="review_comment">Bình luận của bạn </label>
@@ -207,14 +219,15 @@
                                             </div>
                                             <div class="col-lg-6 col-md-6">
                                                 <label for="author">Tên</label>
-                                                <input id="author" type="text" name="ten">
+                                                <input id="author" type="text" name="ten" value="<?=$user?>">
 
                                             </div>
                                             <div class="col-lg-6 col-md-6">
                                                 <label for="email">Địa chỉ email </label>
-                                                <input id="email" type="text" name="email">
+                                                <input id="email" type="text" name="email" value="<?=$email?>">
                                             </div>
                                         </div>
+                                        <input type="hidden" name="iduser" value="<?= $iduser ?>">
                                         <input type="hidden" name="idpro" value="<?= $id ?>">
                                         <input type="submit" value="Bình luận" name="guibinhluan">
                                     </form>
@@ -243,7 +256,7 @@
             <?php
             foreach ($listspdm as $spdm) {
                 extract($spdm);
-                $spct = "index.php?act=chitietsanpham&id=" . $id."&lk_danhmuc=".$lk_danhmuc;
+                $spct = "index.php?act=chitietsanpham&id=" . $id . "&lk_danhmuc=" . $lk_danhmuc;
                 $add = "index.php?act=addtocart&id=" . $id;
                 $imgpath = "uploads/" . $anhdaidiensp;
                 if (is_file($imgpath)) {

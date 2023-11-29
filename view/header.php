@@ -37,7 +37,13 @@
                             <div class="top_right text-end">
                                 <ul>
                                     <li>
-                                    <a href="index.php?act=account"> My Account </a>
+                                        <?php
+                                        if ($_SESSION['user'] == []) {
+                                            echo '<a href="index.php?act=dangkydangnhap"> My Account </a>';
+                                        } else {
+                                            echo '<a href="index.php?act=account"> My Account </a>';
+                                        }
+                                        ?>
                                     </li>
                                 </ul>
                             </div>

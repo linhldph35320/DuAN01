@@ -22,10 +22,10 @@
 
 <body>
    <!-- loader Start -->
-   <div id="loading">
+   <!-- <div id="loading">
       <div id="loading-center">
       </div>
-   </div>
+   </div> -->
    <!-- loader END -->
    <!-- Wrapper Start -->
    <div class="wrapper">
@@ -73,7 +73,7 @@
                      <div class="main-circle"><i class="las la-bars"></i></div>
                   </div>
                   <div class="iq-navbar-logo d-flex justify-content-between">
-                     <a href="index.html" class="header-logo">
+                     <a href="index.php?act=dashboard" class="header-logo">
                         <img src="images/logo.png" class="img-fluid rounded-normal" alt="">
                         <div class="logo-title">
                            <span class="text-primary text-uppercase">Booksto</span>

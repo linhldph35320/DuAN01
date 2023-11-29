@@ -47,13 +47,6 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Ảnh mô tả:</label>
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" accept="image/png, image/jpeg" name="anhmota[]" multiple="multiple">
-                                <label class="custom-file-label">Choose file</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
                             <label>Mô tả:</label><br>
                             <textarea name="mota" id="" cols="100" rows="10"><?php echo $mota?></textarea>
                         </div>

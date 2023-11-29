@@ -31,7 +31,6 @@
                                     <th>Giá</th>
                                     <th>Số lượng</th>
                                     <th>Tổng tiền</th>
-                                    <th>Mã hóa đơn</th>
                                     <th>Action</th>
                                  </tr>
                                  
@@ -42,20 +41,19 @@
                                             extract($dh);
                                             $suadh="index.php?act=suadonhang&id=".$id;
                                             $xoadh="index.php?act=xoadonhang&id=".$id;
-                                            $imgpath = "../uploads/" . $anhdaidiensp;
+                                            $imgpath = "../uploads/" . $img;
                                             if (is_file($imgpath)) {
                                                 $hinh = "<img src='" . $imgpath . "' height='80'>";
                                             } else {
                                                 $hinh = "No photo";
                                             }
                                             echo '<tr>
-                                            <td>'.$madonhang.'</td>
-                                            <td>'.$tensanpham.'</td>
+                                            <td>DA1-'.$idbill.'</td>
+                                            <td>'.$ten.'</td>
                                             <td>'.$hinh.'</td>
                                             <td>'.$gia.'</td>
                                             <td>'.$soluong.'</td>
-                                            <td>'.$tongtien.'</td>
-                                            <td>'.$lk_donhang.'</td>
+                                            <td>'.$thanhtien.'</td>
                                             <td>
                                                <div class="flex align-items-center list-user-action">
                                                  <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back" href="index.php?act=listbill"><-</a>

@@ -25,7 +25,7 @@
                            <table id="user-list-table" class="table table-striped table-bordered mt-4" role="grid" aria-describedby="user-list-page-info">
                              <thead>
                                  <tr>
-                                    <th>No</th>
+                                    <th>Mã đơn hàng</th>
                                     <th>Tên người đặt hàng</th>
                                     <th>Email</th>
                                     <th>Số điện thoại</th>
@@ -41,7 +41,7 @@
                                     <?php
                                         foreach ($listdonghang as $donhang) {
                                             extract($donhang);
-                                            if($trangthai==1){
+                                            if($tinhtrangdonhang==0){
                                              $th="Chưa xác nhận";
                                             }else{
                                              $th="Đã xác nhận";
@@ -50,11 +50,11 @@
                                             $xoadh="index.php?act=xoadonhang&id=".$id;
                                             $viewdh="index.php?act=viewdonhang&id=".$id;
                                             echo '<tr>
-                                            <td>'.$id.'</td>
+                                            <td>DA1-'.$id.'</td>
                                             <td>'.$tendaydu.'</td>
                                             <td>'.$email.'</td>
                                             <td>'.$sodienthoai.'</td>
-                                            <td>'.$diachi.'</td>
+                                            <td>'.$sonha_tenduong.'</td>
                                             <td>'.$ghichu.'</td>
                                             <td>'.$ngaydathang.'</td>
                                             <td>'.$th.'</td>
