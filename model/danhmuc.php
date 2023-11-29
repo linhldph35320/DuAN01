@@ -31,4 +31,10 @@
         }
         pdo_execute($sql);
     }
+
+    function search_danhmuc($tendanhmuc){
+        $sql="SELECT * FROM `tb_danhmuc` WHERE tendanhmuc LIKE '%".$tendanhmuc."%'";
+        $tkdanhmuc=pdo_query($sql);
+        return $tkdanhmuc;
+    }
 ?>

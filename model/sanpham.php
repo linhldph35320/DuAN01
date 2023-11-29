@@ -80,12 +80,12 @@ function loadAll_sanpham_luotban(){
     return $lb;
 }
 
-// function find_sanpham($lk_danhmuc, $tim)
-// {
-//     $sql = "SELECT * FROM `tb_sanpham` WHERE (tensanpham LIKE '".$tim."%' AND lk_danhmuc=".$lk_danhmuc.") OR (tensanpham LIKE '".$tim."%') OR (lk_danhmuc=".$lk_danhmuc.")";
-//     $listtk = pdo_query($sql);
-//     return $listtk;
-// }
+function find_sanpham($tim)
+{
+    $sql = "SELECT * FROM `tb_sanpham` WHERE tensanpham LIKE '".$tim."%'";
+    $listtk = pdo_query($sql);
+    return $listtk;
+}
 function viewOne_sanpham_img($id)
 {
     $sql = "SELECT idimg,anhsanpham FROM `tb_sanpham_img` WHERE id_sanpham=" . $id;
@@ -132,6 +132,13 @@ function update_img($anhsanpham,$id){
         pdo_execute($sql);
     }
 }
+
+function search_sanpham($tensanpham){
+    $sql="SELECT tb_sanpham.id, tensanpham, tendanhmuc, giagoc, giagiam, anhdaidiensp, mota, soluong FROM `tb_sanpham` INNER JOIN tb_danhmuc ON tb_sanpham.lk_danhmuc=tb_danhmuc.id WHERE tensanpham LIKE '%".$tensanpham."%'";
+    $tksanpham=pdo_query($sql);
+    return $tksanpham;
+}
+
 function update_sanpham($id, $tensanpham, $giagoc, $giagiam, $anhsanpham, $mota, $soluong, $lk_danhmuc)
 {
     if ($anhsanpham != "") {

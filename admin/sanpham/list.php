@@ -4,6 +4,12 @@
          <div class="col-sm-12">
             <div class="iq-card">
                <div class="iq-card-header d-flex justify-content-between">
+                  <form class="mr-3 position-relative" action="index.php?act=tksanpham" method="post">
+                     <div class="form-group mb-0">
+                        <input type="text" class="form-control" id="exampleInputSearch" placeholder="Search" aria-controls="user-list-table" name="tensanpham">
+                        <input type="submit" name="timsanpham">
+                     </div>
+                  </form>
                   <div class="iq-header-title">
                      <h4 class="card-title">Danh sách sản phẩm</h4>
                   </div>

@@ -28,6 +28,12 @@ function viewOne_donhang($id)
     return $onedh;
 }
 
+function search_donhang($tendonhang){
+    $sql="SELECT * FROM `tb_donhang` WHERE tendaydu LIKE '%".$tendonhang."%'";
+    $tkdonhang=pdo_query($sql);
+    return $tkdonhang;
+}
+
 function update_donhang($id, $ho,$ten,$tendaydu,$tinh_thanhpho,$quan_huyen,$phuong_xa,$sonha_tenduong,$email, $sodienthoai,$ghichu)
 {
     $sql = "UPDATE `tb_donhang` SET `ho`='$ho',`ten`='$ten',`tendaydu`='$tendaydu',`tinh_thanhpho`='$tinh_thanhpho',`quan_huyen`='$quan_huyen',`phuong_xa`='$phuong_xa',`sonha_tenduong`='$sonha_tenduong',`sodienthoai`='$sodienthoai',`email`='$email',`ghichu`='$ghichu' WHERE id=" . $id;

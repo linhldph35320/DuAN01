@@ -64,22 +64,10 @@
                         <div class="col-lg-9 col-md-6">
                             <div class="middel_right">
                                 <div class="search_container">
-                                    <form action="index.php?act=timkiem" method="GET">
-                                        <div class="hover_category">
-                                            <select class="select_option" name="lk_danhmuc" id="categori1">
-                                                <option selected></option>
-                                                <?php
-                                                foreach ($listdm as $dm) {
-                                                    extract($dm);
-                                                    $viewspdm = "index.php?act=viewspdm&id=" . $id;
-                                                    echo '<option value="' . $id . '">' . $tendanhmuc . '</option>';
-                                                }
-                                                ?>
-                                            </select>
-                                        </div>
+                                    <form action="index.php?act=timkiem" method="POST">
                                         <div class="search_box">
                                             <input placeholder="Tìm kiếm sản phẩm..." type="text" name="tim">
-                                            <button type="submit" name="timkiem">Tìm</button>
+                                            <button><input type="submit" name="timkiem" value="Tìm"></button>
                                         </div>
                                     </form>
                                 </div>

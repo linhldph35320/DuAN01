@@ -32,7 +32,7 @@
                         </thead>
                         <tbody>
                            <?php
-                           foreach ($listdm as $danhmuc) {
+                           foreach ($tkdanhmuc as $danhmuc) {
                               extract($danhmuc);
                               $suadm = "index.php?act=suadm&id=" . $id;
                               $xoadm = "index.php?act=xoadm&id=" . $id;

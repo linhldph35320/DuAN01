@@ -27,14 +27,13 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include("view/viewshop/homeshop.php");
             break;
 
-            // case "timkiem":
-            //     if(isset($_GET['timkiem']) && ($_GET['timkiem'])){
-            //         $lk_danhmuc=$_GET['lk_danhmuc'];
-            //         $tim=$_GET['tim'];
-            //         $listtk=find_sanpham($lk_danhmuc, $tim);
-            //     }
-            //     include("view/viewshop/shoptk.php");
-            // break;
+            case "timkiem":
+                if(isset($_POST['tim']) && ($_POST['tim'])){
+                    $tim=$_POST['tim'];
+                }
+                $listtk=find_sanpham($tim);
+                include("view/viewshop/shoptk.php");
+            break;
 
         case "viewspdm":
             if (isset($_GET['id']) && ($_GET['id'])) {

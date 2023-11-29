@@ -70,6 +70,47 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 $listdm = loadAll_danhmuc();
                 include "danhmuc/list.php";
                 break;
+
+            case 'tkdanhmuc':
+                if (isset($_POST['tendanhmuc']) && ($_POST['tendanhmuc'])) {
+                    $tendanhmuc = $_POST['tendanhmuc'];
+                } else {
+                    $tendanhmuc = "";
+                }
+                $tkdanhmuc = search_danhmuc($tendanhmuc);
+                include "danhmuc/list-tk.php";
+                break;
+
+            case 'tkdonhang':
+                if (isset($_POST['tendonhang']) && ($_POST['tendonhang'])) {
+                    $tendonhang = $_POST['tendonhang'];
+                } else {
+                    $tendonhang = "";
+                }
+                $tkdonhang = search_donhang($tendonhang);
+                include "donhang/list-tk.php";
+                break;
+
+            case 'tksanpham':
+                if (isset($_POST['tensanpham']) && ($_POST['tensanpham'])) {
+                    $tensanpham = $_POST['tensanpham'];
+                } else {
+                    $tensanpham = "";
+                }
+                $tksanpham = search_sanpham($tensanpham);
+                include "sanpham/list-tk.php";
+                break;
+
+            case 'tktaikhoan':
+                if (isset($_POST['tentaikhoan']) && ($_POST['tentaikhoan'])) {
+                    $tentaikhoan = $_POST['tentaikhoan'];
+                } else {
+                    $tentaikhoan = "";
+                }
+                $tktaikhoan = search_taikhoan($tentaikhoan);
+                include "taikhoan/list-tk.php";
+                break;
+
             case "dskh":
                 $listtaikhoan = loadAll_taikhoan();
                 include "taikhoan/list.php";
@@ -118,6 +159,7 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                 $listtaikhoan = loadAll_taikhoan();
                 include "taikhoan/list.php";
                 break;
+
                 ///////////////////////////////////////////////////////////////////////////////////////////////
             case "addsp":
                 if (isset($_POST['addsp']) && ($_POST['addsp'])) {
@@ -241,7 +283,7 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                     } else {
                         // echo "Sorry, there was an error uploading your file.";
                     }
-                    update_img($anhsanpham,$id);
+                    update_img($anhsanpham, $id);
                 }
                 $listsp = loadAll_sanpham();
                 include "sanpham/list.php";
@@ -323,7 +365,7 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                     $sodienthoai = $_POST['sodienthoai'];
                     $email = $_POST['email'];
                     $ghichu = $_POST['ghichu'];
-                    update_donhang($id, $ho,$ten,$tendaydu,$tinh_thanhpho,$quan_huyen,$phuong_xa,$sonha_tenduong,$email, $sodienthoai,$ghichu);
+                    update_donhang($id, $ho, $ten, $tendaydu, $tinh_thanhpho, $quan_huyen, $phuong_xa, $sonha_tenduong, $email, $sodienthoai, $ghichu);
                     $thongbao = "Sửa danh mục thành công";
                 }
                 $listdonghang = loadAll_donhang();

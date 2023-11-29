@@ -29,8 +29,8 @@
                                 <tbody>
                                     <?php
                                     // $listtaikhoan = array();
-                                    if (isset($listtaikhoan) && is_array($listtaikhoan)) {
-                                        foreach ($listtaikhoan as $taikhoan) {
+                                    if (isset($tktaikhoan) && is_array($tktaikhoan)) {
+                                        foreach ($tktaikhoan as $taikhoan) {
                                             $viewtk = "index.php?act=viewtk&id=" . $taikhoan['id'];
                                             $suatk = "index.php?act=suatk&id=" . $taikhoan['id'];
                                             $xoatk = "index.php?act=xoatk&id=" . $taikhoan['id'];

@@ -29,6 +29,12 @@ function viewOne_taikhoan($id){
     return $list1tk;
 }
 
+function search_taikhoan($tentaikhoan){
+    $sql="SELECT * FROM `tb_user` WHERE user LIKE '%".$tentaikhoan."%'";
+    $tktaikhoan=pdo_query($sql);
+    return $tktaikhoan;
+}
+
 function update_taikhoan($id, $name, $address, $email, $user, $pass, $role){
     $sql="UPDATE `tb_user` SET `name`='$name',`address`='$address',`email`='$email',`user`='$user',`pass`='$pass',`role`='$role' WHERE id=".$id;
     pdo_execute($sql);

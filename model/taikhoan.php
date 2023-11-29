@@ -16,6 +16,12 @@ function checkemail($email){
     return $sp;
 }
 
+function search_taikhoan($tentaikhoan){
+    $sql="SELECT * FROM `tb_user` WHERE user LIKE '%.$tentaikhoan.%'";
+    $tktaikhoan=pdo_query($sql);
+    return $tktaikhoan;
+}
+
 
 function update_taikhoan($id,$user,$pass,$email,$address,$tel){
     $sql="UPDATE tb_user SET `user`='".$user."',`pass`='".$pass."',`email`='".$email."',`address`='".$address."',`tel`='".$tel."' WHERE id=".$id;
