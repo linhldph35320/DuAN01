@@ -2873,6 +2873,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .product_thumb {
+  width: 150px;
   position: relative;
 }
 .product_thumb a.secondary_img {
@@ -2968,7 +2969,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .single_product {
   width: auto;
-  height: 260px;
+  height: auto;
   padding: 20px 15px;
   border: 2px solid transparent;
   border-radius: 3px;
@@ -2991,7 +2992,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .product_content {
-  margin-top: 16px;
+  margin-top: 50px;
   text-align: center;
 }
 .product_content h3 {
@@ -5797,14 +5798,16 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .grid_content .product_ratings {
-  margin-bottom: 11px;
+  margin-bottom: 20px;
 }
 .grid_content .product_ratings ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-
+.grid_content{
+  margin: 50px 0;
+}
 .grid_list {
   margin-bottom: 39px;
 }

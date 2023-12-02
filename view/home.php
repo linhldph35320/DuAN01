@@ -328,4 +328,13 @@
     </div>
 </div>
 <!--brand area end-->
+<script>
+//     Swal.fire({
+//   title: "Good job!",
+//   text: "You clicked the button!",
+//   icon: "success"
+// });
+// alert("abc");
+
+</script>
 </SPAn>

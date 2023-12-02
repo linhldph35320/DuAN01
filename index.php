@@ -138,7 +138,12 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     insert_cart($_SESSION['user']['id'], $cart[0], $cart[1], $cart[2], $cart[3], $cart[4], $cart[5], $id_bill);
                 }
                 $_SESSION['mycart'] = [];
-                echo '<script>alert("Đặt Hàng Thành Công!")</script>';
+                // $swal='swal';
+                echo '<script type="text/javascript">
+                Swal.fire({
+                    title: "Đặt hàng thành công!",
+                    icon: "success"
+                  });</script>';
             }
             $bill = loadOne_bill($id_bill);
             $billchitiet = loadAll_cart($id_bill);
