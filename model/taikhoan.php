@@ -47,9 +47,19 @@ function update_matkhau($id,$passcu,$passmoi){
     if($checkmk!=[]){
         $sql1="UPDATE `tb_user` SET `pass`='$passmoi' WHERE id=".$id;
         pdo_execute($sql1);
-        echo "Đổi mật khẩu thành công!";
+        echo '<script type="text/javascript">
+        Swal.fire({
+            title: "Đổi mật khẩu thành công!",
+            icon: "success"
+          });</script>';
     }else{
-        echo "Vui lòng nhập đúng mật khẩu cũ!";
+        echo '<script type="text/javascript">
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Vui lòng nhập đúng mật khẩu cũ!",
+          });
+        </script>';
     }
 }
 ?>
