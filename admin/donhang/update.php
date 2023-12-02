@@ -10,7 +10,7 @@
                 <div class="iq-card">
                     <div class="iq-card-header d-flex justify-content-between">
                         <div class="iq-header-title">
-                            <h4 class="card-title">Update oder</h4>
+                            <h4 class="card-title">Sửa đơn hàng</h4>
                         </div>
                     </div>
                     <div class="iq-card-body">
@@ -55,7 +55,16 @@
                                 <label>ghi chú</label>
                                 <input type="text" class="form-control" name="ghichu" value="<?php if(isset($ghichu) && ($ghichu!="")) echo $ghichu?>">
                             </div>
-
+                            <div class="form-group">
+                            <label>Trạng thái đơn hàng:</label>
+                            <select class="form-control" id="exampleFormControlSelect1" name="tinhtrangdonhang">
+                                <option value="0">Chờ xác nhận</option>
+                                <option value="1">Đã xác nhận</option>
+                                <option value="2">Đã vận chuyển đến bưu cục</option>
+                                <option value="3">Đang giao hàng</option>
+                                <option value="4">Giao hàng thành công</option>
+                            </select>
+                        </div>
                             <input type="hidden" name="id" value="<?php if(isset($_GET['id']) && ($_GET['id']>0)) echo $id?>">
                             <input type="submit" name="update" class="btn btn-primary" value="Submit">
                             <input type="reset" class="btn btn-danger" value="Reset">

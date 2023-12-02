@@ -6,7 +6,7 @@
                <div class="iq-card-header d-flex justify-content-between">
                   <form class="mr-3 position-relative" action="index.php?act=tksanpham" method="post">
                      <div class="form-group mb-0">
-                        <input type="text" class="form-control" id="exampleInputSearch" placeholder="Search" aria-controls="user-list-table" name="tensanpham">
+                        <input type="text" class="form-control" id="exampleInputSearch" placeholder="Search" aria-controls="user-list-table" name="tensanpham" required>
                         <input type="submit" name="timsanpham">
                      </div>
                   </form>
@@ -30,35 +30,40 @@
                            </tr>
                         </thead>
                         <tbody>
-                           <?php
-                           foreach ($listsp as $sanpham) {
-                              extract($sanpham);
-                              $suasp = "index.php?act=suasp&id=" . $id;
-                              $xoasp = "index.php?act=xoasp&id=" . $id;
-                              $viewsp = "index.php?act=viewsp&id=" . $id;
-                              $imgpath = "../uploads/" . $anhdaidiensp;
-                              if (is_file($imgpath)) {
-                                 $hinh = "<img src='" . $imgpath . "' height='80'>";
-                              } else {
-                                 $hinh = "No photo";
-                              }
-                              echo '<tr>
-                                            <td>' . $id . '</td>
-                                            <td>' . $tensanpham . '</td>
-                                            <td>' . $tendanhmuc . '</td>
-                                            <td>' . $hinh . '</td>
-                                            <td>
-                                               <div class="flex align-items-center list-user-action">
-                                               <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="View" href="' . $viewsp . '"><i class="ri-eye-line"></i></a>
-                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="' . $suasp . '"><i class="ri-pencil-line"></i></a>
-                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="' . $xoasp . '"><i class="ri-delete-bin-line"></i></a>
-                                              </div>
-                                            </td>
-                                        </tr>';
-                           }
-                           ?>
-                        </tbody>
-                        </tbody>
+<?php
+  foreach ($listsp as $sanpham) {
+    extract($sanpham);
+
+    $suasp = "index.php?act=suasp&id=" . $id;
+    $xoasp = "index.php?act=xoasp&id=" . $id;
+    $viewsp = "index.php?act=viewsp&id=" . $id;
+    $imgpath = "../uploads/" . $anhdaidiensp;
+
+    if (is_file($imgpath)) {
+      $hinh = "<img src='" . $imgpath . "' height='80'>";
+    } else {
+      $hinh = "No photo";
+    }
+
+    echo '
+    <tr>
+      <td>' . $id . '</td>
+      <td>' . $tensanpham . '</td>
+      <td>' . $tendanhmuc . '</td>
+      <td>' . $hinh . '</td>
+      <td>
+        <div class="flex align-items-center list-user-action">
+          <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="View" href="' . $viewsp . '"><i class="ri-eye-line"></i></a>
+          <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="' . $suasp . '"><i class="ri-pencil-line"></i></a>
+          <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="'.$xoasp.'" onclick="return confirm(\'Bạn có muốn xóa không?\')"><i class="ri-delete-bin-line"></i></a>
+        </div>
+      </td>
+    </tr>
+    ';
+  }
+?>
+</tbody>
+
                      </table>
                   </div>
                </div>

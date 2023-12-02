@@ -18,36 +18,38 @@ if (is_array($dm)) {
                             <div class="form-group">
                                 <label>Tên tài khoản:</label>
                                 <input type="text" class="form-control" name="name" value="<?php if (isset($name) && ($name != ""))
-                                    echo $name ?>">
+                                                                                                echo $name ?>">
                             </div>
                             <div class="form-group">
                                 <label>Địa chỉ:</label>
                                 <input type="text" class="form-control" name="address" value="<?php if (isset($address) && ($address != ""))
-                                echo $address ?>">
+                                                                                                    echo $address ?>">
                             </div>
                             <div class="form-group">
                                 <label>Email:</label>
                                 <input type="email" class="form-control" name="email" value="<?php if (isset($email) && ($email != ""))
-                                echo $email ?>">
+                                                                                                    echo $email ?>">
                             </div>
                             <div class="form-group">
                                 <label>User:</label>
                                 <input type="text" class="form-control" name="user" value="<?php if (isset($user) && ($user != ""))
-                                echo $user ?>">
+                                                                                                echo $user ?>">
                             </div>
                             <div class="form-group">
                                 <label>Pass:</label>
                                 <input type="text" class="form-control" name="pass" value="<?php if (isset($pass) && ($pass != ""))
-                                echo $pass ?>">
+                                                                                                echo $pass ?>">
                             </div>
                             <div class="form-group">
                                 <label>Role:</label>
-                                <input type="text" class="form-control" name="role" value="<?php if (isset($role) && ($role != ""))
-                                echo $role ?>">
+                                <input type="text" class="form-control" name="role" value="<?php if (isset($role) && ($role != "")) {
+                                                                                                if ($role = 1) {
+                                                                                                }
+                                                                                            } ?>">
                             </div>
 
                             <input type="hidden" name="id" value="<?php if (isset($id) && ($id > 0))
-                                echo $id ?>">
+                                                                        echo $id ?>">
                             <input type="submit" name="update" class="btn btn-primary" value="Submit">
                             <input type="reset" class="btn btn-danger" value="Reset">
                             <a href="index.php?act=listdm"><input type="button" class="btn btn-link" value="back"></a>

@@ -12,7 +12,7 @@
                     <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label>Tên sản phẩm:</label>
-                            <input type="text" class="form-control" name="tensanpham">
+                            <input type="text" class="form-control" name="tensanpham" required>
                         </div>
                         <div class="form-group">
                             <label>Danh mục:</label>
@@ -27,29 +27,29 @@
                         </div>
                         <div class="form-group">
                             <label>Giá gốc:</label>
-                            <input type="text" class="form-control" name="giagoc">
+                            <input type="text" class="form-control" name="giagoc" required>
                         </div>
                         <div class="form-group">
                             <label>Giá giảm:</label>
-                            <input type="text" class="form-control" name="giagiam">
+                            <input type="text" class="form-control" name="giagiam" required>
                         </div>
                         <div class="form-group">
                             <label>Ảnh đại diện:</label>
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" accept="image/png, image/jpeg" name="anhsanpham">
+                                <input type="file" class="custom-file-input" accept="image/png, image/jpeg" name="anhsanpham" required>
                                 <label class="custom-file-label">Choose file</label>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Ảnh mô tả:</label>
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" accept="image/png, image/jpeg" name="anhmota[]" multiple="multiple">
+                                <input type="file" class="custom-file-input" accept="image/png, image/jpeg" name="anhmota[]" multiple="multiple" required>
                                 <label class="custom-file-label">Choose file</label>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Mô tả:</label><br>
-                            <textarea name="mota" id="" cols="100" rows="10"></textarea>
+                            <textarea name="mota" id="" cols="100" rows="10" required></textarea>
                         </div>
                         <!-- <div class="form-group">
                             <label>Tên màu:</label>
@@ -64,7 +64,7 @@
                         </div> -->
                         <div class="form-group">
                             <label>Số lượng:</label>
-                            <input type="text" class="form-control" name="soluong">
+                            <input type="text" class="form-control" name="soluong" required>
                         </div>
                         <input type="submit" name="addsp" class="btn btn-primary" value="Submit">
                         <button type="reset" class="btn btn-danger">Reset</button>

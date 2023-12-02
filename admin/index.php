@@ -365,12 +365,18 @@ if (isset($_SESSION["role"]) && ($_SESSION["role"] == 1)) {
                     $sodienthoai = $_POST['sodienthoai'];
                     $email = $_POST['email'];
                     $ghichu = $_POST['ghichu'];
-                    update_donhang($id, $ho, $ten, $tendaydu, $tinh_thanhpho, $quan_huyen, $phuong_xa, $sonha_tenduong, $email, $sodienthoai, $ghichu);
+                    $tinhtrangdonhang = $_POST['tinhtrangdonhang'];
+                    update_donhang($id, $ho, $ten, $tendaydu, $tinh_thanhpho, $quan_huyen, $phuong_xa, $sonha_tenduong, $email, $sodienthoai, $ghichu, $tinhtrangdonhang);
                     $thongbao = "Sửa danh mục thành công";
                 }
                 $listdonghang = loadAll_donhang();
                 include "donhang/list-bill.php";
                 break;
+
+            // case "dashboard":
+            //     $thongke=thongke_sanpham_luotban();
+            //     include "thongke.php";
+            // break;
 
             case "thoat":
                 if (isset($_SESSION['role']))

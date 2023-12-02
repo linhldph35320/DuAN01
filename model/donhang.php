@@ -34,8 +34,32 @@ function search_donhang($tendonhang){
     return $tkdonhang;
 }
 
-function update_donhang($id, $ho,$ten,$tendaydu,$tinh_thanhpho,$quan_huyen,$phuong_xa,$sonha_tenduong,$email, $sodienthoai,$ghichu)
+function loadAll_donhang_id($id){
+    $sql="SELECT * FROM `tb_donhang` WHERE iduser=".$id;
+    $listdh=pdo_query($sql);
+    return $listdh;
+}
+
+function update_donhang($id, $ho,$ten,$tendaydu,$tinh_thanhpho,$quan_huyen,$phuong_xa,$sonha_tenduong,$email, $sodienthoai,$ghichu,$tinhtrangdonhang)
 {
-    $sql = "UPDATE `tb_donhang` SET `ho`='$ho',`ten`='$ten',`tendaydu`='$tendaydu',`tinh_thanhpho`='$tinh_thanhpho',`quan_huyen`='$quan_huyen',`phuong_xa`='$phuong_xa',`sonha_tenduong`='$sonha_tenduong',`sodienthoai`='$sodienthoai',`email`='$email',`ghichu`='$ghichu' WHERE id=" . $id;
+    $sql = "UPDATE `tb_donhang` SET `ho`='$ho',`ten`='$ten',`tendaydu`='$tendaydu',`tinh_thanhpho`='$tinh_thanhpho',`quan_huyen`='$quan_huyen',`phuong_xa`='$phuong_xa',`sonha_tenduong`='$sonha_tenduong',`sodienthoai`='$sodienthoai',`email`='$email',`ghichu`='$ghichu',`tinhtrangdonhang`='$tinhtrangdonhang' WHERE id=" . $id;
     pdo_execute($sql);
+}
+
+function loadAll_donhang_iduser($id){
+    $sql="SELECT * FROM `tb_donhang` WHERE iduser=".$id;
+    $listdh=pdo_query($sql);
+    return $listdh;
+}
+
+function loadAll_donhang_iddh($id){
+    $sql="SELECT * FROM `tb_donhang` WHERE id=".$id;
+    $listdh=pdo_query_one($sql);
+    return $listdh;
+}
+
+function loadAll_donhang_hoadon($id){
+    $sql="SELECT * FROM `tb_hoadon` WHERE idbill=".$id;
+    $listhd=pdo_query($sql);
+    return $listhd;
 }

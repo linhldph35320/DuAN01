@@ -149,3 +149,10 @@ function update_sanpham($id, $tensanpham, $giagoc, $giagiam, $anhsanpham, $mota,
         pdo_execute($sql);
     }
 }
+
+function thongke_sanpham_luotban(){
+    $sql="SELECT * FROM `tb_sanpham` ORDER BY soluongban DESC LIMIT 0,3";
+    $thongke=pdo_query($sql);
+    return $thongke;
+}
+

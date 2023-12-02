@@ -8,6 +8,7 @@ include("model/taikhoan.php");
 include("model/danhmuc.php");
 include("model/binhluan.php");
 include("model/cart.php");
+include("model/donhang.php");
 $listdm = loadAll_danhmuc();
 $spnew = loadAll_sanpham_home();
 $sptop5 = loaddAll_sanpham_top5();
@@ -15,6 +16,7 @@ $spdanhmuc = loaddAll_sanpham_danhmuc_laptop();
 $spdt = loaddAll_sanpham_danhmuc_dienthoai();
 $lx = loadAll_sanpham_luotxem();
 $lb = loadAll_sanpham_luotban();
+
 
 include("view/header.php");
 if (!isset($_SESSION['mycart']))
@@ -27,12 +29,12 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             include("view/viewshop/homeshop.php");
             break;
 
-            case "timkiem":
-                if(isset($_POST['tim']) && ($_POST['tim'])){
-                    $tim=$_POST['tim'];
-                }
-                $listtk=find_sanpham($tim);
-                include("view/viewshop/shoptk.php");
+        case "timkiem":
+            if (isset($_POST['tim']) && ($_POST['tim'])) {
+                $tim = $_POST['tim'];
+            }
+            $listtk = find_sanpham($tim);
+            include("view/viewshop/shoptk.php");
             break;
 
         case "viewspdm":
@@ -75,13 +77,18 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case "addtocart":
             if (isset($_POST['addtocart']) && ($_POST['addtocart'])) {
                 $id = $_POST['id'];
-                $tensanpham = $_POST['tensanpham'];
-                $anhdaidiensp = $_POST['anhdaidiensp'];
-                $giagiam = $_POST['giagiam'];
-                $soluong = 1;
-                $ttien = $soluong * $giagiam;
-                $spadd = [$id, $tensanpham, $anhdaidiensp, $giagiam, $soluong, $ttien];
-                array_push($_SESSION['mycart'], $spadd);
+                $ktra = array_search($id, array_column($_SESSION['mycart'], 0));
+                if ($ktra !== false) {
+                    $_SESSION['mycart'][$ktra][4] += 1;
+                } else {
+                    $tensanpham = $_POST['tensanpham'];
+                    $anhdaidiensp = $_POST['anhdaidiensp'];
+                    $giagiam = $_POST['giagiam'];
+                    $soluong = 1;
+                    $ttien = $soluong * $giagiam;
+                    $spadd = [$id, $tensanpham, $anhdaidiensp, $giagiam, $soluong, $ttien];
+                    array_push($_SESSION['mycart'], $spadd);
+                }
             }
             include "view/cart/giohang.php";
             break;
@@ -112,7 +119,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 if (isset($_SESSION['user']))
                     $iduser = $_SESSION['user']['id'];
                 else
-                    $id = 0;
+                $id = 0;
                 $ho = $_POST['ho'];
                 $ten = $_POST['ten'];
                 $tendaydu = $_POST['tendaydu'];
@@ -131,11 +138,27 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                     insert_cart($_SESSION['user']['id'], $cart[0], $cart[1], $cart[2], $cart[3], $cart[4], $cart[5], $id_bill);
                 }
                 $_SESSION['mycart'] = [];
+                echo '<script>alert("Đặt Hàng Thành Công!")</script>';
             }
             $bill = loadOne_bill($id_bill);
             $billchitiet = loadAll_cart($id_bill);
             include "view/cart/billconfirm.php";
             break;
+
+        case "order":
+            if (isset($_GET['id']) && ($_GET['id'])) {
+                $listdh=loadAll_donhang_iduser($_GET['id']);
+            }
+            include "view/cart/orders.php";
+        break;
+
+        case "xemdh":
+            if (isset($_GET['id']) && ($_GET['id'])) {
+                $listdh=loadAll_donhang_iddh($_GET['id']);
+                $listhd=loadAll_donhang_hoadon($_GET['id']);
+            }
+            include "view/cart/xemdh.php";
+        break;
 
         case "dangkydangnhap":
             include "taikhoan/login.php";
@@ -146,8 +169,13 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $email = $_POST['email'];
                 $user = $_POST['user'];
                 $pass = $_POST['pass'];
-                insert_taikhoan($email, $user, $pass);
-                $dangKi = "Đã đăng kí thành công";
+                $check=checkonlyuser($user);
+                if($check==true){
+                    $dangKi = "Tài khoản đã tồn tại";
+                }else{
+                    insert_taikhoan($email, $user, $pass);
+                    $dangKi = "Đã đăng kí thành công";
+                }
             }
             include "taikhoan/login.php";
             break;
@@ -181,32 +209,35 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
 
         case "user_infor":
-            $user = $_SESSION['user'];
-            if (isset($user)) {
-                include("view/user/userinfo.php");
-            } else {
-                header('Location:index.php');
-            }
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
-                $name = $_POST['name'];
-                $address = $_POST['address'];
                 $email = $_POST['email'];
-                $user = $_POST['user'];
-                $pass = $_POST['pass'];
-                update_user($id, $name, $address, $email, $user, $pass);
-                $capnhatuser = "Cập Nhật Thành Công !";
-                $_SESSION['user'] = checkuser($user, $pass);
-                header('Location:index.php?act=account');
+                update_user($_SESSION['user']['id'], $email);
+                $_SESSION['user']['email']=$email;
+                $capnhatuser="Cập nhật thành công";
             }
+            include("view/myaccount.php");
             break;
 
         case 'logout':
-            $_SESSION['user'] = [];
+            unset($_SESSION['user']);
             header('Location:index.php');
             break;
 
         case 'account':
             include "view/myaccount.php";
+            break;
+
+        case "doimk":
+            include("view/user/doimk.php");
+            break;
+
+        case "user_pass":
+            if (isset($_POST['doimk']) && ($_POST['doimk'])) {
+                $passcu = $_POST['passcu'];
+                $passmoi = $_POST['passmoi'];
+            }
+            include("view/user/doimk.php");
+            update_matkhau($_SESSION['user']['id'], $passcu, $passmoi);
             break;
 
         default:

@@ -15,7 +15,7 @@
                            <div id="user_list_datatable_info" class="dataTables_filter">
                               <form class="mr-3 position-relative" action="index.php?act=tkdonhang" method="post">
                                  <div class="form-group mb-0">
-                                    <input type="text" class="form-control" id="exampleInputSearch" placeholder="Search" aria-controls="user-list-table" name="tendonhang">
+                                    <input type="text" class="form-control" id="exampleInputSearch" placeholder="Search" aria-controls="user-list-table" name="tendonhang" required>
                                     <input type="submit" name="timdonhang">
                                  </div>
                               </form>
@@ -44,11 +44,17 @@
                               extract($donhang);
                               if ($tinhtrangdonhang == 0) {
                                  $th = "Chưa xác nhận";
-                              } else {
+                              } else if($tinhtrangdonhang == 1){
                                  $th = "Đã xác nhận";
+                              }else if($tinhtrangdonhang == 2){
+                                 $th= "Đã vận chuyển đến bưu cục";
+                              }else if($tinhtrangdonhang == 3){
+                                 $th= "Đang giao hàng";
+                              }else{
+                                 $th= "Giao hàng thành công";
                               }
                               $suadh = "index.php?act=suadonhang&id=" . $id;
-                              $xoadh = "index.php?act=xoadonhang&id=" . $id;
+                              // $xoadh = "index.php?act=xoadonhang&id=" . $id;
                               $viewdh = "index.php?act=viewdonhang&id=" . $id;
                               echo '<tr>
                                             <td>DA1-' . $id . '</td>
@@ -63,7 +69,6 @@
                                                <div class="flex align-items-center list-user-action">
                                                <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="View" href="' . $viewdh . '"><i class="ri-eye-line"></i></a>
                                                  <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="' . $suadh . '"><i class="ri-pencil-line"></i></a>
-                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="' . $xoadh . '" onclick="myFunction()"><i class="ri-delete-bin-line"></i></a>
                                               </div>
                                             </td>
                                         </tr>';

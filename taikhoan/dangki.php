@@ -4,15 +4,15 @@
                         <form action="index.php?act=dangky" method="post">
                             <p>
                                 <label>Email <span>*</span></label>
-                                <input type="email" name="email"> 
+                                <input type="email" name="email" required> 
                             </p>
                             <p>
                                 <label>tên đăng nhập <span>*</span></label>
-                                <input type="text" name="user"> 
+                                <input type="text" name="user" required"> 
                             </p>
                             <p>
                                 <label>Mật khẩu <span>*</span></label>
-                                <input type="password" name="pass">
+                                <input type="password" name="pass" required>
                             </p>
                             <div class="login_submit">
                             <input type="submit" value="Đăng kí" name="dangky">

@@ -14,11 +14,8 @@
                                 <thead>
                                     <tr>
                                         <th width="10%">Mã TK</th>
-                                        <th width="20%">Tên Đăng NHập</th>
-                                        <th width="20%">Địa Chỉ</th>
                                         <th width="20%">Email</th>
                                         <th width="10%">Người dùng</th>
-                                        <th width="10%">Mật Khẩu</th>
                                         <th width="10%">Vai Trò</th>
                                         <th width="10%">Action</th>
 
@@ -32,23 +29,18 @@
                                         $xoatk = "index.php?act=xoatk&id=" . $id;
                                         if($role==1){
                                             $vaitro="Admin";
-                                        }else if("role==2"){
-                                            $vaitro="Nhân viên";
-                                        }else{
+                                        }else if("role==1"){
                                             $vaitro="Khách hàng";
+                                        }else{
+                                            $vaitro="Nhân viên";
                                         }
                                         echo '<tr>
                                         <td>'.$id.'</td>
-                                        <td>' . $name . '</td>
-                                        <td>' . $address . '</td>
                                         <td>' . $email . '</td>
                                         <td>' . $user . '</td>
-                                        <td><input type="password" name="" id="" value="'.$pass.'" disabled></td>
                                         <td>' . $vaitro . '</td>
                                         <td>
                                             <div class="flex align-items-center list-user-action">
-                                                <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="' . $suatk . '"><i class="ri-pencil-line"></i></a>
-                                                <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="' . $xoatk . '" onclick="myFunction()"><i class="ri-delete-bin-line"></i></a>
                                                 <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back" href="index.php?act=dskh"><-</a>
                                             </div>
                                         </td>

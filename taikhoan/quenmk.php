@@ -5,7 +5,7 @@
                            
                             <p>
                                 <label>email<span>*</span></label>
-                                <input type="email" name="email">
+                                <input type="email" name="email" required>
                             </p>
                            
                             <div class="login_submit">

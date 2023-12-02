@@ -7,8 +7,8 @@
             <div class="col-12">
                 <div class="breadcrumb_content">
                     <ul>
-                        <li><a href="index.html">home</a></li>
-                        <li>Shopping Cart</li>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li>Giỏ hàng</li>
                     </ul>
                 </div>
             </div>
@@ -41,6 +41,7 @@
                                     $tong = 0;
                                     $i = 0;
                                     foreach ($_SESSION['mycart'] as $cart) {
+                                        //var_dump($cart);
                                         $spct = "index.php?act=chitietsanpham&id=" . $cart[0];
                                         $imgpath = "uploads/" . $cart[2];
                                         if (is_file($imgpath)) {
@@ -54,8 +55,8 @@
                                         echo '                                        <tr>
                                                 <td class="product_remove">' . $xoasp . '
                                                 </td>
-                                                <td class="product_thumb"><a href="'.$spct.'">' . $hinh . '</a></td>
-                                                <td class="product_name"><a href="'.$spct.'">' . $cart[1] . '</a></td>
+                                                <td class="product_thumb"><a href="' . $spct . '">' . $hinh . '</a></td>
+                                                <td class="product_name"><a href="' . $spct . '">' . $cart[1] . '</a></td>
                                                 <td class="product-price">$' . $cart[3] . '</td>
                                                 <td class="product_quantity">' . $cart[4] . '</td>
                                                 <td class="product_total">$' . $thanhtien . '</td>
@@ -72,7 +73,13 @@
                             </table>
                         </div>
                         <div class="cart_submit">
-                            <a href="index.php?act=bill"><input type="button" value="Đặt hàng"></a>
+                            <?php
+                            if ($_SESSION['user'] == []) {
+                                echo '<a href="index.php?act=dangkydangnhap"><input type="button" value="Đặt hàng"></a>';
+                            } else {
+                                echo '<a href="index.php?act=bill"><input type="button" value="Đặt hàng"></a>';
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>

@@ -4,8 +4,8 @@
             <div class="col-12">
                 <div class="breadcrumb_content">
                     <ul>
-                        <li><a href="index.html">home</a></li>
-                        <li>product countdown</li>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li>Sản phẩm chi tiết</li>
                     </ul>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li class="review"><a href="#"> (customer review ) </a></li>
+                                    <li class="review"><a href="#"> (Khách hàng đánh giá ) </a></li>
                                 </ul>
 
                             </div>
@@ -104,20 +104,11 @@
                                 <span class="old_price">$' . $giagoc . '</span>
 
                             </div>
-                            <div class="product_timing">
-                                <div data-countdown="2023/12/15"></div>
-                            </div>
                             <div class="product_variant quantity">
-                            <button><input type="submit" name="addtocart" class="btn btn-primary" value="Add to cart"></button>
-                            </div>
-                            <div class=" product_d_action">
-                                <ul>
-                                    <li><a href="#" title="Add to wishlist">+ Add to Wishlist</a></li>
-                                    <li><a href="#" title="Add to wishlist">+ Compare</a></li>
-                                </ul>
+                            <button><input type="submit" name="addtocart" class="btn btn-primary" value="Thêm vào giỏ hàng"></button>
                             </div>
                             <div class="product_meta">
-                                <span>Category: <a href="#">' . $tendanhmuc . '</a></span>
+                                <span>Danh mục: <a href="#">' . $tendanhmuc . '</a></span>
                             </div>
 
                         </form>
@@ -159,7 +150,7 @@
                                 <a class="active" data-bs-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="false">Mô tả</a>
                             </li>
                             <li>
-                                <a data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+                                <a data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Bình luận</a>
                             </li>
                         </ul>
                     </div>

@@ -12,7 +12,7 @@
                         <div id="user_list_datatable_info" class="dataTables_filter">
                             <form class="mr-3 position-relative">
                                 <div class="form-group mb-0">
-                                    <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search" aria-controls="user-list-table">
+                                    <input type="search" class="form-control" id="exampleInputSearch" placeholder="Search" aria-controls="user-list-table" required>
                                 </div>
                             </form>
                         </div>
@@ -42,24 +42,30 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <?php
-                            foreach ($listbinhluan as $binhluan) {
-                                extract($binhluan);
-                                $xoabl = "index.php?act=xoabl&id=" . $id;
-                                echo
-                                '<td>' . $ten . '</td>
-                                            <td>' . $email . '</td>
-                                            <td>' . $noidung . '</td>
-                                            <td>' . $ngaybinhluan . '</td>
-                                            <td>
-                                            <div class="flex align-items-center list-user-action">
-                                               <a class="iq-bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="' . $xoabl . '"><i class="ri-delete-bin-line"></i></a>
-                                            </div>
-                                         </td>';
-                            }
-                            ?>
+                        <?php
+                        foreach ($listbinhluan as $binhluan) {
+                            extract($binhluan);
+
+                            $xoabl = "index.php?act=xoabl&id=" . $id;
+                        ?>
+                            <tr>
+                                <td><?= $ten ?></td>
+                                <td><?= $email ?></td>
+                                <td><?= $noidung ?></td>
+                                <td><?= $ngaybinhluan ?></td>
+                                <td>
+                                    <div class="flex align-items-center list-user-action">
+                                        <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="<?= $xoabl ?>" onclick="return confirm('bạn có muốn xóa ko ?');">
+                                            <i class="ri-delete-bin-line"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        <?php
+                        }
+                        ?>
                     </tbody>
+
                 </table>
             </div>
         </div>

@@ -2967,6 +2967,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .single_product {
+  width: auto;
+  height: 260px;
   padding: 20px 15px;
   border: 2px solid transparent;
   border-radius: 3px;

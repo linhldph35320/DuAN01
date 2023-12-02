@@ -13,7 +13,7 @@
         $sql="SELECT * FROM `tb_binhluan` WHERE id_pro=".$idpro;
         $listbinhluansp=pdo_query($sql);
         return $listbinhluansp;
-    }
+    } 
     function delete_binhluan($id){
         $sql="DELETE FROM `tb_binhluan` WHERE id=".$id;
         pdo_execute($sql);

@@ -25,19 +25,6 @@
                 <div class="col-lg-9 col-md-12">
                     <!--shop wrapper start-->
                     <!--shop toolbar start-->
-                    <div class="shop_toolbar_wrapper">
-                        <div class="shop_toolbar_btn">
-
-                            <button data-role="grid_3" type="button" class="active btn-grid-3" data-bs-toggle="tooltip"
-                                title="3"></button>
-
-                            <button data-role="grid_4" type="button" class=" btn-grid-4" data-bs-toggle="tooltip"
-                                title="4"></button>
-
-                            <button data-role="grid_list" type="button" class="btn-list" data-bs-toggle="tooltip"
-                                title="List"></button>
-                        </div>
-                    </div>
                     <!--shop toolbar end-->
                     <div class="row shop_wrapper">
                         <?php

@@ -30,7 +30,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-md-6">
                             <div class="support_info">
-                                <p>Telephone Enquiry: <a href="tel:0123456789">0123456789</a></p>
+                                <p>Liên hệ: <a href="tel:0123456789">0123456789JQK</a></p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
@@ -38,10 +38,10 @@
                                 <ul>
                                     <li>
                                         <?php
-                                        if ($_SESSION['user'] == []) {
-                                            echo '<a href="index.php?act=dangkydangnhap"> My Account </a>';
+                                        if (!isset($_SESSION['user'])) {
+                                            echo '<a href="index.php?act=dangkydangnhap"> Tài khoản </a>';
                                         } else {
-                                            echo '<a href="index.php?act=account"> My Account </a>';
+                                            echo '<a href="index.php?act=account"> Tài khoản </a>';
                                         }
                                         ?>
                                     </li>
@@ -66,7 +66,7 @@
                                 <div class="search_container">
                                     <form action="index.php?act=timkiem" method="POST">
                                         <div class="search_box">
-                                            <input placeholder="Tìm kiếm sản phẩm..." type="text" name="tim">
+                                            <input placeholder="Tìm kiếm sản phẩm..." type="text" name="tim" required>
                                             <button><input type="submit" name="timkiem" value="Tìm"></button>
                                         </div>
                                     </form>
@@ -112,29 +112,6 @@
                                         </li>
                                         <li class="mega_items"><a href="index.php?act=shop">Sản phẩm</a>
                                         </li>
-                                        <li><a href="#">blog<i class="fa fa-angle-down"></i></a>
-                                            <ul class="sub_menu pages">
-                                                <li><a href="#">blog details</a></li>
-                                                <li><a href="#">blog fullwidth</a></li>
-                                                <li><a href="#">blog left sidebar</a></li>
-                                                <li><a href="#">blog no sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Page<i class="fa fa-angle-down"></i></a>
-                                            <ul class="sub_menu pages">
-                                                <li><a href="#">About Us</a></li>
-                                                <li><a href="#">services</a></li>
-                                                <li><a href="#">privacy policy</a></li>
-                                                <li><a href="#">Frequently Questions</a></li>
-                                                <li><a href="#">contact</a></li>
-                                                <li><a href="#">login</a></li>
-                                                <li><a href="#">Error 404</a></li>
-                                                <li><a href="#">Compare</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li><a href="#">Về chúng tôi</a></li>
-                                        <li><a href="#">Liên hệ với chúng tôi</a></li>
                                     </ul>
                                 </nav>
                             </div>

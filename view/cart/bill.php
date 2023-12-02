@@ -25,49 +25,49 @@
                         <div class="row">
                             <div class="col-lg-6 mb-20">
                                 <label>Họ<span>*</span></label>
-                                <input type="text" name="ho">
+                                <input type="text" name="ho" required>
                             </div>
                             <div class="col-lg-6 mb-20">
                                 <label>Tên<span>*</span></label>
-                                <input type="text" name="ten">
+                                <input type="text" name="ten" required>
                             </div>
                             <div class="col-12 mb-20">
                                 <label>Tên đầy đủ<span>*</span></label>
-                                <input type="text" name="tendaydu">
+                                <input type="text" name="tendaydu" required>
                             </div>
                             <div class="col-12 mb-20">
                                 <label>Tỉnh, thành phố<span>*</span></label>
-                                <input type="text" name="tinh_thanhpho">
+                                <input type="text" name="tinh_thanhpho" required>
                             </div>
                             <div class="col-12 mb-20">
                                 <label>Quận, huyện<span>*</span></label>
-                                <input type="text" name="quan_huyen">
+                                <input type="text" name="quan_huyen" required>
                             </div>
                             <div class="col-12 mb-20">
                                 <label>Phường, xã<span>*</span></label>
-                                <input type="text" name="phuong_xa">
+                                <input type="text" name="phuong_xa" required>
                             </div>
                             <div class="col-12 mb-20">
                                 <label>Số nhà, tên đường<span>*</span></label>
-                                <input type="text" name="sonha_tenduong">
+                                <input type="text" name="sonha_tenduong" required>
                             </div>
                             <div class="col-lg-6 mb-20">
                                 <label>Số điện thoại<span>*</span></label>
-                                <input type="text" name="sodienthoai">
+                                <input type="text" name="sodienthoai" required>
 
                             </div>
                             <div class="col-lg-6 mb-20">
                                 <label>Địa chỉ email<span>*</span></label>
-                                <input type="email" name="email">
+                                <input type="email" name="email" required>
 
                             </div>
                             <div class="payment_method">
                                 <div class="panel-default">
-                                    <input id="payment" name="phuongthucthanhtoan" type="radio" value="1" />
+                                    <input id="payment" name="phuongthucthanhtoan" type="radio" value="1"  required/>
                                     <label for="payment" data-bs-toggle="collapse" data-bs-target="#method" aria-controls="method">Thanh toán khi nhận hàng</label>
                                 </div>
                                 <div class="panel-default">
-                                    <input id="payment" name="phuongthucthanhtoan" type="radio" value="2" />
+                                    <input id="payment" name="phuongthucthanhtoan" type="radio" value="2" required/>
                                     <label for="payment" data-bs-toggle="collapse" data-bs-target="#method" aria-controls="method">Thanh toán online</label>
                                 </div>
                             </div>

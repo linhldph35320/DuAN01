@@ -21,7 +21,9 @@
         extract($bill);
     }
     ?>
+
     <div class="container">
+    <h2>Cảm ơn quý khách đã đặt hàng!</h2>
         <div class="checkout_form">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
@@ -105,9 +107,10 @@
                                     <?php
                                     foreach ($billchitiet as $bct) {
                                         extract($bct);
+                                        $thanhtien=$soluong*$gia;
                                         echo '                                        <tr>
-                                                <td>' . $ten . '</td>
-                                                <td>' . $gia . 'vnd</td>
+                                                <td>' . $ten . 'x'.$soluong.'</td>
+                                                <td>' . $thanhtien . 'vnd</td>
                                             </tr>';
                                     }
                                     ?>
@@ -116,7 +119,7 @@
                                     <tr class="order_total">
                                         <?php
                                         foreach ($billchitiet as $bct) {
-                                            $tongtien = $tongtien + $gia;
+                                            $thanhtien=$soluong*$gia;
                                             extract($bct);
                                         }
                                         echo '                                        <th>Tổng tiền</th>

@@ -37,4 +37,5 @@
         $tkdanhmuc=pdo_query($sql);
         return $tkdanhmuc;
     }
+
 ?>
