@@ -219,6 +219,11 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 update_user($_SESSION['user']['id'], $email);
                 $_SESSION['user']['email']=$email;
                 $capnhatuser="Cập nhật thành công";
+                echo '<script type="text/javascript">
+                Swal.fire({
+                    title: "Đổi email thành công!",
+                    icon: "success"
+                  });</script>';
             }
             include("view/myaccount.php");
             break;
