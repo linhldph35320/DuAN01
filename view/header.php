@@ -114,6 +114,8 @@
                                         </li>
                                         <li class="mega_items"><a href="index.php?act=shop">Sản phẩm</a>
                                         </li>
+                                        <li class="mega_items"><a href="index.php?act=about_me">Về chúng tôi</a>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>

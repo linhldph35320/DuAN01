@@ -250,6 +250,10 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             update_matkhau($_SESSION['user']['id'], $passcu, $passmoi);
             break;
 
+        case "about_me":
+            include "view/about.php";
+        break;
+
         default:
             include("view/home.php");
             break;

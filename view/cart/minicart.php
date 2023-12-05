@@ -47,6 +47,7 @@
     <div class="mini_cart_footer">
         <div class="cart_button">
             <a href="index.php?act=viewcart">Xem giỏ hàng</a>
+            
         </div>
         <div class="cart_button">
             <a href="index.php?act=bill">Thanh toán</a>

@@ -9,6 +9,7 @@
                             <th>Ngày đặt hàng</th>
                             <th>Trạng thái</th>
                             <th>Tổng tiền</th>
+                            
                             <th>Hành động</th>
                         </tr>
                     </thead>

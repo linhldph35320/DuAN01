@@ -751,6 +751,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   top: 26px;
   z-index: 9;
 }
+.row{
+  justify-content: space-around ;
+}
 @media only screen and (max-width: 767px) {
   .canvas_open {
     right: 18px;
@@ -8297,8 +8300,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     margin-bottom: 28px;
   }
 }
-
+.team_thumb img{
+  justify-content: space-between;
+  width: 300px;
+  height: 280px;
+}
 .team_thumb {
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 24px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
