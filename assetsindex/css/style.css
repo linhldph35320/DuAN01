@@ -568,7 +568,19 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     display: block;
   }
 }
-
+.input input{
+  font-weight: 4  00;
+  font-size: larger;
+  border-radius: 5px;
+  border: solid 1px  #0063d1;
+  background-color: #0063d1;
+  color: #fff;
+  height: 50px;
+  width: 150px;
+}
+.input input:hover{
+  background-color: #000000;
+}
 .Offcanvas_menu_wrapper {
   width: 290px;
   position: fixed;

@@ -68,8 +68,9 @@
                                     <form action="index.php?act=timkiem" method="POST">
                                         <div class="search_box">
                                             <input placeholder="Tìm kiếm sản phẩm..." type="text" name="tim" required>
-                                            <button><input type="submit" name="timkiem" value="Tìm"></button>
+                                           
                                         </div>
+                                       <div class="input"><input type="submit" name="timkiem" value="Tìm"></div>
                                     </form>
                                 </div>
                                 <div class="middel_right_info">
