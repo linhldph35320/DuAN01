@@ -135,7 +135,7 @@
                 <article class="team_member">
                     <figure>
                         <div class="team_thumb">
-                            <img src="assets/img/about/z4944917211609_55d38188c2dea4780af5467dcecf7c07.jpg" alt="">
+                            <img src="assets/img/about/z4945287990380_6f0117d0912bbdd803aafccd69aa2870.jpg" alt="">
                         </div>
                         <figcaption class="team_content">
                             <h3>Nguyễn Mạnh Thắng</h3>
@@ -148,7 +148,7 @@
                 <article class="team_member">
                     <figure>
                         <div class="team_thumb">
-                            <img src="assets/img/about/z4944919816522_68b66e4900cc70b19c448d1c2f5cb36c.jpg" alt="">
+                            <img src="assets/img/about/z4945290966898_95c174f1753b2bb9406ba71d7df48305.jpg" alt="">
                         </div>
                         <figcaption class="team_content">
                             <h3>Phạm Ngọc Quý</h3>

@@ -31,17 +31,19 @@
                     <form action="index.php?act=billconfirm" method="post">
                         <h3>Thông tin đặt hàng</h3>
                         <div class="row">
-                            <div class="col-lg-6 mb-20">
+                            <div class="col-12 mb-20">
                                 <label>Mã đơn hàng</label>
                                 <input type="text" name="madonhang" value="DA1-<?= $bill['id'] ?>" disabled>
                                 <label>Ngày đặt hàng</label>
-                                <input type="datetime" name="" id="" value="<?= $bill['ngaydathang'] ?>">
+                                <input type="datetime" name="" id="" value="<?= $bill['ngaydathang'] ?>" disabled>
+                                <label for="">Tình trang đơn hàng</label>
+                                <input type="text" name="" id="" value="Chưa xác nhận" disabled>
                             </div>
-                            <div class="col-lg-6 mb-20">
+                            <div class="col-12 mb-20">
                                 <label>Họ</label>
                                 <input type="text" name="ho" value="<?= $bill['ho'] ?>" disabled>
                             </div>
-                            <div class="col-lg-6 mb-20">
+                            <div class="col-12 mb-20">
                                 <label>Tên</label>
                                 <input type="text" name="ten" value="<?= $bill['ten'] ?>" disabled>
                             </div>

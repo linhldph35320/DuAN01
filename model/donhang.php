@@ -63,3 +63,10 @@ function loadAll_donhang_hoadon($id){
     $listhd=pdo_query($sql);
     return $listhd;
 }
+
+function delete_dh($id){
+    $sql="DELETE FROM `tb_donhang` WHERE id=".$id;
+    $sql1="DELETE FROM `tb_hoadon` WHERE idbill=".$id;
+    pdo_execute($sql);
+    pdo_execute($sql1);
+}

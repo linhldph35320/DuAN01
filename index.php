@@ -58,7 +58,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
 
         case "binhluan":
-            if ($_SESSION['user'] == []) {
+            if (!isset($_SESSION['user'])) {
                 include "taikhoan/login.php";
             } else {
                 if (isset($_POST['guibinhluan']) && ($_POST['guibinhluan'])) {
@@ -163,6 +163,18 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $listhd=loadAll_donhang_hoadon($_GET['id']);
             }
             include "view/cart/xemdh.php";
+        break;
+
+        case "xoadh":
+            if (isset($_GET['id']) && ($_GET['id'])) {
+                delete_dh($_GET['id']);
+            }
+            echo '<script type="text/javascript">
+            Swal.fire({
+                title: "Hủy đơn hàng thành công!",
+                icon: "success"
+              });</script>';
+            header("Location:index.php");
         break;
 
         case "dangkydangnhap":

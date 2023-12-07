@@ -105,7 +105,7 @@
 
                             </div>
                             <div class="product_variant quantity">
-                            <button><input type="submit" name="addtocart" class="btn btn-primary" value="Thêm vào giỏ hàng"></button>
+                            <input type="submit" name="addtocart" class="btn btn-primary" value="Thêm vào giỏ hàng">
                             </div>
                             <div class="product_meta">
                                 <span>Danh mục: <a href="#">' . $tendanhmuc . '</a></span>
@@ -192,7 +192,6 @@
                                     ?>
                                     <form action="index.php?act=binhluan" method="post">
                                         <?php
-                                        if ($_SESSION['user'] != []) {
                                             if (isset($_SESSION['user'])) {
                                                 $iduser = $_SESSION['user']['id'];
                                                 $user = $_SESSION['user']['user'];
@@ -201,7 +200,9 @@
                                                 $name = "";
                                                 $email = "";
                                             }
-                                        }
+                                        ?>
+                                        <?php
+                                            if (isset($_SESSION['user']) && ($_SESSION['user'] !==[])) {
                                         ?>
                                         <div class="row">
                                             <div class="col-12">
@@ -221,6 +222,7 @@
                                         <input type="hidden" name="iduser" value="<?= $iduser ?>">
                                         <input type="hidden" name="idpro" value="<?= $id ?>">
                                         <input type="submit" value="Bình luận" name="guibinhluan">
+                                        <?php }?>
                                     </form>
                                 </div>
                             </div>

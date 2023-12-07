@@ -74,10 +74,12 @@
                         </div>
                         <div class="cart_submit">
                             <?php
-                            if ($_SESSION['user'] == []) {
-                                echo '<a href="index.php?act=dangkydangnhap"><input type="button" value="Đặt hàng"></a>';
-                            } else {
-                                echo '<a href="index.php?act=bill"><input type="button" value="Đặt hàng"></a>';
+                            if (isset($_SESSION['user'])) {
+                                if ($_SESSION['user'] == []) {
+                                    echo '<a href="index.php?act=dangkydangnhap"><input type="button" value="Đặt hàng"></a>';
+                                } else {
+                                    echo '<a href="index.php?act=bill"><input type="button" value="Đặt hàng"></a>';
+                                }
                             }
                             ?>
                         </div>
