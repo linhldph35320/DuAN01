@@ -17,7 +17,7 @@ function loadAll_sanpham_sp()
 
 function loadAll_sanpham_home()
 {
-    $sql = "SELECT * FROM tb_sanpham WHERE 1 ORDER BY ID  DESC LIMIT 0, 8";
+    $sql = "SELECT * FROM tb_sanpham WHERE 1 ORDER BY ID  DESC ";
     $listsp = pdo_query($sql);
     return $listsp;
 }

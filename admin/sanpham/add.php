@@ -64,7 +64,7 @@
                         </div> -->
                         <div class="form-group">
                             <label>Số lượng:</label>
-                            <input type="text" class="form-control" name="soluong" required>
+                            <input type="number" class="form-control" name="soluong" required>
                         </div>
                         <input type="submit" name="addsp" class="btn btn-primary" value="Submit">
                         <button type="reset" class="btn btn-danger">Reset</button>

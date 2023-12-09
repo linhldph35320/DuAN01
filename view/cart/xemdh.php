@@ -28,63 +28,60 @@ if (isset($listdh) && (is_array($listdh))) {
                     <form action="index.php?act=billconfirm" method="post">
                         <h3>Thông tin đặt hàng</h3>
                         <div class="row">
-                            <div class="col-lg-6 mb-20">
+                            <div class="col-12 mb-20">
                                 <label>Mã đơn hàng</label>
-                                <input type="text" name="madonhang" value="DA1-<?= $id ?>" disabled>
+                                <p>DA1-<?= $id ?></p>
                                 <label>Ngày đặt hàng</label>
-                                <input type="datetime" name="" id="" value="<?= $ngaydathang ?>" disabled>
+                                <p><?= $ngaydathang ?></p>
                             </div>
-                            <div class="col-lg-6 mb-20">
+                            <div class="col-12 mb-20">
                                 <label>Họ</label>
-                                <input type="text" name="ho" value="<?= $ho ?>" disabled>
+                                <p><?= $ho ?></p>
                             </div>
-                            <div class="col-lg-6 mb-20">
+                            <div class="col-12 mb-20">
                                 <label>Tên</label>
-                                <input type="text" name="ten" value="<?= $ten ?>" disabled>
+                                <p><?= $ten ?></p>
                             </div>
                             <div class="col-12 mb-20">
                                 <label>Tên đầy đủ</label>
-                                <input type="text" name="tendaydu" value="<?= $tendaydu ?>" disabled>
+                                <p><?= $tendaydu ?></p>
                             </div>
                             <div class="col-12 mb-20">
                                 <label>Tỉnh, thành phố</label>
-                                <input type="text" name="tinh_thanhpho" value="<?= $tinh_thanhpho ?>" disabled>
+                                <p><?= $tinh_thanhpho ?></p>
                             </div>
                             <div class="col-12 mb-20">
                                 <label>Quận, huyện</label>
-                                <input type="text" name="quan_huyen" value="<?= $quan_huyen ?>" disabled>
+                                <p><?= $quan_huyen ?></p>
                             </div>
                             <div class="col-12 mb-20">
                                 <label>Phường, xã</label>
-                                <input type="text" name="phuong_xa" value="<?= $phuong_xa ?>" disabled>
+                                <p><?= $phuong_xa ?></p>
                             </div>
                             <div class="col-12 mb-20">
                                 <label>Số nhà, tên đường</label>
-                                <input type="text" name="sonha_tenduong" value="<?= $sonha_tenduong ?>" disabled>
+                                <p><?= $sonha_tenduong ?></p>
                             </div>
-                            <div class="col-lg-6 mb-20">
+                            <div class="col-12 mb-20">
                                 <label>Số điện thoại</label>
-                                <input type="text" name="sodienthoai" value="<?= $sodienthoai ?>" disabled>
-
+                                <p><?= $sodienthoai ?></p>
                             </div>
-                            <div class="col-lg-6 mb-20">
+                            <div class="col-12 mb-20">
                                 <label>Địa chỉ email</label>
-                                <input type="email" name="email" value="<?= $email ?>" disabled>
-
+                                <p><?= $email ?></p>
                             </div>
-                            <div class="col-lg-6 mb-20">
+                            <div class="col-12 mb-20">
                                 <label>Phương thức thanh toán</label>
-                                <input type="text" name="pttt" value="<?php if ($phuongthucthanhtoan == 1) {
+                                <p><?php if ($phuongthucthanhtoan == 1) {
                                                                             echo "Thanh toán khi nhận hàng";
                                                                         } else {
                                                                             echo "Thanh toán online";
-                                                                        } ?>" disabled>
-
+                                                                        } ?></p>
                             </div>
                             <div class="col-12">
                                 <div class="order-notes">
                                     <label for="order_note">Ghi chú khi đặt hàng</label>
-                                    <textarea id="order_note" name="ghichu" readonly><?= $ghichu ?></textarea>
+                                    <p><?= $ghichu ?></p>
                                 </div>
                             </div>
                         </div>

@@ -47,6 +47,16 @@ function myFunction() {
   return confirm("Bạn có đồng ý xóa không?");
 }
 </script>
+
+<script>
+  document.getElementById('soluong').addEventListener('input', function() {
+    var inputValue = this.value;
+    if (inputValue < 0) {
+      this.value = "";
+      alert("Không được nhập số âm!");
+    }
+  });
+</script>
 </body>
 
 <!-- Mirrored from templates.iqonic.design/booksto/html/admin-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Nov 2023 08:34:29 GMT -->

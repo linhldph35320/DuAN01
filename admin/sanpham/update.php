@@ -63,7 +63,7 @@
                         </div> -->
                         <div class="form-group">
                             <label>Số lượng:</label>
-                            <input type="text" class="form-control" name="soluong" value="<?php echo $soluong?>">
+                            <input type="number" class="form-control" name="soluong" id="soluong" value="<?php echo $soluong?>">
                         </div>
                         <input type="submit" name="update" class="btn btn-primary" value="Submit">
                         <button type="reset" class="btn btn-danger">Reset</button>
